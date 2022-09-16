@@ -77,21 +77,6 @@ GIT REPO: https://github.com/steckReed/npm-Full-Steck-Tools
     'success'  : $colorSuccess,
   );
 
-## Mandatory Colors to Add To Project     <- Update Text
-  Note: Create .scss color palette file to house below variables in
-  
-  $light-primary:       #ffffff;
-  $light-secondary:     #f3ab26;
-  $light-tertiary:      #0ce1a1;
-  $light-font-primary:  #1c1c1c;
-  $light-font-secondary:#2cb3dd;
-
-  $dark-primary:        #2d3a4c;
-  $dark-secondary:      #2e79b3;
-  $dark-tertiary:       #092133;
-  $dark-font-primary:   #ffffff;
-  $dark-font-secondary: #da4224;
-
 ## Textures
   Note: In order for textures to work properly, or if you're getting a white background.
         Convert all HEX colors to HSL. Background-image doesn't support HEX :'(

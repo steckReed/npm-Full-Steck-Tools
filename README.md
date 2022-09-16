@@ -26,7 +26,6 @@ GIT REPO: https://github.com/steckReed/npm-Full-Steck-Tools
     // Dark Theme
     $dark-primary:         hsl(215, 26%, 24%);
     $dark-secondary:       hsl(206, 59%, 44%);
-    $dark-secondary-light: hsl(206, 86%, 59%);
     $dark-tertiary:        hsl(12, 85%, 60%);
     $dark-font-primary:    hsl(0, 0%, 100%);
     $dark-font-secondary:  hsl(10, 72%, 50%);

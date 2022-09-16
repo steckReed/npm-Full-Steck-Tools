@@ -1,8 +1,57 @@
 # npm-Full-Steck-Tools
 Trying to Make Webdev an Easier &amp; Better Place One Line at a Time
 
+GIT REPO: https://github.com/steckReed/npm-Full-Steck-Tools
+
+## TO USE:
+  1. Create A Global Stylesheet (SCSS)
+    - E.g. '_global-styles.scss'
+
+  2. Include Global Styles within _app.js or Header File (Global Scope)
+
+  3. Create a '_color-palette.scss' File With the Contents Below
+    - NOTE: Light & Dark Colors are Required to be Filled, but don't need to be used
+
+    '''
+    // Default Theme
+    // {Add Color(s) Here}
+
+    // Light Theme
+    $light-primary:        hsl(0, 0%, 100%);
+    $light-secondary:      hsl(39, 90%, 55%);
+    $light-tertiary:       hsl(162, 90%, 46%);
+    $light-font-primary:   hsl(0, 0%, 11%);
+    $light-font-secondary: hsl(194, 72%, 52%);
+
+    // Dark Theme
+    $dark-primary:         hsl(215, 26%, 24%);
+    $dark-secondary:       hsl(206, 59%, 44%);
+    $dark-secondary-light: hsl(206, 86%, 59%);
+    $dark-tertiary:        hsl(12, 85%, 60%);
+    $dark-font-primary:    hsl(0, 0%, 100%);
+    $dark-font-secondary:  hsl(10, 72%, 50%);
 
 
+    // Add Any & All HSL Colors here to auto generate classes based on those colors
+    $auto-class-generator:(
+      // Normal
+        'primary':(
+          'light' : $light-secondary,
+          'dark'  : $dark-secondary
+        ),
+        'secondary':(
+          'light' : $light-tertiary,
+          'dark'  : $dark-tertiary
+        ),
+      // Normal
+    );
+    '''
+
+  4. Add the Following to your Global Stylesheet
+    '''
+    @import './color-palette';
+    @import '../../../node_modules/full-steck-tools/Sassy/-fs-mixins';
+    '''
 
 ## Important!: 
   - Ensure all scss color variables are in HSL format to ensure Full-Steck Tools functions properly

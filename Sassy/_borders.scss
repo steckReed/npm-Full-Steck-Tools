@@ -1,0 +1,125 @@
+// Mixins
+  @mixin dotted(
+      $border-size:   6px, 
+      $border-style:  dotted, 
+      $border-color:black, 
+      $border-radius: 1rem,
+      $transition:    250ms
+    ){ 
+      border:$border-size $border-style $border-color; 
+      border-radius: $border-radius;
+      transition: $transition;
+    }
+  @mixin dashed(
+      $border-size:   6px, 
+      $border-style:  dashed, 
+      $border-color:black, 
+      $border-radius: 1rem,
+      $transition:    250ms
+    ){ 
+      border:$border-size $border-style $border-color; 
+      border-radius: $border-radius;
+      transition: $transition;
+    }
+  @mixin solid (
+      $border-size:   6px, 
+      $border-style:  solid,  
+      $border-color:black, 
+      $border-radius: 1rem,
+      $transition:    250ms
+    ){ 
+      border:$border-size $border-style $border-color; 
+      border-radius: $border-radius;
+      transition: $transition;
+    }
+  @mixin double(
+      $border-size:   6px, 
+      $border-style:  double, 
+      $border-color:black, 
+      $border-radius: 1rem,
+      $transition:    250ms
+    ){ 
+      border:$border-size $border-style $border-color; 
+      border-radius: $border-radius;
+      transition: $transition;
+    }
+  @mixin groove(
+      $border-size:   6px, 
+      $border-style:  groove, 
+      $border-color:black, 
+      $border-radius: 1rem,
+      $transition:    250ms
+    ){ 
+      border:$border-size $border-style $border-color; 
+      border-radius: $border-radius;
+      transition: $transition;
+    }
+  @mixin ridge (
+      $border-size:   6px, 
+      $border-style:  ridge,  
+      $border-color:black, 
+      $border-radius: 1rem,
+      $transition:    250ms
+    ){ 
+      border:$border-size $border-style $border-color; 
+      border-radius: $border-radius;
+      transition: $transition;
+    }
+  @mixin inset (
+      $border-size:   6px, 
+      $border-style:  inset,  
+      $border-color:black, 
+      $border-radius: 1rem,
+      $transition:    250ms
+    ){ 
+      border:$border-size $border-style $border-color; 
+      border-radius: $border-radius;
+      transition: $transition;
+    }
+  @mixin outset(
+      $border-size:   6px, 
+      $border-style:  outset, 
+      $border-color:black, 
+      $border-radius: 1rem,
+      $transition:    250ms
+    ){ 
+      border:$border-size $border-style $border-color; 
+      border-radius: $border-radius;
+      transition: $transition;
+    }
+  @mixin none  (
+      $border-size:   6px, 
+      $border-style:  none,   
+      $border-color:black, 
+      $border-radius: 1rem,
+      $transition:    250ms
+    ){ 
+      border:$border-size $border-style $border-color; 
+      border-radius: $border-radius;
+      transition: $transition;
+    }
+  @mixin hidden(
+      $border-size:   6px, 
+      $border-style:  hidden, 
+      $border-color:black, 
+      $border-radius: 1rem,
+      $transition:    250ms
+    ){ 
+      border:$border-size $border-style $border-color; 
+      border-radius: $border-radius;
+      transition: $transition;
+    }
+// Mixins
+
+// Classes
+  .dotted{ @include dotted(); }
+  .dashed{ @include dashed(); }
+  .solid { @include solid (); }
+  .double{ @include double(); }
+  .groove{ @include groove(); }
+  .ridge { @include ridge (); }
+  .inset { @include inset (); }
+  .outset{ @include outset(); }
+  .none  { @include none  (); }
+  .hidden{ @include hidden(); }
+// Classes

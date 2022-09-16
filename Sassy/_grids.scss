@@ -1,0 +1,66 @@
+// Mixins
+  @mixin grid-pos($grid-column:unset, $grid-row:unset){ grid-column:$grid-column; grid-row:$grid-row; }
+  @mixin grid-container($grid-columns:1fr, $grid-rows:auto, $column-gap:4px, $row-gap:4px, $bg-color: transparent){
+    display: grid;
+    grid-template-columns: $grid-columns;
+    grid-template-rows: $grid-rows;
+    column-gap: $column-gap;
+    row-gap: $row-gap;
+    background-color: $bg-color;
+    @content;
+  }
+
+  @mixin flex-pos($flex-column:unset, $flex-row:unset){ grid-column:$flex-column; grid-row:$flex-row; }
+  @mixin flex-container($flex-columns:1fr, $flex-rows:auto, $bg-color: transparent){
+    display: flex;
+    // flex-template-columns: $flex-columns;
+    // flex-template-rows: $flex-rows;
+    background-color: $bg-color;
+    @content;
+  }
+// Mixins
+
+// Classes
+  // Grids
+  // Grids
+  
+  // Flex
+  // Flex
+
+  // Collapsible Containers
+    .collapsible-container{
+      @include grid-pos(1);
+    }
+  // Collapsible Containers
+// Classes
+
+// Tags
+  grid { 
+    @include grid-pos(1); 
+    @include grid-container(); 
+    height: min-content; 
+    width: min-content; 
+    margin: auto
+  }
+  grid-container { 
+    @include grid-pos(1); 
+    @include grid-container(); 
+    height: 100vh; 
+    width: 100vw; 
+    margin: auto
+  }
+  flex { 
+    @include flex-pos(1); 
+    @include flex-container(); 
+    height: min-content; 
+    width: min-content; 
+    margin: auto
+  }
+  flex-container { 
+    @include flex-pos(1); 
+    @include flex-container(); 
+    height: 100vh; 
+    width: 100vw; 
+    margin: auto
+  }
+// Tags

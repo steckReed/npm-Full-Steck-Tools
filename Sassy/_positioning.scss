@@ -1,0 +1,37 @@
+// Mixins
+  @mixin position($position:fixed, $top:unset, $bottom:unset, $left:unset, $right:unset, $transform:unset){
+    position: $position;
+    top: $top;
+    right: $right;
+    transform: $transform;
+  }
+// Mixins
+
+// Classes
+  // Fixed
+    // // Original
+    // .position-top-left{     position: fixed; top: 30px;    right: 100%; transform: translateX(100%);}
+    // .position-top-middle{   position: fixed; top: 30px;    left: 50%;   transform: translateX(-50%);}
+    // .position-top-right{    position: fixed; top: 30px;    left: 100%;  transform: translateX(-100%);}
+    // /* // .position-center-left{  position: fixed; } // Needs work */
+    // .position-center-middle{position: fixed; top: 50%;     left: 50%;   transform: translateX(-50%);}
+    // /* // .position-center-right{ position: fixed; } // Needs work */
+    // .position-bottom-left{  position: fixed; bottom: 30px; right: 100%; transform: translateX(100%);}
+    // .position-bottom-middle{position: fixed; bottom: 30px; left: 50%;   transform: translateX(-50%);}
+    // .position-bottom-right{ position: fixed; bottom: 30px; left: 100%;  transform: translateX(-100%);}
+
+
+    .position-top-left      { @include position(fixed, 30px,  unset, unset, 100%,  translateX(100%));  }
+    .position-top-middle    { @include position(fixed, 30px,  unset, 50%,   unset, translateX(-50%));  }
+    .position-top-right     { @include position(fixed, 30px,  unset, 100%,  unset, translateX(-100%)); }
+    .position-center-middle { @include position(fixed, 50%,   unset, 50%,   unset, translateX(-50%));  }
+    .position-bottom-left   { @include position(fixed, unset, 30px,  unset, 100%,  translateX(100%));  }
+    .position-bottom-middle { @include position(fixed, unset, 30px,  unset, -50%,  translateX(-50%));  }
+    .position-bottom-right  { @include position(fixed, unset, 30px,  unset, -100%, translateX(-100%)); }
+
+
+    /* // .position-center-left{  position: fixed; } // Needs work */
+    /* // .position-center-right{ position: fixed; } // Needs work */
+  // Fixed
+
+// Classes

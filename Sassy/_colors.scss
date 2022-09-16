@@ -1,0 +1,31 @@
+// Default Colors
+$colorWhite           : hsl(0, 0%, 100%);
+$colorOffWhite        : hsl(0, 0%, 84%);
+$colorMutedWhite      : hsl(210, 18%, 87%);
+$colorBlack           : hsl(0, 0%, 7%);
+$colorLightGrey       : hsl(0, 0%, 25%);
+
+// Description Colors
+$colorSuccess         : hsl(134, 61%, 41%);
+$colorInfo            : hsl(190, 90%, 50%);
+$colorWarning         : hsl(27, 98%, 54%);
+$colorDanger          : hsl(354, 70%, 54%);
+$colorAlert           : hsl(51, 100%, 51%);
+
+// Text Colors
+$light-primary-text   : $colorBlack;
+$light-secondary-text : $colorLightGrey;
+$dark-primary-text    : $colorWhite;
+$dark-secondary-text  : $colorOffWhite;
+
+
+
+$fs-auto-class-generator: (
+  // Description
+    'success'   : $colorSuccess,
+    'info'      : $colorInfo,
+    'warning'   : $colorWarning,
+    'danger'    : $colorDanger,
+    'alert'     : $colorAlert,
+  // Description
+);

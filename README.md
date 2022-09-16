@@ -3,6 +3,9 @@ Trying to Make Webdev an Easier &amp; Better Place One Line at a Time
 
 GIT REPO: https://github.com/steckReed/npm-Full-Steck-Tools
 
+This Package Works Best With Icons!
+https://react-icons.github.io/react-icons/
+
 ## TO USE:
   1. Create A Global Stylesheet (SCSS)
     - E.g. '_global-styles.scss'
@@ -50,6 +53,13 @@ GIT REPO: https://github.com/steckReed/npm-Full-Steck-Tools
     '''
     @import './color-palette';
     @import '../../../node_modules/full-steck-tools/Sassy/-fs-mixins';
+    '''
+
+  5. This Package Works Best With Icons, Who Doesnt Like Those?
+    - Recommend to install 'react-icons' from (https://react-icons.github.io/react-icons/)
+    
+    '''
+    npm i react-icons --save
     '''
 
 ## Important!: 

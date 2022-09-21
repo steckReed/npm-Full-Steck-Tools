@@ -7,6 +7,3 @@ $fs-default-size-tags: (
   'sm' : 'sm',
   'xs' : 'xs',
 );
-
-// Merge Color Maps Together
-$auto-class-generator-merge : map.merge($fs-auto-class-generator, $auto-class-generator);

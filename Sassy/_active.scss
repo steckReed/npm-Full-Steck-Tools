@@ -80,6 +80,9 @@
 // Mixins
 
 // Classes
+  // Auto-Generated Button Classes
+  @each $key, $value in $auto-class-generator-merge{ @include auto-btn-class-generator($key, $value); }
+
   .active{
     @include light-theme{
       background-color: $light-font-primary;
@@ -92,86 +95,4 @@
       border-left: 4px solid $dark-secondary;
     }
   }
-
-
-  // Auto-Generated Button Classes
-  @each $key, $value in $auto-class-generator-merge{ @include auto-btn-class-generator($key, $value); }
-  
-  // .btn-primary.active-success,
-  // .active-success{
-  //   @include light-theme{
-  //     color: $light-primary;
-
-  //     @include active(
-  //       $border-size:       4px,
-  //       $border-style:      solid,
-  //       $border-color:      $colorSuccess,
-  //       $border-radius:     0.25rem,
-  //       $background-color:  $colorBlack,
-  //     );
-  //   }
-  //   @include dark-theme{
-  //     color: $dark-primary;
-      
-  //     @include active(
-  //       $border-size:       4px,
-  //       $border-style:      solid,
-  //       $border-color:      $colorSuccess,
-  //       $border-radius:     0.25rem,
-  //       $background-color:  $colorWhite,
-  //     );
-  //   }
-  // }
-
-  // .active-info{
-  //   @include light-theme{
-  //     background-color: $colorBlack;
-  //     color: $dark-secondary-text;
-  //     border-left: 4px solid $colorInfo;
-  //   }
-  //   @include dark-theme{
-  //     background-color: $colorWhite;
-  //     color: $light-secondary-text;
-  //     border-left: 4px solid $colorInfo;
-  //   }
-  // }
-
-  // .active-warning{
-  //   @include light-theme{
-  //     background-color: $colorBlack;
-  //     color: $dark-secondary-text;
-  //     border-left: 4px solid $colorWarning;
-  //   }
-  //   @include dark-theme{
-  //     background-color: $colorWhite;
-  //     color: $light-secondary-text;
-  //     border-left: 4px solid $colorWarning;
-  //   }
-  // }
-
-  // .active-danger{
-  //   @include light-theme{
-  //     background-color: $colorBlack;
-  //     color: $dark-secondary-text;
-  //     border-left: 4px solid $colorDanger;
-  //   }
-  //   @include dark-theme{
-  //     background-color: $colorWhite;
-  //     color: $light-secondary-text;
-  //     border-left: 4px solid $colorDanger;
-  //   }
-  // }
-
-  // .active-alert{
-  //   @include light-theme{
-  //     background-color: $colorBlack;
-  //     color: $dark-secondary-text;
-  //     border-left: 4px solid $colorAlert;
-  //   }
-  //   @include dark-theme{
-  //     background-color: $colorWhite;
-  //     color: $light-secondary-text;
-  //     border-left: 4px solid $colorAlert;
-  //   }
-  // }
 // Classes

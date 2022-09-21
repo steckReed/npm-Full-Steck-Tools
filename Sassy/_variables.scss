@@ -1,0 +1,12 @@
+// Store Default Tag Names to Loop Through
+$fs-default-size-tags: (
+  // Description
+  'xl' : 'xl',
+  'lg' : 'lg',
+  'md' : 'md',
+  'sm' : 'sm',
+  'xs' : 'xs',
+);
+
+// Merge Color Maps Together
+$auto-class-generator-merge : map.merge($fs-auto-class-generator, $auto-class-generator);

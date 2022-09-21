@@ -66,6 +66,5 @@
     @include dark-theme { background-image: makeTextureSVG(transparent, $dark-primary) !important; }
   }
   
-  @each $key, $value in $auto-class-generator{    @include auto-texture-class-generator($key, $value); }
-  @each $key, $value in $fs-auto-class-generator{ @include auto-texture-class-generator($key, $value); }
+  @each $key, $value in $auto-class-generator-merge{ @include auto-texture-class-generator($key, $value); }
 // Classes

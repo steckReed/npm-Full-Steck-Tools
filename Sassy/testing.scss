@@ -1,138 +1,138 @@
-@use "sass:map";
-@import './_color-palette';
-@import '../Packages/Full-Steck-Tools/Sassy/-fs-mixins';
+// @use "sass:map";
+// @import './_color-palette';
+// @import '../Packages/Full-Steck-Tools/Sassy/-fs-mixins';
 
-@function strEndsWith($string, $find) {
-  @return str-length($string) >= str-length($find) AND str-slice($string, (str-length($string) - str-length($find) + 1)) == $find;
-}
-
-@function isMap($var){
-  @return type-of($var) == 'map';
-}
-
-// Idea for full auto-generated classes
-$main-color-map:();
-// Example:
-// $main-color-map : (
-//   1 : (
-//     light: #006D85,
-//     dark : #005D72
-//   )
-// );
-
-  // Auto-Generated Classes
-    @mixin auto-btn-generator($key, $value){
-      @debug($key, $value);
-      .auto-bg-#{$key}{
-        @include btn();
-
-        @if(isMap($value) and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
-          $valueLight : map-get($value, 'light');
-          $valueDark  : map-get($value, 'dark');
-
-          @include light-theme{
-            @include light-style($valueLight);
-            @include btn-hover(transparent, $light-font-primary, 1px solid $valueLight);
-          }
-          @include dark-theme{
-            @include dark-style($valueDark);
-            @include btn-hover(transparent, $dark-font-primary, 1px solid $valueDark);
-          }
-        }
-        @else{
-          @include btn-hover(transparent, $value, 1px solid $value);
-          background-color: $value;
-          color: $colorWhite;
-        }
-                
-        transition: 325ms;
-      }
-    }
-    @each $key, $value in $auto-class-generator{
-      .bg-#{$key}{
-        @include btn();
-
-        @if(isMap($value) and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
-          $valueLight : map-get($value, 'light');
-          $valueDark  : map-get($value, 'dark');
-
-          @include light-theme{
-            @include light-style($valueLight);
-            @include btn-hover(transparent, $light-font-primary, 1px solid $valueLight);
-          }
-          @include dark-theme{
-            @include dark-style($valueDark);
-            @include btn-hover(transparent, $dark-font-primary, 1px solid $valueDark);
-          }
-        }
-        @else{
-          @include btn-hover(transparent, $value, 1px solid $value);
-          background-color: $value;
-          color: $colorWhite;
-        }
-                
-        transition: 325ms;
-      }
-    }
-    
-    @each $key, $value in $fs-auto-class-generator{
-      
-      @include auto-btn-generator($key, $value);
-    }
-
-
-    // @each $key, $value in $auto-class-generator{
-    //   .bg-#{$key}{ 
-    //     background-color: $value;
-    //   }
-    // }
-  // Auto-Generated Classes
-// Get All Keys of Color Maps
-
-
-
-
-
-
-
-
-
-
-
-//   // Map Version (No Overloading)
-//     $title-headers: (
-//       lg: clamp(1.8rem, 4.6vw, 4rem),
-//       md: clamp(1.8rem, 4.6vw, 3rem),
-//       sm: clamp(1.8rem, 4.6vw, 2.5rem),
-//       xs: clamp(1.8rem, 4.6vw, 2rem)
-//     );
-//     @mixin title-header($title-header) { 
-//       @if map-has-key($title-headers, $title-header) {
-//         font-size: map-get($title-headers, $title-header)
-//       } @else {
-//         @warn "Incorrect Key Entered"
-//       }
-//     };
-
-//     .test-class{
-//       @include title-header(md);
-//       @include text-no-break();
-//       @include text();
-//       text-align: center;
-//       margin: auto;
-//     }
-//   // Map Version
-
-// $icons: (
-//   glass: "\f000",
-//   music: "\f001",
-//   search: "\f002",
-//   envelope-o: "\f003",
-//   heart: "\f004"
-// );
-
-// @each $name, $icon in $icons {
-//   .fa-#{$name}:before {
-//     content: $icon;
-//   }
+// @function strEndsWith($string, $find) {
+//   @return str-length($string) >= str-length($find) AND str-slice($string, (str-length($string) - str-length($find) + 1)) == $find;
 // }
+
+// @function isMap($var){
+//   @return type-of($var) == 'map';
+// }
+
+// // Idea for full auto-generated classes
+// $main-color-map:();
+// // Example:
+// // $main-color-map : (
+// //   1 : (
+// //     light: #006D85,
+// //     dark : #005D72
+// //   )
+// // );
+
+//   // Auto-Generated Classes
+//     @mixin auto-btn-generator($key, $value){
+//       @debug($key, $value);
+//       .auto-bg-#{$key}{
+//         @include btn();
+
+//         @if(isMap($value) and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
+//           $valueLight : map-get($value, 'light');
+//           $valueDark  : map-get($value, 'dark');
+
+//           @include light-theme{
+//             @include light-style($valueLight);
+//             @include btn-hover(transparent, $light-font-primary, 1px solid $valueLight);
+//           }
+//           @include dark-theme{
+//             @include dark-style($valueDark);
+//             @include btn-hover(transparent, $dark-font-primary, 1px solid $valueDark);
+//           }
+//         }
+//         @else{
+//           @include btn-hover(transparent, $value, 1px solid $value);
+//           background-color: $value;
+//           color: $colorWhite;
+//         }
+                
+//         transition: 325ms;
+//       }
+//     }
+//     @each $key, $value in $auto-class-generator{
+//       .bg-#{$key}{
+//         @include btn();
+
+//         @if(isMap($value) and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
+//           $valueLight : map-get($value, 'light');
+//           $valueDark  : map-get($value, 'dark');
+
+//           @include light-theme{
+//             @include light-style($valueLight);
+//             @include btn-hover(transparent, $light-font-primary, 1px solid $valueLight);
+//           }
+//           @include dark-theme{
+//             @include dark-style($valueDark);
+//             @include btn-hover(transparent, $dark-font-primary, 1px solid $valueDark);
+//           }
+//         }
+//         @else{
+//           @include btn-hover(transparent, $value, 1px solid $value);
+//           background-color: $value;
+//           color: $colorWhite;
+//         }
+                
+//         transition: 325ms;
+//       }
+//     }
+    
+//     @each $key, $value in $fs-auto-class-generator{
+      
+//       @include auto-btn-generator($key, $value);
+//     }
+
+
+//     // @each $key, $value in $auto-class-generator{
+//     //   .bg-#{$key}{ 
+//     //     background-color: $value;
+//     //   }
+//     // }
+//   // Auto-Generated Classes
+// // Get All Keys of Color Maps
+
+
+
+
+
+
+
+
+
+
+
+// //   // Map Version (No Overloading)
+// //     $title-headers: (
+// //       lg: clamp(1.8rem, 4.6vw, 4rem),
+// //       md: clamp(1.8rem, 4.6vw, 3rem),
+// //       sm: clamp(1.8rem, 4.6vw, 2.5rem),
+// //       xs: clamp(1.8rem, 4.6vw, 2rem)
+// //     );
+// //     @mixin title-header($title-header) { 
+// //       @if map-has-key($title-headers, $title-header) {
+// //         font-size: map-get($title-headers, $title-header)
+// //       } @else {
+// //         @warn "Incorrect Key Entered"
+// //       }
+// //     };
+
+// //     .test-class{
+// //       @include title-header(md);
+// //       @include text-no-break();
+// //       @include text();
+// //       text-align: center;
+// //       margin: auto;
+// //     }
+// //   // Map Version
+
+// // $icons: (
+// //   glass: "\f000",
+// //   music: "\f001",
+// //   search: "\f002",
+// //   envelope-o: "\f003",
+// //   heart: "\f004"
+// // );
+
+// // @each $name, $icon in $icons {
+// //   .fa-#{$name}:before {
+// //     content: $icon;
+// //   }
+// // }

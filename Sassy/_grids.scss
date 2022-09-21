@@ -10,11 +10,10 @@
     @content;
   }
 
-  @mixin flex-pos($flex-column:unset, $flex-row:unset){ grid-column:$flex-column; grid-row:$flex-row; }
-  @mixin flex-container($flex-columns:1fr, $flex-rows:auto, $bg-color: transparent){
+  @mixin flex-container($flex-columns:1fr, $flex-rows:auto, $gap: 3.5vmin, $bg-color: transparent){
     display: flex;
-    // flex-template-columns: $flex-columns;
-    // flex-template-rows: $flex-rows;
+    flex-wrap: wrap;
+    gap: $gap;
     background-color: $bg-color;
     @content;
   }
@@ -33,34 +32,3 @@
     }
   // Collapsible Containers
 // Classes
-
-// Tags
-  grid { 
-    @include grid-pos(1); 
-    @include grid-container(); 
-    height: min-content; 
-    width: min-content; 
-    margin: auto
-  }
-  grid-container { 
-    @include grid-pos(1); 
-    @include grid-container(); 
-    height: 100vh; 
-    width: 100vw; 
-    margin: auto
-  }
-  flex { 
-    @include flex-pos(1); 
-    @include flex-container(); 
-    height: min-content; 
-    width: min-content; 
-    margin: auto
-  }
-  flex-container { 
-    @include flex-pos(1); 
-    @include flex-container(); 
-    height: 100vh; 
-    width: 100vw; 
-    margin: auto
-  }
-// Tags

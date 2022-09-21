@@ -1,32 +1,83 @@
-@mixin active(
-  $border-size:       unset,
-  $border-style:      unset,
-  $border-color:      unset,
-  $border-radius:     unset,
-  $background-color:  unset
-){
-  border-left:      $border-size $border-style $border-color; 
-  border-radius:    $border-radius;
-  background-color: $background-color;
-}
- 
+// Mixins
+  @mixin active(
+    $border-size:       unset,
+    $border-style:      unset,
+    $border-color:      unset,
+    $border-radius:     unset,
+    $background-color:  unset
+  ){
+    border-left:      $border-size $border-style $border-color; 
+    border-radius:    $border-radius;
+    background-color: $background-color;
+  }
 
+  @mixin auto-btn-class-generator($key, $value){
+    @each $keyChild, $valueChild in $auto-class-generator-merge{
+      // Normal & Description
+        .btn-#{$key}.active-#{$keyChild},
+        .active-#{$keyChild}{
 
-// padding: 0.375rem 0.75rem;
-// border: none;
-// border-radius: 0px 0.2rem 0.2rem 0px;
-// transition: 325ms;
-// @include light-theme{
-//   background-color: $light-font-primary;
-//   color: $light-primary;
-//   @include btn-hover(#{$light-secondary}70 !important, $light-font-primary, $border:none);
-// }
-// @include dark-theme{
-//   background-color: $dark-font-primary;
-//   color: $dark-primary;
-//   @include btn-hover(#{$dark-secondary}70 !important, $dark-font-primary, $border:none);
-// }
+          @if(varIs($valueChild, 'map') and ( map-has-key($valueChild, "light") and map-has-key($valueChild, "dark") )){ 
+            
+            $valueLight : map-get($valueChild, 'light');
+            $valueDark  : map-get($valueChild, 'dark');
+            
+            @include light-theme{
+              color: $light-primary;
 
+              @include active(
+                $border-size:       4px,
+                $border-style:      solid,
+                $border-color:      $valueLight,
+                $border-radius:     0.25rem,
+                $background-color:  $dark-primary,
+              );
+            }
+            @include dark-theme{
+              color: $dark-primary;
+              
+              @include active(
+                $border-size:       4px,
+                $border-style:      solid,
+                $border-color:      $valueDark,
+                $border-radius:     0.25rem,
+                $background-color:  $light-primary,
+              );
+            }
+
+          }
+          @else{
+
+            @include light-theme{
+              color: $light-primary;
+
+              @include active(
+                $border-size:       4px,
+                $border-style:      solid,
+                $border-color:      $valueChild,
+                $border-radius:     0.25rem,
+                $background-color:  $dark-primary,
+              );
+            }
+            @include dark-theme{
+              color: $dark-primary;
+
+              @include active(
+                $border-size:       4px,
+                $border-style:      solid,
+                $border-color:      $valueChild,
+                $border-radius:     0.25rem,
+                $background-color:  $light-primary,
+              );
+            }
+
+          }
+        }
+      // Normal & Description
+    }
+  }
+
+// Mixins
 
 // Classes
   .active{
@@ -42,77 +93,85 @@
     }
   }
 
-  .btn-primary.active-success,
-  .active-success{
-    @include light-theme{
-      @include active(
-        $border-size:       4px,
-        $border-style:      solid,
-        $border-color:      $colorSuccess,
-        $border-radius:     0.25rem,
-        $background-color:  $colorBlack,
-      );
-    }
-    @include dark-theme{
-      @include active(
-        $border-size:       4px,
-        $border-style:      solid,
-        $border-color:      $colorSuccess,
-        $border-radius:     0.25rem,
-        $background-color:  $colorWhite,
-      );
-    }
-  }
 
-  .active-info{
-    @include light-theme{
-      background-color: $colorBlack;
-      color: $dark-secondary-text;
-      border-left: 4px solid $colorInfo;
-    }
-    @include dark-theme{
-      background-color: $colorWhite;
-      color: $light-secondary-text;
-      border-left: 4px solid $colorInfo;
-    }
-  }
+  // Auto-Generated Button Classes
+  @each $key, $value in $auto-class-generator-merge{ @include auto-btn-class-generator($key, $value); }
+  
+  // .btn-primary.active-success,
+  // .active-success{
+  //   @include light-theme{
+  //     color: $light-primary;
 
-  .active-warning{
-    @include light-theme{
-      background-color: $colorBlack;
-      color: $dark-secondary-text;
-      border-left: 4px solid $colorWarning;
-    }
-    @include dark-theme{
-      background-color: $colorWhite;
-      color: $light-secondary-text;
-      border-left: 4px solid $colorWarning;
-    }
-  }
+  //     @include active(
+  //       $border-size:       4px,
+  //       $border-style:      solid,
+  //       $border-color:      $colorSuccess,
+  //       $border-radius:     0.25rem,
+  //       $background-color:  $colorBlack,
+  //     );
+  //   }
+  //   @include dark-theme{
+  //     color: $dark-primary;
+      
+  //     @include active(
+  //       $border-size:       4px,
+  //       $border-style:      solid,
+  //       $border-color:      $colorSuccess,
+  //       $border-radius:     0.25rem,
+  //       $background-color:  $colorWhite,
+  //     );
+  //   }
+  // }
 
-  .active-danger{
-    @include light-theme{
-      background-color: $colorBlack;
-      color: $dark-secondary-text;
-      border-left: 4px solid $colorDanger;
-    }
-    @include dark-theme{
-      background-color: $colorWhite;
-      color: $light-secondary-text;
-      border-left: 4px solid $colorDanger;
-    }
-  }
+  // .active-info{
+  //   @include light-theme{
+  //     background-color: $colorBlack;
+  //     color: $dark-secondary-text;
+  //     border-left: 4px solid $colorInfo;
+  //   }
+  //   @include dark-theme{
+  //     background-color: $colorWhite;
+  //     color: $light-secondary-text;
+  //     border-left: 4px solid $colorInfo;
+  //   }
+  // }
 
-  .active-alert{
-    @include light-theme{
-      background-color: $colorBlack;
-      color: $dark-secondary-text;
-      border-left: 4px solid $colorAlert;
-    }
-    @include dark-theme{
-      background-color: $colorWhite;
-      color: $light-secondary-text;
-      border-left: 4px solid $colorAlert;
-    }
-  }
+  // .active-warning{
+  //   @include light-theme{
+  //     background-color: $colorBlack;
+  //     color: $dark-secondary-text;
+  //     border-left: 4px solid $colorWarning;
+  //   }
+  //   @include dark-theme{
+  //     background-color: $colorWhite;
+  //     color: $light-secondary-text;
+  //     border-left: 4px solid $colorWarning;
+  //   }
+  // }
+
+  // .active-danger{
+  //   @include light-theme{
+  //     background-color: $colorBlack;
+  //     color: $dark-secondary-text;
+  //     border-left: 4px solid $colorDanger;
+  //   }
+  //   @include dark-theme{
+  //     background-color: $colorWhite;
+  //     color: $light-secondary-text;
+  //     border-left: 4px solid $colorDanger;
+  //   }
+  // }
+
+  // .active-alert{
+  //   @include light-theme{
+  //     background-color: $colorBlack;
+  //     color: $dark-secondary-text;
+  //     border-left: 4px solid $colorAlert;
+  //   }
+  //   @include dark-theme{
+  //     background-color: $colorWhite;
+  //     color: $light-secondary-text;
+  //     border-left: 4px solid $colorAlert;
+  //   }
+  // }
 // Classes

@@ -1,0 +1,28 @@
+grid { 
+  @include grid-pos(1); 
+  @include grid-container(); 
+  height: min-content; 
+  width: min-content; 
+  margin: auto
+}
+grid-container { 
+  @include grid-pos(1); 
+  @include grid-container(); 
+  height: 100vh; 
+  width: 100vw; 
+  margin: auto
+}
+flex { 
+  @include grid-pos(1); 
+  @include flex-container(); 
+  height: min-content; 
+  width: min-content; 
+  margin: auto
+}
+flex-container { 
+  @include grid-pos(1); 
+  @include flex-container(); 
+  height: 100vh; 
+  width: 100vw; 
+  margin: auto
+}

@@ -1,16 +1,18 @@
 @use "sass:map";
 
 // FS Imports
-// Globals
-@import '_logic';
+// Globals (ORDER MATTERS)
+@import './logic';
 @import '_fs-animations';
 @import './colors';
+@import './variables';
 @import './color-theme';
 @import './hovers';
 @import './accessibility';
 @import './display';
 @import './fonts';
 @import './grids';
+@import './grid-tags';
 @import './global';
 @import './positioning';
 

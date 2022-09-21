@@ -1,5 +1,8 @@
 # npm-Full-Steck-Tools
 Trying to Make Webdev an Easier &amp; Better Place One Line at a Time
+Plugin Contains 
+  + SCSS for helpful out of the box styling & mixins to create your own custom classes
+  + JS Animations, Snackbars, etc.
 
 GIT REPO: https://github.com/steckReed/npm-Full-Steck-Tools
 
@@ -90,3 +93,13 @@ https://react-icons.github.io/react-icons/
 ## Textures
   Note: In order for textures to work properly, or if you're getting a white background.
         Convert all HEX colors to HSL. Background-image doesn't support HEX :'(
+
+# --- JS FUNCTIONS ---
+  ## HOW TO USE "Full-Steck Scroll Animation"
+    sa_EleId           = (REQUIRED)
+    sa_TopEleId        = (REQUIRED)
+    sa_AnimationIn     = (REQUIRED)
+    sa_BottomEleId     =
+    sa_AnimationOut    =
+    sa_TimeDelay       =
+    sa_RepeatAnimation = 

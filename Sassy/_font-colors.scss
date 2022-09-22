@@ -1,5 +1,5 @@
 // Mixins
-  @mixin auto-btn-class-generator($key, $value){
+  @mixin auto-font-class-generator($key, $value){
     // Color
       .color-#{$key},
       .font-color-#{$key}{
@@ -19,7 +19,7 @@
 // Mixins
 
 // Auto-Generated Classes
-@each $key, $value in $auto-class-generator-merge{ @include auto-btn-class-generator($key, $value); }
+@each $key, $value in $auto-class-generator-merge{ @include auto-font-class-generator($key, $value); }
 
 // Classes
 // Classes

@@ -1,15 +1,40 @@
+$fs-border-tags: (
+  'dotted' : dotted,
+  'dashed' : dashed,
+  'solid'  : solid,
+  'double' : double,
+  'groove' : groove,
+  'ridge'  : ridge,
+  'inset'  : inset,
+  'outset' : outset,
+  'none'   : none,
+  'hidden' : hidden
+);
+
 // Mixins
+  @mixin border-style(
+      $border-size    : 6px, 
+      $border-style   : dotted, 
+      $border-color   :black, 
+      $border-radius  : 1rem,
+      $transition     : 250ms
+    ){ 
+    border:$border-size $border-style $border-color; 
+    border-radius: $border-radius;
+    transition: $transition;
+  }
+
   @mixin dotted(
-      $border-size:   6px, 
-      $border-style:  dotted, 
-      $border-color:black, 
-      $border-radius: 1rem,
-      $transition:    250ms
+      $border-size    : 6px, 
+      $border-style   : dotted, 
+      $border-color   :black, 
+      $border-radius  : 1rem,
+      $transition     : 250ms
     ){ 
       border:$border-size $border-style $border-color; 
       border-radius: $border-radius;
       transition: $transition;
-    }
+  }
   @mixin dashed(
       $border-size:   6px, 
       $border-style:  dashed, 
@@ -20,7 +45,7 @@
       border:$border-size $border-style $border-color; 
       border-radius: $border-radius;
       transition: $transition;
-    }
+  }
   @mixin solid (
       $border-size:   6px, 
       $border-style:  solid,  
@@ -31,7 +56,7 @@
       border:$border-size $border-style $border-color; 
       border-radius: $border-radius;
       transition: $transition;
-    }
+  }
   @mixin double(
       $border-size:   6px, 
       $border-style:  double, 
@@ -42,7 +67,7 @@
       border:$border-size $border-style $border-color; 
       border-radius: $border-radius;
       transition: $transition;
-    }
+  }
   @mixin groove(
       $border-size:   6px, 
       $border-style:  groove, 
@@ -53,7 +78,7 @@
       border:$border-size $border-style $border-color; 
       border-radius: $border-radius;
       transition: $transition;
-    }
+  }
   @mixin ridge (
       $border-size:   6px, 
       $border-style:  ridge,  
@@ -64,7 +89,7 @@
       border:$border-size $border-style $border-color; 
       border-radius: $border-radius;
       transition: $transition;
-    }
+  }
   @mixin inset (
       $border-size:   6px, 
       $border-style:  inset,  
@@ -75,7 +100,7 @@
       border:$border-size $border-style $border-color; 
       border-radius: $border-radius;
       transition: $transition;
-    }
+  }
   @mixin outset(
       $border-size:   6px, 
       $border-style:  outset, 
@@ -86,7 +111,7 @@
       border:$border-size $border-style $border-color; 
       border-radius: $border-radius;
       transition: $transition;
-    }
+  }
   @mixin none  (
       $border-size:   6px, 
       $border-style:  none,   
@@ -97,7 +122,7 @@
       border:$border-size $border-style $border-color; 
       border-radius: $border-radius;
       transition: $transition;
-    }
+  }
   @mixin hidden(
       $border-size:   6px, 
       $border-style:  hidden, 
@@ -108,8 +133,34 @@
       border:$border-size $border-style $border-color; 
       border-radius: $border-radius;
       transition: $transition;
+  }
+  
+  @mixin auto-border-class-generator($key, $value){
+    @each $keyBorder, $valueBorder in $fs-border-tags{
+      .border-#{$keyBorder}-#{$key}{
+
+        @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
+          $valueLight : map-get($value, 'light');
+          $valueDark  : map-get($value, 'dark');
+
+          @include light-theme{
+            @include border-style(6px, $valueBorder, $valueLight, 1rem, 250ms);
+          }
+          @include dark-theme{
+            @include border-style(6px, $valueBorder, $valueDark, 1rem, 250ms);
+          }
+        }
+        @else{
+            @include border-style(6px, $valueBorder, $value, 1rem, 250ms);
+        }
+        
+      }
     }
+  }
 // Mixins
+
+// Auto-Generated Classes
+@each $key, $value in $auto-class-generator-merge{ @include auto-border-class-generator($key, $value); }
 
 // Classes
   .dotted{ @include dotted(); }

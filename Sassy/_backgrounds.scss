@@ -1,5 +1,5 @@
 // Mixins
-  @mixin auto-btn-class-generator($key, $value){
+  @mixin auto-background-class-generator($key, $value){
     // Background Color
       .bg-#{$key},
       .background-#{$key}{
@@ -7,11 +7,11 @@
           $valueLight : map-get($value, 'light');
           $valueDark  : map-get($value, 'dark');
 
-          @include light-theme{ background-color: $valueLight; }
-          @include dark-theme { background-color: $valueDark;  }
+          @include light-theme{ background-color : $valueLight; }
+          @include dark-theme { background-color : $valueDark;  }
         }
         @else{
-          background-color: $value;
+          background-color : $value;
         }
       }
     // Background Color
@@ -19,7 +19,7 @@
 // Mixins
 
 // Auto-Generated Classes
-@each $key, $value in $auto-class-generator-merge{ @include auto-btn-class-generator($key, $value); }
+@each $key, $value in $auto-class-generator-merge{ @include auto-background-class-generator($key, $value); }
 
 // Classes
 // Classes

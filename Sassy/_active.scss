@@ -1,17 +1,17 @@
 // Mixins
   @mixin active(
-    $border-size:       unset,
-    $border-style:      unset,
-    $border-color:      unset,
-    $border-radius:     unset,
-    $background-color:  unset
+    $border-size      : unset,
+    $border-style     : unset,
+    $border-color     : unset,
+    $border-radius    : unset,
+    $background-color : unset
   ){
-    border-left:      $border-size $border-style $border-color; 
-    border-radius:    $border-radius;
-    background-color: $background-color;
+    border-left       : $border-size $border-style $border-color; 
+    border-radius     : $border-radius;
+    background-color  : $background-color;
   }
 
-  @mixin auto-btn-class-generator($key, $value){
+  @mixin auto-active-class-generator($key, $value){
     @each $keyChild, $valueChild in $auto-class-generator-merge{
       // Normal & Description
         .btn-#{$key}.active-#{$keyChild},
@@ -26,22 +26,22 @@
               color: $light-primary;
 
               @include active(
-                $border-size:       4px,
-                $border-style:      solid,
-                $border-color:      $valueLight,
-                $border-radius:     0.25rem,
-                $background-color:  $dark-primary,
+                $border-size      : 4px,
+                $border-style     : solid,
+                $border-color     : $valueLight,
+                $border-radius    : 0.25rem,
+                $background-color : $dark-primary,
               );
             }
             @include dark-theme{
               color: $dark-primary;
               
               @include active(
-                $border-size:       4px,
-                $border-style:      solid,
-                $border-color:      $valueDark,
-                $border-radius:     0.25rem,
-                $background-color:  $light-primary,
+                $border-size      : 4px,
+                $border-style     : solid,
+                $border-color     : $valueDark,
+                $border-radius    : 0.25rem,
+                $background-color : $light-primary,
               );
             }
 
@@ -52,22 +52,22 @@
               color: $light-primary;
 
               @include active(
-                $border-size:       4px,
-                $border-style:      solid,
-                $border-color:      $valueChild,
-                $border-radius:     0.25rem,
-                $background-color:  $dark-primary,
+                $border-size      : 4px,
+                $border-style     : solid,
+                $border-color     : $valueChild,
+                $border-radius    : 0.25rem,
+                $background-color : $dark-primary,
               );
             }
             @include dark-theme{
               color: $dark-primary;
 
               @include active(
-                $border-size:       4px,
-                $border-style:      solid,
-                $border-color:      $valueChild,
-                $border-radius:     0.25rem,
-                $background-color:  $light-primary,
+                $border-size      : 4px,
+                $border-style     : solid,
+                $border-color     : $valueChild,
+                $border-radius    : 0.25rem,
+                $background-color :  $light-primary,
               );
             }
 
@@ -81,18 +81,18 @@
 
 // Classes
   // Auto-Generated Button Classes
-  @each $key, $value in $auto-class-generator-merge{ @include auto-btn-class-generator($key, $value); }
+  @each $key, $value in $auto-class-generator-merge{ @include auto-active-class-generator($key, $value); }
 
   .active{
     @include light-theme{
-      background-color: $light-font-primary;
-      color: $light-primary;
-      border-left: 4px solid $light-secondary;
+      background-color  : $light-font-primary;
+      color             : $light-primary;
+      border-left       : 4px solid $light-secondary;
     }
     @include dark-theme{
-      background-color: $dark-font-primary;
-      color: $dark-primary;
-      border-left: 4px solid $dark-secondary;
+      background-color  : $dark-font-primary;
+      color             : $dark-primary;
+      border-left       : 4px solid $dark-secondary;
     }
   }
 // Classes

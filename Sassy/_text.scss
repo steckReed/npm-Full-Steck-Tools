@@ -3,7 +3,7 @@
     padding: $padding; 
     margin: $margin; 
   }
-  @mixin text-no-break(){
+  @mixin text-no-wrap(){
     width: min-content;
     white-space: nowrap;
   }
@@ -53,36 +53,37 @@
 // Mixins
 
 // Classes
+  .text-no-wrap{ @include text-no-wrap(); }
   // Titles
     // Headers
-    .title-header-xl{ @include title-header-xl(); @include text-no-break(); @include text(); text-align: center; margin: auto; }
-    .title-header-lg{ @include title-header-lg(); @include text-no-break(); @include text(); text-align: center; margin: auto; }
-    .title-header-md{ @include title-header-md(); @include text-no-break(); @include text(); text-align: center; margin: auto; }
-    .title-header-sm{ @include title-header-sm(); @include text-no-break(); @include text(); text-align: center; margin: auto; }
-    .title-header-xs{ @include title-header-xs(); @include text-no-break(); @include text(); text-align: center; margin: auto; }
+    .title-header-xl{ @include title-header-xl(); @include text-no-wrap(); @include text(); text-align: center; margin: auto; }
+    .title-header-lg{ @include title-header-lg(); @include text-no-wrap(); @include text(); text-align: center; margin: auto; }
+    .title-header-md{ @include title-header-md(); @include text-no-wrap(); @include text(); text-align: center; margin: auto; }
+    .title-header-sm{ @include title-header-sm(); @include text-no-wrap(); @include text(); text-align: center; margin: auto; }
+    .title-header-xs{ @include title-header-xs(); @include text-no-wrap(); @include text(); text-align: center; margin: auto; }
 
     // Sub Headers
-    .title-sub-xl{ @include title-sub-xl(); @include text-no-break(); @include text(); text-align: center; margin: auto; }
-    .title-sub-lg{ @include title-sub-lg(); @include text-no-break(); @include text(); text-align: center; margin: auto; }
-    .title-sub-md{ @include title-sub-md(); @include text-no-break(); @include text(); text-align: center; margin: auto; }
-    .title-sub-sm{ @include title-sub-sm(); @include text-no-break(); @include text(); text-align: center; margin: auto; }
-    .title-sub-xs{ @include title-sub-xs(); @include text-no-break(); @include text(); text-align: center; margin: auto; }
+    .title-sub-xl{ @include title-sub-xl(); @include text-no-wrap(); @include text(); text-align: center; margin: auto; }
+    .title-sub-lg{ @include title-sub-lg(); @include text-no-wrap(); @include text(); text-align: center; margin: auto; }
+    .title-sub-md{ @include title-sub-md(); @include text-no-wrap(); @include text(); text-align: center; margin: auto; }
+    .title-sub-sm{ @include title-sub-sm(); @include text-no-wrap(); @include text(); text-align: center; margin: auto; }
+    .title-sub-xs{ @include title-sub-xs(); @include text-no-wrap(); @include text(); text-align: center; margin: auto; }
   // Titles
 
   // Descriptions
     // Headers
-    .desc-header-xl{ @include desc-header-xl(); @include text-no-break(); @include text(); text-align: center; margin: auto; }
-    .desc-header-lg{ @include desc-header-lg(); @include text-no-break(); @include text(); text-align: center; margin: auto; }
-    .desc-header-md{ @include desc-header-md(); @include text-no-break(); @include text(); text-align: center; margin: auto; }
-    .desc-header-sm{ @include desc-header-sm(); @include text-no-break(); @include text(); text-align: center; margin: auto; }
-    .desc-header-xs{ @include desc-header-xs(); @include text-no-break(); @include text(); text-align: center; margin: auto; }
+    .desc-header-xl{ @include desc-header-xl(); @include text-no-wrap(); @include text(); text-align: center; margin: auto; }
+    .desc-header-lg{ @include desc-header-lg(); @include text-no-wrap(); @include text(); text-align: center; margin: auto; }
+    .desc-header-md{ @include desc-header-md(); @include text-no-wrap(); @include text(); text-align: center; margin: auto; }
+    .desc-header-sm{ @include desc-header-sm(); @include text-no-wrap(); @include text(); text-align: center; margin: auto; }
+    .desc-header-xs{ @include desc-header-xs(); @include text-no-wrap(); @include text(); text-align: center; margin: auto; }
     
     // Sub Headers
-    .desc-sub-xl{ @include desc-sub-xl(); @include text-no-break(); @include text(); text-align: center; margin: auto; }
-    .desc-sub-lg{ @include desc-sub-lg(); @include text-no-break(); @include text(); text-align: center; margin: auto; }
-    .desc-sub-md{ @include desc-sub-md(); @include text-no-break(); @include text(); text-align: center; margin: auto; }
-    .desc-sub-sm{ @include desc-sub-sm(); @include text-no-break(); @include text(); text-align: center; margin: auto; }
-    .desc-sub-xs{ @include desc-sub-xs(); @include text-no-break(); @include text(); text-align: center; margin: auto; }
+    .desc-sub-xl{ @include desc-sub-xl(); @include text-no-wrap(); @include text(); text-align: center; margin: auto; }
+    .desc-sub-lg{ @include desc-sub-lg(); @include text-no-wrap(); @include text(); text-align: center; margin: auto; }
+    .desc-sub-md{ @include desc-sub-md(); @include text-no-wrap(); @include text(); text-align: center; margin: auto; }
+    .desc-sub-sm{ @include desc-sub-sm(); @include text-no-wrap(); @include text(); text-align: center; margin: auto; }
+    .desc-sub-xs{ @include desc-sub-xs(); @include text-no-wrap(); @include text(); text-align: center; margin: auto; }
   // Descriptions
 // Classes
 

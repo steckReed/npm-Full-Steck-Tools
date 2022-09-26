@@ -1,22 +1,22 @@
 *[contenteditable="true"]{ 
   @include light-theme(){ 
     &:hover{ outline: 1px dotted  $light-secondary; }
-    &:focus,&:active{ outline: 2px dotted  $light-font-primary; } 
+    &:focus,&:active{ outline: 2px dotted  $light-text-primary; } 
   }
 
   @include dark-theme(){ 
     &:hover{ outline: 1px dotted  $dark-secondary; }
-    &:focus,&:active{ outline: 2px dotted  $dark-font-primary; } 
+    &:focus,&:active{ outline: 2px dotted  $dark-text-primary; } 
   }
 }
 
 body[contenteditable="true"]{ 
   @include light-theme(){ 
-    &:hover,&:focus,&:active{ border: 2px dotted  $light-font-primary; } 
+    &:hover,&:focus,&:active{ border: 2px dotted  $light-text-primary; } 
   }
 
   @include dark-theme(){ 
-    &:hover,&:focus,&:active{ border: 2px dotted  $dark-font-primary; } 
+    &:hover,&:focus,&:active{ border: 2px dotted  $dark-text-primary; } 
   }
 }
 

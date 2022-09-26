@@ -5,18 +5,18 @@
   @media (prefers-color-scheme: dark) { @content; } 
 }
 
-@mixin light-style($background-color:$light-secondary, $color:$light-font-primary){
+@mixin light-style($background-color:$light-secondary, $color:$light-text-primary){
   background-color: $background-color;
   color: $color;
   @content;
 }
-@mixin dark-style($background-color:$dark-secondary, $color:$dark-font-primary){
+@mixin dark-style($background-color:$dark-secondary, $color:$dark-text-primary){
   background-color: $background-color;
   color: $color;
   @content;
 }
 
-@mixin effects($background-color:transparent, $color:$light-font-primary, $border:1px solid $light-secondary, $cursor:pointer){
+@mixin effects($background-color:transparent, $color:$light-text-primary, $border:1px solid $light-secondary, $cursor:pointer){
   background-color: $background-color;
   color: $color;
   border: $border;

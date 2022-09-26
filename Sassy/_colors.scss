@@ -1,30 +1,53 @@
 // Default Colors
-$colorWhite           : hsl(0, 0%, 100%);
-$colorOffWhite        : hsl(0, 0%, 84%);
-$colorMutedWhite      : hsl(210, 18%, 87%);
-$colorBlack           : hsl(0, 0%, 7%);
-$colorLightGrey       : hsl(0, 0%, 25%);
+  // White
+  $colorWhite           : hsl(0, 0%, 100%)    !default;
+  $colorOffWhite        : hsl(0, 33%, 98%)    !default;
+  $colorMutedWhite      : hsl(210, 18%, 87%)  !default;
+
+  // Black
+  $colorBlack           : hsl(0, 0%, 7%)      !default;
+  $colorOffBlack        : hsl(0, 0%, 11%)     !default;
+  $colorMutedBlack      : hsl(0, 0%, 15%)     !default;
+
+  // Gray
+  $colorGray            : hsl(0, 0%, 50%)     !default;
+  $colorOffGray         : hsl(0, 0%, 73%)     !default;
+  $colorLightGray       : hsl(0, 0%, 84%)     !default;
+  $colorDarkGray        : hsl(0, 0%, 25%)     !default;
+// Default Colors
 
 // Description Colors
-$colorSuccess         : hsl(134, 61%, 41%);
-$colorInfo            : hsl(190, 90%, 50%);
-$colorWarning         : hsl(27, 98%, 54%);
-$colorDanger          : hsl(354, 70%, 54%);
-$colorAlert           : hsl(51, 100%, 51%);
+  $colorSuccess         : hsl(134, 61%, 41%)  !default;
+  $colorInfo            : hsl(190, 90%, 50%)  !default;
+  $colorWarning         : hsl(27, 98%, 54%)   !default;
+  $colorDanger          : hsl(354, 70%, 54%)  !default;
+  $colorAlert           : hsl(51, 100%, 51%)  !default;
+// Description Colors
 
 // Text Colors
-$light-primary-text   : $colorBlack;
-$light-secondary-text : $colorLightGrey;
-$dark-primary-text    : $colorWhite;
-$dark-secondary-text  : $colorOffWhite;
+  $text-color-white     : $colorWhite           !default;
+  $text-color-offWhite  : $colorOffWhite        !default;
+  $text-color-black     : $colorBlack           !default;
+  $text-color-gray      : $colorDarkGray        !default;
 
+  $light-text-primary   : $colorBlack           !default;
+  $light-text-secondary : hsl(194, 72%, 52%)  !default;
+  $dark-text-primary    : $colorWhite           !default;
+  $dark-text-secondary  : hsl(10, 72%, 50%)   !default;
+// Text Colors
 
-$fs-auto-class-generator: (
-  // Description
-    'success'   : $colorSuccess,
-    'info'      : $colorInfo,
-    'warning'   : $colorWarning,
-    'danger'    : $colorDanger,
-    'alert'     : $colorAlert,
-  // Description
-);
+// Theme Colors
+  // Light
+  $light-background     : hsl(58, 89%, 93%)   !default;
+  $light-primary        : hsl(194, 100%, 33%) !default;
+  $light-secondary      : hsl(4, 82%, 67%)    !default;
+  $light-tertiary       : hsl(183, 100%, 36%) !default;
+  $light-offset         : hsl(29, 97%, 86%)   !default;
+
+  // Dark
+  $dark-background      : hsl(218, 23%, 21%)  !default;
+  $dark-primary         : hsl(214, 35%, 37%)  !default;
+  $dark-secondary       : hsl(12, 83%, 62%)   !default;
+  $dark-tertiary        : hsl(202, 46%, 72%)  !default;
+  $dark-offset          : hsl(12, 83%, 62%)   !default;
+// Theme Colors

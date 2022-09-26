@@ -85,12 +85,12 @@
 
   .active{
     @include light-theme{
-      background-color  : $light-font-primary;
+      background-color  : $light-text-primary;
       color             : $light-primary;
       border-left       : 4px solid $light-secondary;
     }
     @include dark-theme{
-      background-color  : $dark-font-primary;
+      background-color  : $dark-text-primary;
       color             : $dark-primary;
       border-left       : 4px solid $dark-secondary;
     }

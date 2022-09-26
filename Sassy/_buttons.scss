@@ -59,7 +59,7 @@
   // Effects (Hover, Link Visited, Active, Focus)
     @mixin btn-hover(
       $background-color:transparent, 
-      $color:$light-font-primary, 
+      $color:$light-text-primary, 
       $border:1px solid $light-secondary, 
       $cursor:pointer
     ){
@@ -70,7 +70,7 @@
     }
     @mixin btn-link(
       $background-color:transparent, 
-      $color:$light-font-primary, 
+      $color:$light-text-primary, 
       $border:1px solid $light-secondary, 
       $cursor:pointer
     ){
@@ -81,7 +81,7 @@
     }
     @mixin btn-visited(
       $background-color:transparent, 
-      $color:$light-font-primary, 
+      $color:$light-text-primary, 
       $border:1px solid $light-secondary, 
       $cursor:pointer
     ){
@@ -92,7 +92,7 @@
     }
     @mixin btn-active(
       $background-color:transparent, 
-      $color:$light-font-primary, 
+      $color:$light-text-primary, 
       $border:1px solid $light-secondary, 
       $cursor:pointer
     ){
@@ -141,11 +141,11 @@
         
         @include light-theme{
           @include light-style();
-          @include btn-hover(#{$light-secondary}70 !important, $light-font-primary, $border:none);
+          @include btn-hover(#{$light-secondary}70 !important, $light-text-primary, $border:none);
         }
         @include dark-theme{
           @include dark-style();
-          @include btn-hover(#{$dark-secondary}70 !important, $dark-font-primary, $border:none);
+          @include btn-hover(#{$dark-secondary}70 !important, $dark-text-primary, $border:none);
         }
         
         height: 100%;
@@ -162,14 +162,14 @@
         border-radius: 0px 0.2rem 0.2rem 0px;
         transition: 325ms;
         @include light-theme{
-          background-color: $light-font-primary;
+          background-color: $light-text-primary;
           color: $light-primary;
-          @include btn-hover(#{$light-secondary}70 !important, $light-font-primary, $border:none);
+          @include btn-hover(#{$light-secondary}70 !important, $light-text-primary, $border:none);
         }
         @include dark-theme{
-          background-color: $dark-font-primary;
+          background-color: $dark-text-primary;
           color: $dark-primary;
-          @include btn-hover(#{$dark-secondary}70 !important, $dark-font-primary, $border:none);
+          @include btn-hover(#{$dark-secondary}70 !important, $dark-text-primary, $border:none);
         }
       }
   
@@ -191,8 +191,8 @@
         padding: 0.375rem 0.75rem;
         border-radius: 0.25rem;
         
-        @include light-theme{ background-color: $light-font-primary; color: $light-primary; }
-        @include dark-theme{  background-color: $dark-font-primary;  color: $dark-primary;}
+        @include light-theme{ background-color: $light-text-primary; color: $light-primary; }
+        @include dark-theme{  background-color: $dark-text-primary;  color: $dark-primary;}
 
         &:hover{ cursor: default; }
       }
@@ -204,10 +204,10 @@
         border-radius: 0.25rem;
         
         @include light-theme{
-          @include btn-hover(#{$light-primary}70 !important, $light-font-primary, $border:none);
+          @include btn-hover(#{$light-primary}70 !important, $light-text-primary, $border:none);
         }
         @include dark-theme{
-          @include btn-hover(#{$dark-primary}70 !important, $dark-font-primary, $border:none);
+          @include btn-hover(#{$dark-primary}70 !important, $dark-text-primary, $border:none);
         }
 
         & > i{ 

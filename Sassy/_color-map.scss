@@ -49,10 +49,19 @@
       ),
     // Default
   );
+
 // SCSS Auto Class Generator Map
 
+// Remove Dups in fs-auto-class-generator (Allows user to overwrite defaults)
+  @if(variable-exists(auto-class-generator)){
+    @each $key, $value in $auto-class-generator{ 
+      $fs-auto-class-generator : map-remove($fs-auto-class-generator, $key);  
+    }
+  };
+// Remove Dups in fs-auto-class-generator 
+
 // Default Auto Class Generator (Color Map)
-  $auto-class-generator-merge: null !default; // Prevents "Undefined Variable" Error
+  $auto-class-generator-merge: null !default; // Makes Global Scope (Prevents "Undefined Variable" Error)
 
   // Ensure $auto-class-generator Exists
   @if( 

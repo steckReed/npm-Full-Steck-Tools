@@ -10884,1651 +10884,1651 @@ body {
 }
 
 .border-dotted-white {
-  border: 6px dotted hsl(0deg, 0%, 100%);
-  border-radius: 1rem;
+  border: 4px dotted hsl(0deg, 0%, 100%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dashed-white {
-  border: 6px dashed hsl(0deg, 0%, 100%);
-  border-radius: 1rem;
+  border: 4px dashed hsl(0deg, 0%, 100%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-solid-white {
-  border: 6px solid hsl(0deg, 0%, 100%);
-  border-radius: 1rem;
+  border: 4px solid hsl(0deg, 0%, 100%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-double-white {
-  border: 6px double hsl(0deg, 0%, 100%);
-  border-radius: 1rem;
+  border: 4px double hsl(0deg, 0%, 100%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-groove-white {
-  border: 6px groove hsl(0deg, 0%, 100%);
-  border-radius: 1rem;
+  border: 4px groove hsl(0deg, 0%, 100%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-ridge-white {
-  border: 6px ridge hsl(0deg, 0%, 100%);
-  border-radius: 1rem;
+  border: 4px ridge hsl(0deg, 0%, 100%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-inset-white {
-  border: 6px inset hsl(0deg, 0%, 100%);
-  border-radius: 1rem;
+  border: 4px inset hsl(0deg, 0%, 100%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-outset-white {
-  border: 6px outset hsl(0deg, 0%, 100%);
-  border-radius: 1rem;
+  border: 4px outset hsl(0deg, 0%, 100%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-none-white {
-  border: 6px none hsl(0deg, 0%, 100%);
-  border-radius: 1rem;
+  border: 4px none hsl(0deg, 0%, 100%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-hidden-white {
-  border: 6px hidden hsl(0deg, 0%, 100%);
-  border-radius: 1rem;
+  border: 4px hidden hsl(0deg, 0%, 100%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dotted-offWhite {
-  border: 6px dotted hsl(0deg, 33%, 98%);
-  border-radius: 1rem;
+  border: 4px dotted hsl(0deg, 33%, 98%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dashed-offWhite {
-  border: 6px dashed hsl(0deg, 33%, 98%);
-  border-radius: 1rem;
+  border: 4px dashed hsl(0deg, 33%, 98%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-solid-offWhite {
-  border: 6px solid hsl(0deg, 33%, 98%);
-  border-radius: 1rem;
+  border: 4px solid hsl(0deg, 33%, 98%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-double-offWhite {
-  border: 6px double hsl(0deg, 33%, 98%);
-  border-radius: 1rem;
+  border: 4px double hsl(0deg, 33%, 98%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-groove-offWhite {
-  border: 6px groove hsl(0deg, 33%, 98%);
-  border-radius: 1rem;
+  border: 4px groove hsl(0deg, 33%, 98%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-ridge-offWhite {
-  border: 6px ridge hsl(0deg, 33%, 98%);
-  border-radius: 1rem;
+  border: 4px ridge hsl(0deg, 33%, 98%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-inset-offWhite {
-  border: 6px inset hsl(0deg, 33%, 98%);
-  border-radius: 1rem;
+  border: 4px inset hsl(0deg, 33%, 98%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-outset-offWhite {
-  border: 6px outset hsl(0deg, 33%, 98%);
-  border-radius: 1rem;
+  border: 4px outset hsl(0deg, 33%, 98%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-none-offWhite {
-  border: 6px none hsl(0deg, 33%, 98%);
-  border-radius: 1rem;
+  border: 4px none hsl(0deg, 33%, 98%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-hidden-offWhite {
-  border: 6px hidden hsl(0deg, 33%, 98%);
-  border-radius: 1rem;
+  border: 4px hidden hsl(0deg, 33%, 98%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dotted-mutedWhite {
-  border: 6px dotted hsl(210deg, 18%, 87%);
-  border-radius: 1rem;
+  border: 4px dotted hsl(210deg, 18%, 87%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dashed-mutedWhite {
-  border: 6px dashed hsl(210deg, 18%, 87%);
-  border-radius: 1rem;
+  border: 4px dashed hsl(210deg, 18%, 87%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-solid-mutedWhite {
-  border: 6px solid hsl(210deg, 18%, 87%);
-  border-radius: 1rem;
+  border: 4px solid hsl(210deg, 18%, 87%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-double-mutedWhite {
-  border: 6px double hsl(210deg, 18%, 87%);
-  border-radius: 1rem;
+  border: 4px double hsl(210deg, 18%, 87%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-groove-mutedWhite {
-  border: 6px groove hsl(210deg, 18%, 87%);
-  border-radius: 1rem;
+  border: 4px groove hsl(210deg, 18%, 87%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-ridge-mutedWhite {
-  border: 6px ridge hsl(210deg, 18%, 87%);
-  border-radius: 1rem;
+  border: 4px ridge hsl(210deg, 18%, 87%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-inset-mutedWhite {
-  border: 6px inset hsl(210deg, 18%, 87%);
-  border-radius: 1rem;
+  border: 4px inset hsl(210deg, 18%, 87%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-outset-mutedWhite {
-  border: 6px outset hsl(210deg, 18%, 87%);
-  border-radius: 1rem;
+  border: 4px outset hsl(210deg, 18%, 87%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-none-mutedWhite {
-  border: 6px none hsl(210deg, 18%, 87%);
-  border-radius: 1rem;
+  border: 4px none hsl(210deg, 18%, 87%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-hidden-mutedWhite {
-  border: 6px hidden hsl(210deg, 18%, 87%);
-  border-radius: 1rem;
+  border: 4px hidden hsl(210deg, 18%, 87%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dotted-black {
-  border: 6px dotted hsl(0deg, 0%, 7%);
-  border-radius: 1rem;
+  border: 4px dotted hsl(0deg, 0%, 7%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dashed-black {
-  border: 6px dashed hsl(0deg, 0%, 7%);
-  border-radius: 1rem;
+  border: 4px dashed hsl(0deg, 0%, 7%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-solid-black {
-  border: 6px solid hsl(0deg, 0%, 7%);
-  border-radius: 1rem;
+  border: 4px solid hsl(0deg, 0%, 7%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-double-black {
-  border: 6px double hsl(0deg, 0%, 7%);
-  border-radius: 1rem;
+  border: 4px double hsl(0deg, 0%, 7%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-groove-black {
-  border: 6px groove hsl(0deg, 0%, 7%);
-  border-radius: 1rem;
+  border: 4px groove hsl(0deg, 0%, 7%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-ridge-black {
-  border: 6px ridge hsl(0deg, 0%, 7%);
-  border-radius: 1rem;
+  border: 4px ridge hsl(0deg, 0%, 7%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-inset-black {
-  border: 6px inset hsl(0deg, 0%, 7%);
-  border-radius: 1rem;
+  border: 4px inset hsl(0deg, 0%, 7%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-outset-black {
-  border: 6px outset hsl(0deg, 0%, 7%);
-  border-radius: 1rem;
+  border: 4px outset hsl(0deg, 0%, 7%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-none-black {
-  border: 6px none hsl(0deg, 0%, 7%);
-  border-radius: 1rem;
+  border: 4px none hsl(0deg, 0%, 7%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-hidden-black {
-  border: 6px hidden hsl(0deg, 0%, 7%);
-  border-radius: 1rem;
+  border: 4px hidden hsl(0deg, 0%, 7%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dotted-offBlack {
-  border: 6px dotted hsl(0deg, 0%, 11%);
-  border-radius: 1rem;
+  border: 4px dotted hsl(0deg, 0%, 11%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dashed-offBlack {
-  border: 6px dashed hsl(0deg, 0%, 11%);
-  border-radius: 1rem;
+  border: 4px dashed hsl(0deg, 0%, 11%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-solid-offBlack {
-  border: 6px solid hsl(0deg, 0%, 11%);
-  border-radius: 1rem;
+  border: 4px solid hsl(0deg, 0%, 11%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-double-offBlack {
-  border: 6px double hsl(0deg, 0%, 11%);
-  border-radius: 1rem;
+  border: 4px double hsl(0deg, 0%, 11%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-groove-offBlack {
-  border: 6px groove hsl(0deg, 0%, 11%);
-  border-radius: 1rem;
+  border: 4px groove hsl(0deg, 0%, 11%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-ridge-offBlack {
-  border: 6px ridge hsl(0deg, 0%, 11%);
-  border-radius: 1rem;
+  border: 4px ridge hsl(0deg, 0%, 11%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-inset-offBlack {
-  border: 6px inset hsl(0deg, 0%, 11%);
-  border-radius: 1rem;
+  border: 4px inset hsl(0deg, 0%, 11%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-outset-offBlack {
-  border: 6px outset hsl(0deg, 0%, 11%);
-  border-radius: 1rem;
+  border: 4px outset hsl(0deg, 0%, 11%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-none-offBlack {
-  border: 6px none hsl(0deg, 0%, 11%);
-  border-radius: 1rem;
+  border: 4px none hsl(0deg, 0%, 11%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-hidden-offBlack {
-  border: 6px hidden hsl(0deg, 0%, 11%);
-  border-radius: 1rem;
+  border: 4px hidden hsl(0deg, 0%, 11%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dotted-mutedBlack {
-  border: 6px dotted hsl(0deg, 0%, 15%);
-  border-radius: 1rem;
+  border: 4px dotted hsl(0deg, 0%, 15%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dashed-mutedBlack {
-  border: 6px dashed hsl(0deg, 0%, 15%);
-  border-radius: 1rem;
+  border: 4px dashed hsl(0deg, 0%, 15%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-solid-mutedBlack {
-  border: 6px solid hsl(0deg, 0%, 15%);
-  border-radius: 1rem;
+  border: 4px solid hsl(0deg, 0%, 15%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-double-mutedBlack {
-  border: 6px double hsl(0deg, 0%, 15%);
-  border-radius: 1rem;
+  border: 4px double hsl(0deg, 0%, 15%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-groove-mutedBlack {
-  border: 6px groove hsl(0deg, 0%, 15%);
-  border-radius: 1rem;
+  border: 4px groove hsl(0deg, 0%, 15%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-ridge-mutedBlack {
-  border: 6px ridge hsl(0deg, 0%, 15%);
-  border-radius: 1rem;
+  border: 4px ridge hsl(0deg, 0%, 15%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-inset-mutedBlack {
-  border: 6px inset hsl(0deg, 0%, 15%);
-  border-radius: 1rem;
+  border: 4px inset hsl(0deg, 0%, 15%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-outset-mutedBlack {
-  border: 6px outset hsl(0deg, 0%, 15%);
-  border-radius: 1rem;
+  border: 4px outset hsl(0deg, 0%, 15%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-none-mutedBlack {
-  border: 6px none hsl(0deg, 0%, 15%);
-  border-radius: 1rem;
+  border: 4px none hsl(0deg, 0%, 15%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-hidden-mutedBlack {
-  border: 6px hidden hsl(0deg, 0%, 15%);
-  border-radius: 1rem;
+  border: 4px hidden hsl(0deg, 0%, 15%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dotted-gray {
-  border: 6px dotted hsl(0deg, 0%, 50%);
-  border-radius: 1rem;
+  border: 4px dotted hsl(0deg, 0%, 50%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dashed-gray {
-  border: 6px dashed hsl(0deg, 0%, 50%);
-  border-radius: 1rem;
+  border: 4px dashed hsl(0deg, 0%, 50%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-solid-gray {
-  border: 6px solid hsl(0deg, 0%, 50%);
-  border-radius: 1rem;
+  border: 4px solid hsl(0deg, 0%, 50%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-double-gray {
-  border: 6px double hsl(0deg, 0%, 50%);
-  border-radius: 1rem;
+  border: 4px double hsl(0deg, 0%, 50%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-groove-gray {
-  border: 6px groove hsl(0deg, 0%, 50%);
-  border-radius: 1rem;
+  border: 4px groove hsl(0deg, 0%, 50%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-ridge-gray {
-  border: 6px ridge hsl(0deg, 0%, 50%);
-  border-radius: 1rem;
+  border: 4px ridge hsl(0deg, 0%, 50%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-inset-gray {
-  border: 6px inset hsl(0deg, 0%, 50%);
-  border-radius: 1rem;
+  border: 4px inset hsl(0deg, 0%, 50%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-outset-gray {
-  border: 6px outset hsl(0deg, 0%, 50%);
-  border-radius: 1rem;
+  border: 4px outset hsl(0deg, 0%, 50%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-none-gray {
-  border: 6px none hsl(0deg, 0%, 50%);
-  border-radius: 1rem;
+  border: 4px none hsl(0deg, 0%, 50%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-hidden-gray {
-  border: 6px hidden hsl(0deg, 0%, 50%);
-  border-radius: 1rem;
+  border: 4px hidden hsl(0deg, 0%, 50%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dotted-offGray {
-  border: 6px dotted hsl(0deg, 0%, 73%);
-  border-radius: 1rem;
+  border: 4px dotted hsl(0deg, 0%, 73%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dashed-offGray {
-  border: 6px dashed hsl(0deg, 0%, 73%);
-  border-radius: 1rem;
+  border: 4px dashed hsl(0deg, 0%, 73%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-solid-offGray {
-  border: 6px solid hsl(0deg, 0%, 73%);
-  border-radius: 1rem;
+  border: 4px solid hsl(0deg, 0%, 73%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-double-offGray {
-  border: 6px double hsl(0deg, 0%, 73%);
-  border-radius: 1rem;
+  border: 4px double hsl(0deg, 0%, 73%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-groove-offGray {
-  border: 6px groove hsl(0deg, 0%, 73%);
-  border-radius: 1rem;
+  border: 4px groove hsl(0deg, 0%, 73%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-ridge-offGray {
-  border: 6px ridge hsl(0deg, 0%, 73%);
-  border-radius: 1rem;
+  border: 4px ridge hsl(0deg, 0%, 73%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-inset-offGray {
-  border: 6px inset hsl(0deg, 0%, 73%);
-  border-radius: 1rem;
+  border: 4px inset hsl(0deg, 0%, 73%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-outset-offGray {
-  border: 6px outset hsl(0deg, 0%, 73%);
-  border-radius: 1rem;
+  border: 4px outset hsl(0deg, 0%, 73%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-none-offGray {
-  border: 6px none hsl(0deg, 0%, 73%);
-  border-radius: 1rem;
+  border: 4px none hsl(0deg, 0%, 73%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-hidden-offGray {
-  border: 6px hidden hsl(0deg, 0%, 73%);
-  border-radius: 1rem;
+  border: 4px hidden hsl(0deg, 0%, 73%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dotted-lightGray {
-  border: 6px dotted hsl(0deg, 0%, 84%);
-  border-radius: 1rem;
+  border: 4px dotted hsl(0deg, 0%, 84%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dashed-lightGray {
-  border: 6px dashed hsl(0deg, 0%, 84%);
-  border-radius: 1rem;
+  border: 4px dashed hsl(0deg, 0%, 84%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-solid-lightGray {
-  border: 6px solid hsl(0deg, 0%, 84%);
-  border-radius: 1rem;
+  border: 4px solid hsl(0deg, 0%, 84%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-double-lightGray {
-  border: 6px double hsl(0deg, 0%, 84%);
-  border-radius: 1rem;
+  border: 4px double hsl(0deg, 0%, 84%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-groove-lightGray {
-  border: 6px groove hsl(0deg, 0%, 84%);
-  border-radius: 1rem;
+  border: 4px groove hsl(0deg, 0%, 84%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-ridge-lightGray {
-  border: 6px ridge hsl(0deg, 0%, 84%);
-  border-radius: 1rem;
+  border: 4px ridge hsl(0deg, 0%, 84%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-inset-lightGray {
-  border: 6px inset hsl(0deg, 0%, 84%);
-  border-radius: 1rem;
+  border: 4px inset hsl(0deg, 0%, 84%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-outset-lightGray {
-  border: 6px outset hsl(0deg, 0%, 84%);
-  border-radius: 1rem;
+  border: 4px outset hsl(0deg, 0%, 84%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-none-lightGray {
-  border: 6px none hsl(0deg, 0%, 84%);
-  border-radius: 1rem;
+  border: 4px none hsl(0deg, 0%, 84%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-hidden-lightGray {
-  border: 6px hidden hsl(0deg, 0%, 84%);
-  border-radius: 1rem;
+  border: 4px hidden hsl(0deg, 0%, 84%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dotted-darkGray {
-  border: 6px dotted hsl(0deg, 0%, 25%);
-  border-radius: 1rem;
+  border: 4px dotted hsl(0deg, 0%, 25%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dashed-darkGray {
-  border: 6px dashed hsl(0deg, 0%, 25%);
-  border-radius: 1rem;
+  border: 4px dashed hsl(0deg, 0%, 25%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-solid-darkGray {
-  border: 6px solid hsl(0deg, 0%, 25%);
-  border-radius: 1rem;
+  border: 4px solid hsl(0deg, 0%, 25%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-double-darkGray {
-  border: 6px double hsl(0deg, 0%, 25%);
-  border-radius: 1rem;
+  border: 4px double hsl(0deg, 0%, 25%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-groove-darkGray {
-  border: 6px groove hsl(0deg, 0%, 25%);
-  border-radius: 1rem;
+  border: 4px groove hsl(0deg, 0%, 25%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-ridge-darkGray {
-  border: 6px ridge hsl(0deg, 0%, 25%);
-  border-radius: 1rem;
+  border: 4px ridge hsl(0deg, 0%, 25%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-inset-darkGray {
-  border: 6px inset hsl(0deg, 0%, 25%);
-  border-radius: 1rem;
+  border: 4px inset hsl(0deg, 0%, 25%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-outset-darkGray {
-  border: 6px outset hsl(0deg, 0%, 25%);
-  border-radius: 1rem;
+  border: 4px outset hsl(0deg, 0%, 25%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-none-darkGray {
-  border: 6px none hsl(0deg, 0%, 25%);
-  border-radius: 1rem;
+  border: 4px none hsl(0deg, 0%, 25%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-hidden-darkGray {
-  border: 6px hidden hsl(0deg, 0%, 25%);
-  border-radius: 1rem;
+  border: 4px hidden hsl(0deg, 0%, 25%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dotted-success {
-  border: 6px dotted hsl(134deg, 61%, 41%);
-  border-radius: 1rem;
+  border: 4px dotted hsl(134deg, 61%, 41%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dashed-success {
-  border: 6px dashed hsl(134deg, 61%, 41%);
-  border-radius: 1rem;
+  border: 4px dashed hsl(134deg, 61%, 41%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-solid-success {
-  border: 6px solid hsl(134deg, 61%, 41%);
-  border-radius: 1rem;
+  border: 4px solid hsl(134deg, 61%, 41%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-double-success {
-  border: 6px double hsl(134deg, 61%, 41%);
-  border-radius: 1rem;
+  border: 4px double hsl(134deg, 61%, 41%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-groove-success {
-  border: 6px groove hsl(134deg, 61%, 41%);
-  border-radius: 1rem;
+  border: 4px groove hsl(134deg, 61%, 41%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-ridge-success {
-  border: 6px ridge hsl(134deg, 61%, 41%);
-  border-radius: 1rem;
+  border: 4px ridge hsl(134deg, 61%, 41%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-inset-success {
-  border: 6px inset hsl(134deg, 61%, 41%);
-  border-radius: 1rem;
+  border: 4px inset hsl(134deg, 61%, 41%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-outset-success {
-  border: 6px outset hsl(134deg, 61%, 41%);
-  border-radius: 1rem;
+  border: 4px outset hsl(134deg, 61%, 41%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-none-success {
-  border: 6px none hsl(134deg, 61%, 41%);
-  border-radius: 1rem;
+  border: 4px none hsl(134deg, 61%, 41%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-hidden-success {
-  border: 6px hidden hsl(134deg, 61%, 41%);
-  border-radius: 1rem;
+  border: 4px hidden hsl(134deg, 61%, 41%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dotted-info {
-  border: 6px dotted hsl(190deg, 90%, 50%);
-  border-radius: 1rem;
+  border: 4px dotted hsl(190deg, 90%, 50%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dashed-info {
-  border: 6px dashed hsl(190deg, 90%, 50%);
-  border-radius: 1rem;
+  border: 4px dashed hsl(190deg, 90%, 50%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-solid-info {
-  border: 6px solid hsl(190deg, 90%, 50%);
-  border-radius: 1rem;
+  border: 4px solid hsl(190deg, 90%, 50%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-double-info {
-  border: 6px double hsl(190deg, 90%, 50%);
-  border-radius: 1rem;
+  border: 4px double hsl(190deg, 90%, 50%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-groove-info {
-  border: 6px groove hsl(190deg, 90%, 50%);
-  border-radius: 1rem;
+  border: 4px groove hsl(190deg, 90%, 50%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-ridge-info {
-  border: 6px ridge hsl(190deg, 90%, 50%);
-  border-radius: 1rem;
+  border: 4px ridge hsl(190deg, 90%, 50%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-inset-info {
-  border: 6px inset hsl(190deg, 90%, 50%);
-  border-radius: 1rem;
+  border: 4px inset hsl(190deg, 90%, 50%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-outset-info {
-  border: 6px outset hsl(190deg, 90%, 50%);
-  border-radius: 1rem;
+  border: 4px outset hsl(190deg, 90%, 50%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-none-info {
-  border: 6px none hsl(190deg, 90%, 50%);
-  border-radius: 1rem;
+  border: 4px none hsl(190deg, 90%, 50%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-hidden-info {
-  border: 6px hidden hsl(190deg, 90%, 50%);
-  border-radius: 1rem;
+  border: 4px hidden hsl(190deg, 90%, 50%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dotted-warning {
-  border: 6px dotted hsl(27deg, 98%, 54%);
-  border-radius: 1rem;
+  border: 4px dotted hsl(27deg, 98%, 54%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dashed-warning {
-  border: 6px dashed hsl(27deg, 98%, 54%);
-  border-radius: 1rem;
+  border: 4px dashed hsl(27deg, 98%, 54%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-solid-warning {
-  border: 6px solid hsl(27deg, 98%, 54%);
-  border-radius: 1rem;
+  border: 4px solid hsl(27deg, 98%, 54%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-double-warning {
-  border: 6px double hsl(27deg, 98%, 54%);
-  border-radius: 1rem;
+  border: 4px double hsl(27deg, 98%, 54%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-groove-warning {
-  border: 6px groove hsl(27deg, 98%, 54%);
-  border-radius: 1rem;
+  border: 4px groove hsl(27deg, 98%, 54%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-ridge-warning {
-  border: 6px ridge hsl(27deg, 98%, 54%);
-  border-radius: 1rem;
+  border: 4px ridge hsl(27deg, 98%, 54%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-inset-warning {
-  border: 6px inset hsl(27deg, 98%, 54%);
-  border-radius: 1rem;
+  border: 4px inset hsl(27deg, 98%, 54%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-outset-warning {
-  border: 6px outset hsl(27deg, 98%, 54%);
-  border-radius: 1rem;
+  border: 4px outset hsl(27deg, 98%, 54%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-none-warning {
-  border: 6px none hsl(27deg, 98%, 54%);
-  border-radius: 1rem;
+  border: 4px none hsl(27deg, 98%, 54%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-hidden-warning {
-  border: 6px hidden hsl(27deg, 98%, 54%);
-  border-radius: 1rem;
+  border: 4px hidden hsl(27deg, 98%, 54%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dotted-danger {
-  border: 6px dotted hsl(354deg, 70%, 54%);
-  border-radius: 1rem;
+  border: 4px dotted hsl(354deg, 70%, 54%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dashed-danger {
-  border: 6px dashed hsl(354deg, 70%, 54%);
-  border-radius: 1rem;
+  border: 4px dashed hsl(354deg, 70%, 54%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-solid-danger {
-  border: 6px solid hsl(354deg, 70%, 54%);
-  border-radius: 1rem;
+  border: 4px solid hsl(354deg, 70%, 54%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-double-danger {
-  border: 6px double hsl(354deg, 70%, 54%);
-  border-radius: 1rem;
+  border: 4px double hsl(354deg, 70%, 54%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-groove-danger {
-  border: 6px groove hsl(354deg, 70%, 54%);
-  border-radius: 1rem;
+  border: 4px groove hsl(354deg, 70%, 54%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-ridge-danger {
-  border: 6px ridge hsl(354deg, 70%, 54%);
-  border-radius: 1rem;
+  border: 4px ridge hsl(354deg, 70%, 54%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-inset-danger {
-  border: 6px inset hsl(354deg, 70%, 54%);
-  border-radius: 1rem;
+  border: 4px inset hsl(354deg, 70%, 54%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-outset-danger {
-  border: 6px outset hsl(354deg, 70%, 54%);
-  border-radius: 1rem;
+  border: 4px outset hsl(354deg, 70%, 54%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-none-danger {
-  border: 6px none hsl(354deg, 70%, 54%);
-  border-radius: 1rem;
+  border: 4px none hsl(354deg, 70%, 54%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-hidden-danger {
-  border: 6px hidden hsl(354deg, 70%, 54%);
-  border-radius: 1rem;
+  border: 4px hidden hsl(354deg, 70%, 54%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dotted-alert {
-  border: 6px dotted hsl(51deg, 100%, 51%);
-  border-radius: 1rem;
+  border: 4px dotted hsl(51deg, 100%, 51%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-dashed-alert {
-  border: 6px dashed hsl(51deg, 100%, 51%);
-  border-radius: 1rem;
+  border: 4px dashed hsl(51deg, 100%, 51%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-solid-alert {
-  border: 6px solid hsl(51deg, 100%, 51%);
-  border-radius: 1rem;
+  border: 4px solid hsl(51deg, 100%, 51%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-double-alert {
-  border: 6px double hsl(51deg, 100%, 51%);
-  border-radius: 1rem;
+  border: 4px double hsl(51deg, 100%, 51%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-groove-alert {
-  border: 6px groove hsl(51deg, 100%, 51%);
-  border-radius: 1rem;
+  border: 4px groove hsl(51deg, 100%, 51%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-ridge-alert {
-  border: 6px ridge hsl(51deg, 100%, 51%);
-  border-radius: 1rem;
+  border: 4px ridge hsl(51deg, 100%, 51%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-inset-alert {
-  border: 6px inset hsl(51deg, 100%, 51%);
-  border-radius: 1rem;
+  border: 4px inset hsl(51deg, 100%, 51%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-outset-alert {
-  border: 6px outset hsl(51deg, 100%, 51%);
-  border-radius: 1rem;
+  border: 4px outset hsl(51deg, 100%, 51%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-none-alert {
-  border: 6px none hsl(51deg, 100%, 51%);
-  border-radius: 1rem;
+  border: 4px none hsl(51deg, 100%, 51%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 .border-hidden-alert {
-  border: 6px hidden hsl(51deg, 100%, 51%);
-  border-radius: 1rem;
+  border: 4px hidden hsl(51deg, 100%, 51%);
+  border-radius: 0.5rem;
   transition: 250ms;
 }
 
 @media (prefers-color-scheme: light) {
   .border-dotted-background {
-    border: 6px dotted hsl(0deg, 0%, 93%);
-    border-radius: 1rem;
+    border: 4px dotted hsl(0deg, 0%, 93%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-dotted-background {
-    border: 6px dotted hsl(218deg, 23%, 21%);
-    border-radius: 1rem;
+    border: 4px dotted hsl(218deg, 23%, 21%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-dashed-background {
-    border: 6px dashed hsl(0deg, 0%, 93%);
-    border-radius: 1rem;
+    border: 4px dashed hsl(0deg, 0%, 93%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-dashed-background {
-    border: 6px dashed hsl(218deg, 23%, 21%);
-    border-radius: 1rem;
+    border: 4px dashed hsl(218deg, 23%, 21%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-solid-background {
-    border: 6px solid hsl(0deg, 0%, 93%);
-    border-radius: 1rem;
+    border: 4px solid hsl(0deg, 0%, 93%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-solid-background {
-    border: 6px solid hsl(218deg, 23%, 21%);
-    border-radius: 1rem;
+    border: 4px solid hsl(218deg, 23%, 21%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-double-background {
-    border: 6px double hsl(0deg, 0%, 93%);
-    border-radius: 1rem;
+    border: 4px double hsl(0deg, 0%, 93%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-double-background {
-    border: 6px double hsl(218deg, 23%, 21%);
-    border-radius: 1rem;
+    border: 4px double hsl(218deg, 23%, 21%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-groove-background {
-    border: 6px groove hsl(0deg, 0%, 93%);
-    border-radius: 1rem;
+    border: 4px groove hsl(0deg, 0%, 93%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-groove-background {
-    border: 6px groove hsl(218deg, 23%, 21%);
-    border-radius: 1rem;
+    border: 4px groove hsl(218deg, 23%, 21%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-ridge-background {
-    border: 6px ridge hsl(0deg, 0%, 93%);
-    border-radius: 1rem;
+    border: 4px ridge hsl(0deg, 0%, 93%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-ridge-background {
-    border: 6px ridge hsl(218deg, 23%, 21%);
-    border-radius: 1rem;
+    border: 4px ridge hsl(218deg, 23%, 21%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-inset-background {
-    border: 6px inset hsl(0deg, 0%, 93%);
-    border-radius: 1rem;
+    border: 4px inset hsl(0deg, 0%, 93%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-inset-background {
-    border: 6px inset hsl(218deg, 23%, 21%);
-    border-radius: 1rem;
+    border: 4px inset hsl(218deg, 23%, 21%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-outset-background {
-    border: 6px outset hsl(0deg, 0%, 93%);
-    border-radius: 1rem;
+    border: 4px outset hsl(0deg, 0%, 93%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-outset-background {
-    border: 6px outset hsl(218deg, 23%, 21%);
-    border-radius: 1rem;
+    border: 4px outset hsl(218deg, 23%, 21%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-none-background {
-    border: 6px none hsl(0deg, 0%, 93%);
-    border-radius: 1rem;
+    border: 4px none hsl(0deg, 0%, 93%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-none-background {
-    border: 6px none hsl(218deg, 23%, 21%);
-    border-radius: 1rem;
+    border: 4px none hsl(218deg, 23%, 21%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-hidden-background {
-    border: 6px hidden hsl(0deg, 0%, 93%);
-    border-radius: 1rem;
+    border: 4px hidden hsl(0deg, 0%, 93%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-hidden-background {
-    border: 6px hidden hsl(218deg, 23%, 21%);
-    border-radius: 1rem;
+    border: 4px hidden hsl(218deg, 23%, 21%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-dotted-primary {
-    border: 6px dotted hsl(194deg, 100%, 33%);
-    border-radius: 1rem;
+    border: 4px dotted hsl(194deg, 100%, 33%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-dotted-primary {
-    border: 6px dotted hsl(214deg, 35%, 37%);
-    border-radius: 1rem;
+    border: 4px dotted hsl(214deg, 35%, 37%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-dashed-primary {
-    border: 6px dashed hsl(194deg, 100%, 33%);
-    border-radius: 1rem;
+    border: 4px dashed hsl(194deg, 100%, 33%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-dashed-primary {
-    border: 6px dashed hsl(214deg, 35%, 37%);
-    border-radius: 1rem;
+    border: 4px dashed hsl(214deg, 35%, 37%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-solid-primary {
-    border: 6px solid hsl(194deg, 100%, 33%);
-    border-radius: 1rem;
+    border: 4px solid hsl(194deg, 100%, 33%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-solid-primary {
-    border: 6px solid hsl(214deg, 35%, 37%);
-    border-radius: 1rem;
+    border: 4px solid hsl(214deg, 35%, 37%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-double-primary {
-    border: 6px double hsl(194deg, 100%, 33%);
-    border-radius: 1rem;
+    border: 4px double hsl(194deg, 100%, 33%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-double-primary {
-    border: 6px double hsl(214deg, 35%, 37%);
-    border-radius: 1rem;
+    border: 4px double hsl(214deg, 35%, 37%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-groove-primary {
-    border: 6px groove hsl(194deg, 100%, 33%);
-    border-radius: 1rem;
+    border: 4px groove hsl(194deg, 100%, 33%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-groove-primary {
-    border: 6px groove hsl(214deg, 35%, 37%);
-    border-radius: 1rem;
+    border: 4px groove hsl(214deg, 35%, 37%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-ridge-primary {
-    border: 6px ridge hsl(194deg, 100%, 33%);
-    border-radius: 1rem;
+    border: 4px ridge hsl(194deg, 100%, 33%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-ridge-primary {
-    border: 6px ridge hsl(214deg, 35%, 37%);
-    border-radius: 1rem;
+    border: 4px ridge hsl(214deg, 35%, 37%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-inset-primary {
-    border: 6px inset hsl(194deg, 100%, 33%);
-    border-radius: 1rem;
+    border: 4px inset hsl(194deg, 100%, 33%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-inset-primary {
-    border: 6px inset hsl(214deg, 35%, 37%);
-    border-radius: 1rem;
+    border: 4px inset hsl(214deg, 35%, 37%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-outset-primary {
-    border: 6px outset hsl(194deg, 100%, 33%);
-    border-radius: 1rem;
+    border: 4px outset hsl(194deg, 100%, 33%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-outset-primary {
-    border: 6px outset hsl(214deg, 35%, 37%);
-    border-radius: 1rem;
+    border: 4px outset hsl(214deg, 35%, 37%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-none-primary {
-    border: 6px none hsl(194deg, 100%, 33%);
-    border-radius: 1rem;
+    border: 4px none hsl(194deg, 100%, 33%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-none-primary {
-    border: 6px none hsl(214deg, 35%, 37%);
-    border-radius: 1rem;
+    border: 4px none hsl(214deg, 35%, 37%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-hidden-primary {
-    border: 6px hidden hsl(194deg, 100%, 33%);
-    border-radius: 1rem;
+    border: 4px hidden hsl(194deg, 100%, 33%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-hidden-primary {
-    border: 6px hidden hsl(214deg, 35%, 37%);
-    border-radius: 1rem;
+    border: 4px hidden hsl(214deg, 35%, 37%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-dotted-secondary {
-    border: 6px dotted hsl(4deg, 82%, 67%);
-    border-radius: 1rem;
+    border: 4px dotted hsl(4deg, 82%, 67%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-dotted-secondary {
-    border: 6px dotted hsl(12deg, 83%, 62%);
-    border-radius: 1rem;
+    border: 4px dotted hsl(12deg, 83%, 62%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-dashed-secondary {
-    border: 6px dashed hsl(4deg, 82%, 67%);
-    border-radius: 1rem;
+    border: 4px dashed hsl(4deg, 82%, 67%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-dashed-secondary {
-    border: 6px dashed hsl(12deg, 83%, 62%);
-    border-radius: 1rem;
+    border: 4px dashed hsl(12deg, 83%, 62%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-solid-secondary {
-    border: 6px solid hsl(4deg, 82%, 67%);
-    border-radius: 1rem;
+    border: 4px solid hsl(4deg, 82%, 67%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-solid-secondary {
-    border: 6px solid hsl(12deg, 83%, 62%);
-    border-radius: 1rem;
+    border: 4px solid hsl(12deg, 83%, 62%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-double-secondary {
-    border: 6px double hsl(4deg, 82%, 67%);
-    border-radius: 1rem;
+    border: 4px double hsl(4deg, 82%, 67%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-double-secondary {
-    border: 6px double hsl(12deg, 83%, 62%);
-    border-radius: 1rem;
+    border: 4px double hsl(12deg, 83%, 62%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-groove-secondary {
-    border: 6px groove hsl(4deg, 82%, 67%);
-    border-radius: 1rem;
+    border: 4px groove hsl(4deg, 82%, 67%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-groove-secondary {
-    border: 6px groove hsl(12deg, 83%, 62%);
-    border-radius: 1rem;
+    border: 4px groove hsl(12deg, 83%, 62%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-ridge-secondary {
-    border: 6px ridge hsl(4deg, 82%, 67%);
-    border-radius: 1rem;
+    border: 4px ridge hsl(4deg, 82%, 67%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-ridge-secondary {
-    border: 6px ridge hsl(12deg, 83%, 62%);
-    border-radius: 1rem;
+    border: 4px ridge hsl(12deg, 83%, 62%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-inset-secondary {
-    border: 6px inset hsl(4deg, 82%, 67%);
-    border-radius: 1rem;
+    border: 4px inset hsl(4deg, 82%, 67%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-inset-secondary {
-    border: 6px inset hsl(12deg, 83%, 62%);
-    border-radius: 1rem;
+    border: 4px inset hsl(12deg, 83%, 62%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-outset-secondary {
-    border: 6px outset hsl(4deg, 82%, 67%);
-    border-radius: 1rem;
+    border: 4px outset hsl(4deg, 82%, 67%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-outset-secondary {
-    border: 6px outset hsl(12deg, 83%, 62%);
-    border-radius: 1rem;
+    border: 4px outset hsl(12deg, 83%, 62%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-none-secondary {
-    border: 6px none hsl(4deg, 82%, 67%);
-    border-radius: 1rem;
+    border: 4px none hsl(4deg, 82%, 67%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-none-secondary {
-    border: 6px none hsl(12deg, 83%, 62%);
-    border-radius: 1rem;
+    border: 4px none hsl(12deg, 83%, 62%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-hidden-secondary {
-    border: 6px hidden hsl(4deg, 82%, 67%);
-    border-radius: 1rem;
+    border: 4px hidden hsl(4deg, 82%, 67%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-hidden-secondary {
-    border: 6px hidden hsl(12deg, 83%, 62%);
-    border-radius: 1rem;
+    border: 4px hidden hsl(12deg, 83%, 62%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-dotted-tertiary {
-    border: 6px dotted hsl(183deg, 100%, 36%);
-    border-radius: 1rem;
+    border: 4px dotted hsl(183deg, 100%, 36%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-dotted-tertiary {
-    border: 6px dotted hsl(151deg, 24%, 60%);
-    border-radius: 1rem;
+    border: 4px dotted hsl(151deg, 24%, 60%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-dashed-tertiary {
-    border: 6px dashed hsl(183deg, 100%, 36%);
-    border-radius: 1rem;
+    border: 4px dashed hsl(183deg, 100%, 36%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-dashed-tertiary {
-    border: 6px dashed hsl(151deg, 24%, 60%);
-    border-radius: 1rem;
+    border: 4px dashed hsl(151deg, 24%, 60%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-solid-tertiary {
-    border: 6px solid hsl(183deg, 100%, 36%);
-    border-radius: 1rem;
+    border: 4px solid hsl(183deg, 100%, 36%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-solid-tertiary {
-    border: 6px solid hsl(151deg, 24%, 60%);
-    border-radius: 1rem;
+    border: 4px solid hsl(151deg, 24%, 60%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-double-tertiary {
-    border: 6px double hsl(183deg, 100%, 36%);
-    border-radius: 1rem;
+    border: 4px double hsl(183deg, 100%, 36%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-double-tertiary {
-    border: 6px double hsl(151deg, 24%, 60%);
-    border-radius: 1rem;
+    border: 4px double hsl(151deg, 24%, 60%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-groove-tertiary {
-    border: 6px groove hsl(183deg, 100%, 36%);
-    border-radius: 1rem;
+    border: 4px groove hsl(183deg, 100%, 36%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-groove-tertiary {
-    border: 6px groove hsl(151deg, 24%, 60%);
-    border-radius: 1rem;
+    border: 4px groove hsl(151deg, 24%, 60%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-ridge-tertiary {
-    border: 6px ridge hsl(183deg, 100%, 36%);
-    border-radius: 1rem;
+    border: 4px ridge hsl(183deg, 100%, 36%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-ridge-tertiary {
-    border: 6px ridge hsl(151deg, 24%, 60%);
-    border-radius: 1rem;
+    border: 4px ridge hsl(151deg, 24%, 60%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-inset-tertiary {
-    border: 6px inset hsl(183deg, 100%, 36%);
-    border-radius: 1rem;
+    border: 4px inset hsl(183deg, 100%, 36%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-inset-tertiary {
-    border: 6px inset hsl(151deg, 24%, 60%);
-    border-radius: 1rem;
+    border: 4px inset hsl(151deg, 24%, 60%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-outset-tertiary {
-    border: 6px outset hsl(183deg, 100%, 36%);
-    border-radius: 1rem;
+    border: 4px outset hsl(183deg, 100%, 36%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-outset-tertiary {
-    border: 6px outset hsl(151deg, 24%, 60%);
-    border-radius: 1rem;
+    border: 4px outset hsl(151deg, 24%, 60%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-none-tertiary {
-    border: 6px none hsl(183deg, 100%, 36%);
-    border-radius: 1rem;
+    border: 4px none hsl(183deg, 100%, 36%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-none-tertiary {
-    border: 6px none hsl(151deg, 24%, 60%);
-    border-radius: 1rem;
+    border: 4px none hsl(151deg, 24%, 60%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-hidden-tertiary {
-    border: 6px hidden hsl(183deg, 100%, 36%);
-    border-radius: 1rem;
+    border: 4px hidden hsl(183deg, 100%, 36%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-hidden-tertiary {
-    border: 6px hidden hsl(151deg, 24%, 60%);
-    border-radius: 1rem;
+    border: 4px hidden hsl(151deg, 24%, 60%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-dotted-offset {
-    border: 6px dotted hsl(29deg, 97%, 86%);
-    border-radius: 1rem;
+    border: 4px dotted hsl(29deg, 97%, 86%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-dotted-offset {
-    border: 6px dotted hsl(202deg, 46%, 72%);
-    border-radius: 1rem;
+    border: 4px dotted hsl(202deg, 46%, 72%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-dashed-offset {
-    border: 6px dashed hsl(29deg, 97%, 86%);
-    border-radius: 1rem;
+    border: 4px dashed hsl(29deg, 97%, 86%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-dashed-offset {
-    border: 6px dashed hsl(202deg, 46%, 72%);
-    border-radius: 1rem;
+    border: 4px dashed hsl(202deg, 46%, 72%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-solid-offset {
-    border: 6px solid hsl(29deg, 97%, 86%);
-    border-radius: 1rem;
+    border: 4px solid hsl(29deg, 97%, 86%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-solid-offset {
-    border: 6px solid hsl(202deg, 46%, 72%);
-    border-radius: 1rem;
+    border: 4px solid hsl(202deg, 46%, 72%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-double-offset {
-    border: 6px double hsl(29deg, 97%, 86%);
-    border-radius: 1rem;
+    border: 4px double hsl(29deg, 97%, 86%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-double-offset {
-    border: 6px double hsl(202deg, 46%, 72%);
-    border-radius: 1rem;
+    border: 4px double hsl(202deg, 46%, 72%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-groove-offset {
-    border: 6px groove hsl(29deg, 97%, 86%);
-    border-radius: 1rem;
+    border: 4px groove hsl(29deg, 97%, 86%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-groove-offset {
-    border: 6px groove hsl(202deg, 46%, 72%);
-    border-radius: 1rem;
+    border: 4px groove hsl(202deg, 46%, 72%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-ridge-offset {
-    border: 6px ridge hsl(29deg, 97%, 86%);
-    border-radius: 1rem;
+    border: 4px ridge hsl(29deg, 97%, 86%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-ridge-offset {
-    border: 6px ridge hsl(202deg, 46%, 72%);
-    border-radius: 1rem;
+    border: 4px ridge hsl(202deg, 46%, 72%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-inset-offset {
-    border: 6px inset hsl(29deg, 97%, 86%);
-    border-radius: 1rem;
+    border: 4px inset hsl(29deg, 97%, 86%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-inset-offset {
-    border: 6px inset hsl(202deg, 46%, 72%);
-    border-radius: 1rem;
+    border: 4px inset hsl(202deg, 46%, 72%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-outset-offset {
-    border: 6px outset hsl(29deg, 97%, 86%);
-    border-radius: 1rem;
+    border: 4px outset hsl(29deg, 97%, 86%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-outset-offset {
-    border: 6px outset hsl(202deg, 46%, 72%);
-    border-radius: 1rem;
+    border: 4px outset hsl(202deg, 46%, 72%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-none-offset {
-    border: 6px none hsl(29deg, 97%, 86%);
-    border-radius: 1rem;
+    border: 4px none hsl(29deg, 97%, 86%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-none-offset {
-    border: 6px none hsl(202deg, 46%, 72%);
-    border-radius: 1rem;
+    border: 4px none hsl(202deg, 46%, 72%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .border-hidden-offset {
-    border: 6px hidden hsl(29deg, 97%, 86%);
-    border-radius: 1rem;
+    border: 4px hidden hsl(29deg, 97%, 86%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }
 @media (prefers-color-scheme: dark) {
   .border-hidden-offset {
-    border: 6px hidden hsl(202deg, 46%, 72%);
-    border-radius: 1rem;
+    border: 4px hidden hsl(202deg, 46%, 72%);
+    border-radius: 0.5rem;
     transition: 250ms;
   }
 }

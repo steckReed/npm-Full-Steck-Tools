@@ -14,7 +14,7 @@ $fs-flex-container-flex-wrap: (
   $margin : auto,
   ){
   @include grid-pos(1);
-  height  : $height;
+  min-height  : $height;
   width   : $width;
   margin  : $margin;
 }

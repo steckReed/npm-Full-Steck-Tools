@@ -518,8 +518,6 @@
 }
 
 grid {
-  grid-column: 1;
-  grid-row: unset;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -527,6 +525,8 @@ grid {
        column-gap: 4px;
   row-gap: 4px;
   background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
@@ -537,8 +537,6 @@ grid {
 }
 
 grid-container {
-  grid-column: 1;
-  grid-row: unset;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -546,18 +544,20 @@ grid-container {
        column-gap: 4px;
   row-gap: 4px;
   background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
   height: 100vh;
   width: 100vw;
   margin: auto;
 }
 
 flex {
-  grid-column: 1;
-  grid-row: unset;
   display: flex;
   flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
@@ -568,15 +568,1515 @@ flex {
 }
 
 flex-container {
-  grid-column: 1;
-  grid-row: unset;
   display: flex;
   flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
   height: 100vh;
   width: 100vw;
   margin: auto;
+}
+
+grid-white {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+grid-container-white {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+flex-white {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+flex-container-white {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+grid-offWhite {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(0deg, 33%, 98%);
+}
+
+grid-container-offWhite {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 33%, 98%);
+}
+
+flex-offWhite {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(0deg, 33%, 98%);
+}
+
+flex-container-offWhite {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 33%, 98%);
+}
+
+grid-mutedWhite {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(210deg, 18%, 87%);
+}
+
+grid-container-mutedWhite {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(210deg, 18%, 87%);
+}
+
+flex-mutedWhite {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(210deg, 18%, 87%);
+}
+
+flex-container-mutedWhite {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(210deg, 18%, 87%);
+}
+
+grid-black {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 7%);
+}
+
+grid-container-black {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 7%);
+}
+
+flex-black {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 7%);
+}
+
+flex-container-black {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 7%);
+}
+
+grid-offBlack {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 11%);
+}
+
+grid-container-offBlack {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 11%);
+}
+
+flex-offBlack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 11%);
+}
+
+flex-container-offBlack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 11%);
+}
+
+grid-mutedBlack {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 15%);
+}
+
+grid-container-mutedBlack {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 15%);
+}
+
+flex-mutedBlack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 15%);
+}
+
+flex-container-mutedBlack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 15%);
+}
+
+grid-gray {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 50%);
+}
+
+grid-container-gray {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 50%);
+}
+
+flex-gray {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 50%);
+}
+
+flex-container-gray {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 50%);
+}
+
+grid-offGray {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 73%);
+}
+
+grid-container-offGray {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 73%);
+}
+
+flex-offGray {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 73%);
+}
+
+flex-container-offGray {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 73%);
+}
+
+grid-lightGray {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 84%);
+}
+
+grid-container-lightGray {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 84%);
+}
+
+flex-lightGray {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 84%);
+}
+
+flex-container-lightGray {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 84%);
+}
+
+grid-darkGray {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 25%);
+}
+
+grid-container-darkGray {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 25%);
+}
+
+flex-darkGray {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 25%);
+}
+
+flex-container-darkGray {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 25%);
+}
+
+grid-success {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(134deg, 61%, 41%);
+}
+
+grid-container-success {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(134deg, 61%, 41%);
+}
+
+flex-success {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(134deg, 61%, 41%);
+}
+
+flex-container-success {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(134deg, 61%, 41%);
+}
+
+grid-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(190deg, 90%, 50%);
+}
+
+grid-container-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(190deg, 90%, 50%);
+}
+
+flex-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(190deg, 90%, 50%);
+}
+
+flex-container-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(190deg, 90%, 50%);
+}
+
+grid-warning {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(27deg, 98%, 54%);
+}
+
+grid-container-warning {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(27deg, 98%, 54%);
+}
+
+flex-warning {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(27deg, 98%, 54%);
+}
+
+flex-container-warning {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(27deg, 98%, 54%);
+}
+
+grid-danger {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(354deg, 70%, 54%);
+}
+
+grid-container-danger {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(354deg, 70%, 54%);
+}
+
+flex-danger {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(354deg, 70%, 54%);
+}
+
+flex-container-danger {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(354deg, 70%, 54%);
+}
+
+grid-alert {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(51deg, 100%, 51%);
+}
+
+grid-container-alert {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(51deg, 100%, 51%);
+}
+
+flex-alert {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  background-color: hsl(51deg, 100%, 51%);
+}
+
+flex-container-alert {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(51deg, 100%, 51%);
+}
+
+grid-background {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  grid-background {
+    background-color: hsl(58deg, 89%, 93%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  grid-background {
+    background-color: hsl(218deg, 23%, 21%);
+  }
+}
+
+grid-container-background {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  grid-container-background {
+    background-color: hsl(58deg, 89%, 93%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  grid-container-background {
+    background-color: hsl(218deg, 23%, 21%);
+  }
+}
+
+flex-background {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-background {
+    background-color: hsl(58deg, 89%, 93%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-background {
+    background-color: hsl(218deg, 23%, 21%);
+  }
+}
+
+flex-container-background {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-container-background {
+    background-color: hsl(58deg, 89%, 93%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-container-background {
+    background-color: hsl(218deg, 23%, 21%);
+  }
+}
+
+grid-primary {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  grid-primary {
+    background-color: hsl(194deg, 100%, 33%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  grid-primary {
+    background-color: hsl(214deg, 35%, 37%);
+  }
+}
+
+grid-container-primary {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  grid-container-primary {
+    background-color: hsl(194deg, 100%, 33%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  grid-container-primary {
+    background-color: hsl(214deg, 35%, 37%);
+  }
+}
+
+flex-primary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-primary {
+    background-color: hsl(194deg, 100%, 33%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-primary {
+    background-color: hsl(214deg, 35%, 37%);
+  }
+}
+
+flex-container-primary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-container-primary {
+    background-color: hsl(194deg, 100%, 33%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-container-primary {
+    background-color: hsl(214deg, 35%, 37%);
+  }
+}
+
+grid-secondary {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  grid-secondary {
+    background-color: hsl(4deg, 82%, 67%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  grid-secondary {
+    background-color: hsl(12deg, 83%, 62%);
+  }
+}
+
+grid-container-secondary {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  grid-container-secondary {
+    background-color: hsl(4deg, 82%, 67%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  grid-container-secondary {
+    background-color: hsl(12deg, 83%, 62%);
+  }
+}
+
+flex-secondary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-secondary {
+    background-color: hsl(4deg, 82%, 67%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-secondary {
+    background-color: hsl(12deg, 83%, 62%);
+  }
+}
+
+flex-container-secondary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-container-secondary {
+    background-color: hsl(4deg, 82%, 67%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-container-secondary {
+    background-color: hsl(12deg, 83%, 62%);
+  }
+}
+
+grid-tertiary {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  grid-tertiary {
+    background-color: hsl(183deg, 100%, 36%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  grid-tertiary {
+    background-color: hsl(202deg, 46%, 72%);
+  }
+}
+
+grid-container-tertiary {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  grid-container-tertiary {
+    background-color: hsl(183deg, 100%, 36%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  grid-container-tertiary {
+    background-color: hsl(202deg, 46%, 72%);
+  }
+}
+
+flex-tertiary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-tertiary {
+    background-color: hsl(183deg, 100%, 36%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-tertiary {
+    background-color: hsl(202deg, 46%, 72%);
+  }
+}
+
+flex-container-tertiary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-container-tertiary {
+    background-color: hsl(183deg, 100%, 36%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-container-tertiary {
+    background-color: hsl(202deg, 46%, 72%);
+  }
+}
+
+grid-offset {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  grid-offset {
+    background-color: hsl(29deg, 97%, 86%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  grid-offset {
+    background-color: hsl(12deg, 83%, 62%);
+  }
+}
+
+grid-container-offset {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 4px;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  grid-container-offset {
+    background-color: hsl(29deg, 97%, 86%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  grid-container-offset {
+    background-color: hsl(12deg, 83%, 62%);
+  }
+}
+
+flex-offset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-offset {
+    background-color: hsl(29deg, 97%, 86%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-offset {
+    background-color: hsl(12deg, 83%, 62%);
+  }
+}
+
+flex-container-offset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-container-offset {
+    background-color: hsl(29deg, 97%, 86%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-container-offset {
+    background-color: hsl(12deg, 83%, 62%);
+  }
 }
 
 *, ::after, ::before {

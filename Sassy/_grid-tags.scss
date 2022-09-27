@@ -1,28 +1,108 @@
-grid { 
-  @include grid-pos(1); 
-  @include grid-container(); 
-  height: min-content; 
-  width: min-content; 
-  margin: auto
+// WOULD LOVE TO USE, BUT SCSS HAS VARIABLE ISSUES (Issue found when using variable at beginning of name)
+// $fs-container-tags: (
+//   // Description
+//   'grid' : 'grid',
+//   'flex' : 'flex',
+// );
+
+@mixin container(
+  $height : min-content,
+  $width  : min-content,
+  $margin : auto,
+  ){
+  @include grid-pos(1);
+  height  : $height;
+  width   : $width;
+  margin  : $margin;
 }
-grid-container { 
-  @include grid-pos(1); 
-  @include grid-container(); 
-  height: 100vh; 
-  width: 100vw; 
-  margin: auto
+
+@mixin auto-grid-tag-class-generator($key, $value){
+  // @each $keyContainer, $valueContainer in $fs-container-tags{
+    // Grid
+      grid-#{$key} {
+        @include grid-container();
+        @include container();
+
+        @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
+          $valueLight : map-get($value, 'light');
+          $valueDark  : map-get($value, 'dark');
+
+          @include light-theme{ background-color: $valueLight; }
+          @include dark-theme { background-color: $valueDark;  }
+        }
+        @else{
+          background-color: $value;
+        }
+      }
+      grid-container-#{$key} {
+        @include grid-container();
+        @include container(100vh, 100vw);
+        
+        @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
+          $valueLight : map-get($value, 'light');
+          $valueDark  : map-get($value, 'dark');
+
+          @include light-theme{ background-color: $valueLight; }
+          @include dark-theme { background-color: $valueDark;  }
+        }
+        @else{
+          background-color: $value;
+        }
+      }
+    // Grid
+      
+    // Flex
+      flex-#{$key} {
+        @include flex-container();
+        @include container();
+
+        @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
+          $valueLight : map-get($value, 'light');
+          $valueDark  : map-get($value, 'dark');
+
+          @include light-theme{ background-color: $valueLight; }
+          @include dark-theme { background-color: $valueDark;  }
+        }
+        @else{
+          background-color: $value;
+        }
+      }
+      flex-container-#{$key} {
+        @include flex-container();
+        @include container(100vh, 100vw);
+        
+        @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
+          $valueLight : map-get($value, 'light');
+          $valueDark  : map-get($value, 'dark');
+
+          @include light-theme{ background-color: $valueLight; }
+          @include dark-theme { background-color: $valueDark;  }
+        }
+        @else{
+          background-color: $value;
+        }
+      }
+    // Flex
+  // }
 }
-flex { 
-  @include grid-pos(1); 
-  @include flex-container(); 
-  height: min-content; 
-  width: min-content; 
-  margin: auto
-}
-flex-container { 
-  @include grid-pos(1); 
-  @include flex-container(); 
-  height: 100vh; 
-  width: 100vw; 
-  margin: auto
-}
+
+// Default Tags
+  grid {
+    @include grid-container();
+    @include container();
+  }
+  grid-container {
+    @include grid-container();
+    @include container(100vh, 100vw);
+  }
+  flex {
+    @include flex-container();
+    @include container();
+  }
+  flex-container {
+    @include flex-container();
+    @include container(100vh, 100vw);
+  }
+// Default Tags
+
+@each $key, $value in $auto-class-generator-merge{ @include auto-grid-tag-class-generator($key, $value); }

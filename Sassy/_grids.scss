@@ -12,7 +12,6 @@
 
   @mixin flex-container($flex-columns:1fr, $flex-rows:auto, $gap: 3.5vmin, $bg-color: transparent){
     display: flex;
-    flex-wrap: wrap;
     gap: $gap;
     background-color: $bg-color;
     @content;

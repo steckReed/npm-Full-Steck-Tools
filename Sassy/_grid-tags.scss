@@ -1,13 +1,16 @@
 // WOULD LOVE TO USE, BUT SCSS HAS VARIABLE ISSUES (Issue found when using variable at beginning of name)
 // $fs-container-tags: (
-//   // Description
 //   'grid' : 'grid',
 //   'flex' : 'flex',
 // );
+$fs-flex-container-flex-wrap: (
+  'wrap'         : 'wrap',
+  'wrap-reverse' : 'wrap-reverse',
+);
 
 @mixin container(
-  $height : min-content,
-  $width  : min-content,
+  $height : auto,
+  $width  : auto,
   $margin : auto,
   ){
   @include grid-pos(1);
@@ -52,36 +55,73 @@
     // Grid
       
     // Flex
-      flex-#{$key} {
-        @include flex-container();
-        @include container();
+      // Defaults
+        flex-#{$key} {
+          @include flex-container();
+          @include container();
 
-        @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
-          $valueLight : map-get($value, 'light');
-          $valueDark  : map-get($value, 'dark');
+          @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
+            $valueLight : map-get($value, 'light');
+            $valueDark  : map-get($value, 'dark');
 
-          @include light-theme{ background-color: $valueLight; }
-          @include dark-theme { background-color: $valueDark;  }
+            @include light-theme{ background-color: $valueLight; }
+            @include dark-theme { background-color: $valueDark;  }
+          }
+          @else{
+            background-color: $value;
+          }
         }
-        @else{
-          background-color: $value;
-        }
-      }
-      flex-container-#{$key} {
-        @include flex-container();
-        @include container(100vh, 100vw);
-        
-        @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
-          $valueLight : map-get($value, 'light');
-          $valueDark  : map-get($value, 'dark');
+        flex-container-#{$key} {
+          @include flex-container();
+          @include container(100vh, 100vw);
+          
+          @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
+            $valueLight : map-get($value, 'light');
+            $valueDark  : map-get($value, 'dark');
 
-          @include light-theme{ background-color: $valueLight; }
-          @include dark-theme { background-color: $valueDark;  }
+            @include light-theme{ background-color: $valueLight; }
+            @include dark-theme { background-color: $valueDark;  }
+          }
+          @else{
+            background-color: $value;
+          }
         }
-        @else{
-          background-color: $value;
+      // Defaults
+      
+      // Flex Wrap
+        @each $keyFlexWrap, $valueFlexWrap in $fs-flex-container-flex-wrap{
+          flex-#{$keyFlexWrap}-#{$key} {
+            @include flex-container();
+            @include container();
+
+            @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
+              $valueLight : map-get($value, 'light');
+              $valueDark  : map-get($value, 'dark');
+
+              @include light-theme{ background-color: $valueLight; }
+              @include dark-theme { background-color: $valueDark;  }
+            }
+            @else{
+              background-color: $value;
+            }
+          }
+          flex-container-#{$keyFlexWrap}-#{$key} {
+            @include flex-container();
+            @include container(100vh, 100vw);
+            
+            @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
+              $valueLight : map-get($value, 'light');
+              $valueDark  : map-get($value, 'dark');
+
+              @include light-theme{ background-color: $valueLight; }
+              @include dark-theme { background-color: $valueDark;  }
+            }
+            @else{
+              background-color: $value;
+            }
+          }
         }
-      }
+      // Flex Wrap
     // Flex
   // }
 }
@@ -99,9 +139,19 @@
     @include flex-container();
     @include container();
   }
+  flex-wrap {
+    @include flex-container();
+    @include container();
+    flex-wrap: wrap;
+  }
   flex-container {
     @include flex-container();
     @include container(100vh, 100vw);
+  }
+  flex-container-wrap {
+    @include flex-container();
+    @include container(100vh, 100vw);
+    flex-wrap: wrap;
   }
 // Default Tags
 

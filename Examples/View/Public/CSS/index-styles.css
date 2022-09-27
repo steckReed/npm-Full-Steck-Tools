@@ -254,7 +254,7 @@
 }
 @media (prefers-color-scheme: dark) {
   .outline-secondary {
-    outline: 1px solid hsl(202deg, 46%, 72%);
+    outline: 1px solid hsl(151deg, 24%, 60%);
   }
 }
 
@@ -311,7 +311,7 @@
     color: hsl(0deg, 0%, 7%);
     border: 1px solid hsl(4deg, 82%, 67%);
     cursor: pointer;
-    outline: 1px solid hsl(202deg, 46%, 72%);
+    outline: 1px solid hsl(151deg, 24%, 60%);
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -320,7 +320,7 @@
     color: hsl(0deg, 0%, 7%);
     border: 1px solid hsl(4deg, 82%, 67%);
     cursor: pointer;
-    outline: 1px solid hsl(202deg, 46%, 72%);
+    outline: 1px solid hsl(151deg, 24%, 60%);
   }
 }
 
@@ -495,7 +495,7 @@
 @media (prefers-color-scheme: dark) {
   .color-tertiary,
 .font-color-tertiary {
-    color: hsl(202deg, 46%, 72%);
+    color: hsl(151deg, 24%, 60%);
   }
 }
 
@@ -508,7 +508,7 @@
 @media (prefers-color-scheme: dark) {
   .color-offset,
 .font-color-offset {
-    color: hsl(12deg, 83%, 62%);
+    color: hsl(202deg, 46%, 72%);
   }
 }
 
@@ -527,12 +527,8 @@ grid {
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
 }
 
@@ -553,23 +549,29 @@ grid-container {
 
 flex {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
+}
+
+flex-wrap {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  flex-wrap: wrap;
 }
 
 flex-container {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
@@ -577,6 +579,18 @@ flex-container {
   height: 100vh;
   width: 100vw;
   margin: auto;
+}
+
+flex-container-wrap {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  flex-wrap: wrap;
 }
 
 grid-white {
@@ -589,12 +603,8 @@ grid-white {
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(0deg, 0%, 100%);
 }
@@ -617,24 +627,66 @@ grid-container-white {
 
 flex-white {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(0deg, 0%, 100%);
 }
 
 flex-container-white {
   display: flex;
-  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+flex-wrap-white {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+flex-container-wrap-white {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+flex-wrap-reverse-white {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+flex-container-wrap-reverse-white {
+  display: flex;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
@@ -655,12 +707,8 @@ grid-offWhite {
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(0deg, 33%, 98%);
 }
@@ -683,24 +731,66 @@ grid-container-offWhite {
 
 flex-offWhite {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(0deg, 33%, 98%);
 }
 
 flex-container-offWhite {
   display: flex;
-  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 33%, 98%);
+}
+
+flex-wrap-offWhite {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(0deg, 33%, 98%);
+}
+
+flex-container-wrap-offWhite {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 33%, 98%);
+}
+
+flex-wrap-reverse-offWhite {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(0deg, 33%, 98%);
+}
+
+flex-container-wrap-reverse-offWhite {
+  display: flex;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
@@ -721,12 +811,8 @@ grid-mutedWhite {
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(210deg, 18%, 87%);
 }
@@ -749,24 +835,66 @@ grid-container-mutedWhite {
 
 flex-mutedWhite {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(210deg, 18%, 87%);
 }
 
 flex-container-mutedWhite {
   display: flex;
-  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(210deg, 18%, 87%);
+}
+
+flex-wrap-mutedWhite {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(210deg, 18%, 87%);
+}
+
+flex-container-wrap-mutedWhite {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(210deg, 18%, 87%);
+}
+
+flex-wrap-reverse-mutedWhite {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(210deg, 18%, 87%);
+}
+
+flex-container-wrap-reverse-mutedWhite {
+  display: flex;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
@@ -787,12 +915,8 @@ grid-black {
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(0deg, 0%, 7%);
 }
@@ -815,24 +939,66 @@ grid-container-black {
 
 flex-black {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(0deg, 0%, 7%);
 }
 
 flex-container-black {
   display: flex;
-  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 7%);
+}
+
+flex-wrap-black {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 7%);
+}
+
+flex-container-wrap-black {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 7%);
+}
+
+flex-wrap-reverse-black {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 7%);
+}
+
+flex-container-wrap-reverse-black {
+  display: flex;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
@@ -853,12 +1019,8 @@ grid-offBlack {
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(0deg, 0%, 11%);
 }
@@ -881,24 +1043,66 @@ grid-container-offBlack {
 
 flex-offBlack {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(0deg, 0%, 11%);
 }
 
 flex-container-offBlack {
   display: flex;
-  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 11%);
+}
+
+flex-wrap-offBlack {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 11%);
+}
+
+flex-container-wrap-offBlack {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 11%);
+}
+
+flex-wrap-reverse-offBlack {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 11%);
+}
+
+flex-container-wrap-reverse-offBlack {
+  display: flex;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
@@ -919,12 +1123,8 @@ grid-mutedBlack {
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(0deg, 0%, 15%);
 }
@@ -947,24 +1147,66 @@ grid-container-mutedBlack {
 
 flex-mutedBlack {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(0deg, 0%, 15%);
 }
 
 flex-container-mutedBlack {
   display: flex;
-  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 15%);
+}
+
+flex-wrap-mutedBlack {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 15%);
+}
+
+flex-container-wrap-mutedBlack {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 15%);
+}
+
+flex-wrap-reverse-mutedBlack {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 15%);
+}
+
+flex-container-wrap-reverse-mutedBlack {
+  display: flex;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
@@ -985,12 +1227,8 @@ grid-gray {
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(0deg, 0%, 50%);
 }
@@ -1013,24 +1251,66 @@ grid-container-gray {
 
 flex-gray {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(0deg, 0%, 50%);
 }
 
 flex-container-gray {
   display: flex;
-  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 50%);
+}
+
+flex-wrap-gray {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 50%);
+}
+
+flex-container-wrap-gray {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 50%);
+}
+
+flex-wrap-reverse-gray {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 50%);
+}
+
+flex-container-wrap-reverse-gray {
+  display: flex;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
@@ -1051,12 +1331,8 @@ grid-offGray {
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(0deg, 0%, 73%);
 }
@@ -1079,24 +1355,66 @@ grid-container-offGray {
 
 flex-offGray {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(0deg, 0%, 73%);
 }
 
 flex-container-offGray {
   display: flex;
-  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 73%);
+}
+
+flex-wrap-offGray {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 73%);
+}
+
+flex-container-wrap-offGray {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 73%);
+}
+
+flex-wrap-reverse-offGray {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 73%);
+}
+
+flex-container-wrap-reverse-offGray {
+  display: flex;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
@@ -1117,12 +1435,8 @@ grid-lightGray {
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(0deg, 0%, 84%);
 }
@@ -1145,24 +1459,66 @@ grid-container-lightGray {
 
 flex-lightGray {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(0deg, 0%, 84%);
 }
 
 flex-container-lightGray {
   display: flex;
-  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 84%);
+}
+
+flex-wrap-lightGray {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 84%);
+}
+
+flex-container-wrap-lightGray {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 84%);
+}
+
+flex-wrap-reverse-lightGray {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 84%);
+}
+
+flex-container-wrap-reverse-lightGray {
+  display: flex;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
@@ -1183,12 +1539,8 @@ grid-darkGray {
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(0deg, 0%, 25%);
 }
@@ -1211,24 +1563,66 @@ grid-container-darkGray {
 
 flex-darkGray {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(0deg, 0%, 25%);
 }
 
 flex-container-darkGray {
   display: flex;
-  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 25%);
+}
+
+flex-wrap-darkGray {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 25%);
+}
+
+flex-container-wrap-darkGray {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 25%);
+}
+
+flex-wrap-reverse-darkGray {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(0deg, 0%, 25%);
+}
+
+flex-container-wrap-reverse-darkGray {
+  display: flex;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
@@ -1249,12 +1643,8 @@ grid-success {
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(134deg, 61%, 41%);
 }
@@ -1277,24 +1667,66 @@ grid-container-success {
 
 flex-success {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(134deg, 61%, 41%);
 }
 
 flex-container-success {
   display: flex;
-  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(134deg, 61%, 41%);
+}
+
+flex-wrap-success {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(134deg, 61%, 41%);
+}
+
+flex-container-wrap-success {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(134deg, 61%, 41%);
+}
+
+flex-wrap-reverse-success {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(134deg, 61%, 41%);
+}
+
+flex-container-wrap-reverse-success {
+  display: flex;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
@@ -1315,12 +1747,8 @@ grid-info {
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(190deg, 90%, 50%);
 }
@@ -1343,24 +1771,66 @@ grid-container-info {
 
 flex-info {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(190deg, 90%, 50%);
 }
 
 flex-container-info {
   display: flex;
-  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(190deg, 90%, 50%);
+}
+
+flex-wrap-info {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(190deg, 90%, 50%);
+}
+
+flex-container-wrap-info {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(190deg, 90%, 50%);
+}
+
+flex-wrap-reverse-info {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(190deg, 90%, 50%);
+}
+
+flex-container-wrap-reverse-info {
+  display: flex;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
@@ -1381,12 +1851,8 @@ grid-warning {
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(27deg, 98%, 54%);
 }
@@ -1409,24 +1875,66 @@ grid-container-warning {
 
 flex-warning {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(27deg, 98%, 54%);
 }
 
 flex-container-warning {
   display: flex;
-  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(27deg, 98%, 54%);
+}
+
+flex-wrap-warning {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(27deg, 98%, 54%);
+}
+
+flex-container-wrap-warning {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(27deg, 98%, 54%);
+}
+
+flex-wrap-reverse-warning {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(27deg, 98%, 54%);
+}
+
+flex-container-wrap-reverse-warning {
+  display: flex;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
@@ -1447,12 +1955,8 @@ grid-danger {
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(354deg, 70%, 54%);
 }
@@ -1475,24 +1979,66 @@ grid-container-danger {
 
 flex-danger {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(354deg, 70%, 54%);
 }
 
 flex-container-danger {
   display: flex;
-  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(354deg, 70%, 54%);
+}
+
+flex-wrap-danger {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(354deg, 70%, 54%);
+}
+
+flex-container-wrap-danger {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(354deg, 70%, 54%);
+}
+
+flex-wrap-reverse-danger {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(354deg, 70%, 54%);
+}
+
+flex-container-wrap-reverse-danger {
+  display: flex;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
@@ -1513,12 +2059,8 @@ grid-alert {
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(51deg, 100%, 51%);
 }
@@ -1541,24 +2083,66 @@ grid-container-alert {
 
 flex-alert {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
   background-color: hsl(51deg, 100%, 51%);
 }
 
 flex-container-alert {
   display: flex;
-  flex-wrap: wrap;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(51deg, 100%, 51%);
+}
+
+flex-wrap-alert {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(51deg, 100%, 51%);
+}
+
+flex-container-wrap-alert {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: hsl(51deg, 100%, 51%);
+}
+
+flex-wrap-reverse-alert {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+  background-color: hsl(51deg, 100%, 51%);
+}
+
+flex-container-wrap-reverse-alert {
+  display: flex;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
@@ -1579,12 +2163,8 @@ grid-background {
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
@@ -1625,17 +2205,12 @@ grid-container-background {
 
 flex-background {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
@@ -1651,7 +2226,6 @@ flex-background {
 
 flex-container-background {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
@@ -1671,6 +2245,90 @@ flex-container-background {
   }
 }
 
+flex-wrap-background {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-wrap-background {
+    background-color: hsl(58deg, 89%, 93%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-wrap-background {
+    background-color: hsl(218deg, 23%, 21%);
+  }
+}
+
+flex-container-wrap-background {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-container-wrap-background {
+    background-color: hsl(58deg, 89%, 93%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-container-wrap-background {
+    background-color: hsl(218deg, 23%, 21%);
+  }
+}
+
+flex-wrap-reverse-background {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-wrap-reverse-background {
+    background-color: hsl(58deg, 89%, 93%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-wrap-reverse-background {
+    background-color: hsl(218deg, 23%, 21%);
+  }
+}
+
+flex-container-wrap-reverse-background {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-container-wrap-reverse-background {
+    background-color: hsl(58deg, 89%, 93%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-container-wrap-reverse-background {
+    background-color: hsl(218deg, 23%, 21%);
+  }
+}
+
 grid-primary {
   display: grid;
   grid-template-columns: 1fr;
@@ -1681,12 +2339,8 @@ grid-primary {
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
@@ -1727,17 +2381,12 @@ grid-container-primary {
 
 flex-primary {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
@@ -1753,7 +2402,6 @@ flex-primary {
 
 flex-container-primary {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
@@ -1773,6 +2421,90 @@ flex-container-primary {
   }
 }
 
+flex-wrap-primary {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-wrap-primary {
+    background-color: hsl(194deg, 100%, 33%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-wrap-primary {
+    background-color: hsl(214deg, 35%, 37%);
+  }
+}
+
+flex-container-wrap-primary {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-container-wrap-primary {
+    background-color: hsl(194deg, 100%, 33%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-container-wrap-primary {
+    background-color: hsl(214deg, 35%, 37%);
+  }
+}
+
+flex-wrap-reverse-primary {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-wrap-reverse-primary {
+    background-color: hsl(194deg, 100%, 33%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-wrap-reverse-primary {
+    background-color: hsl(214deg, 35%, 37%);
+  }
+}
+
+flex-container-wrap-reverse-primary {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-container-wrap-reverse-primary {
+    background-color: hsl(194deg, 100%, 33%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-container-wrap-reverse-primary {
+    background-color: hsl(214deg, 35%, 37%);
+  }
+}
+
 grid-secondary {
   display: grid;
   grid-template-columns: 1fr;
@@ -1783,12 +2515,8 @@ grid-secondary {
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
@@ -1829,17 +2557,12 @@ grid-container-secondary {
 
 flex-secondary {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
@@ -1855,7 +2578,6 @@ flex-secondary {
 
 flex-container-secondary {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
@@ -1875,6 +2597,90 @@ flex-container-secondary {
   }
 }
 
+flex-wrap-secondary {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-wrap-secondary {
+    background-color: hsl(4deg, 82%, 67%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-wrap-secondary {
+    background-color: hsl(12deg, 83%, 62%);
+  }
+}
+
+flex-container-wrap-secondary {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-container-wrap-secondary {
+    background-color: hsl(4deg, 82%, 67%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-container-wrap-secondary {
+    background-color: hsl(12deg, 83%, 62%);
+  }
+}
+
+flex-wrap-reverse-secondary {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-wrap-reverse-secondary {
+    background-color: hsl(4deg, 82%, 67%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-wrap-reverse-secondary {
+    background-color: hsl(12deg, 83%, 62%);
+  }
+}
+
+flex-container-wrap-reverse-secondary {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-container-wrap-reverse-secondary {
+    background-color: hsl(4deg, 82%, 67%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-container-wrap-reverse-secondary {
+    background-color: hsl(12deg, 83%, 62%);
+  }
+}
+
 grid-tertiary {
   display: grid;
   grid-template-columns: 1fr;
@@ -1885,12 +2691,8 @@ grid-tertiary {
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
@@ -1900,7 +2702,7 @@ grid-tertiary {
 }
 @media (prefers-color-scheme: dark) {
   grid-tertiary {
-    background-color: hsl(202deg, 46%, 72%);
+    background-color: hsl(151deg, 24%, 60%);
   }
 }
 
@@ -1925,23 +2727,18 @@ grid-container-tertiary {
 }
 @media (prefers-color-scheme: dark) {
   grid-container-tertiary {
-    background-color: hsl(202deg, 46%, 72%);
+    background-color: hsl(151deg, 24%, 60%);
   }
 }
 
 flex-tertiary {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
@@ -1951,13 +2748,12 @@ flex-tertiary {
 }
 @media (prefers-color-scheme: dark) {
   flex-tertiary {
-    background-color: hsl(202deg, 46%, 72%);
+    background-color: hsl(151deg, 24%, 60%);
   }
 }
 
 flex-container-tertiary {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
@@ -1973,7 +2769,91 @@ flex-container-tertiary {
 }
 @media (prefers-color-scheme: dark) {
   flex-container-tertiary {
-    background-color: hsl(202deg, 46%, 72%);
+    background-color: hsl(151deg, 24%, 60%);
+  }
+}
+
+flex-wrap-tertiary {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-wrap-tertiary {
+    background-color: hsl(183deg, 100%, 36%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-wrap-tertiary {
+    background-color: hsl(151deg, 24%, 60%);
+  }
+}
+
+flex-container-wrap-tertiary {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-container-wrap-tertiary {
+    background-color: hsl(183deg, 100%, 36%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-container-wrap-tertiary {
+    background-color: hsl(151deg, 24%, 60%);
+  }
+}
+
+flex-wrap-reverse-tertiary {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-wrap-reverse-tertiary {
+    background-color: hsl(183deg, 100%, 36%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-wrap-reverse-tertiary {
+    background-color: hsl(151deg, 24%, 60%);
+  }
+}
+
+flex-container-wrap-reverse-tertiary {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-container-wrap-reverse-tertiary {
+    background-color: hsl(183deg, 100%, 36%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-container-wrap-reverse-tertiary {
+    background-color: hsl(151deg, 24%, 60%);
   }
 }
 
@@ -1987,12 +2867,8 @@ grid-offset {
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
@@ -2002,7 +2878,7 @@ grid-offset {
 }
 @media (prefers-color-scheme: dark) {
   grid-offset {
-    background-color: hsl(12deg, 83%, 62%);
+    background-color: hsl(202deg, 46%, 72%);
   }
 }
 
@@ -2027,23 +2903,18 @@ grid-container-offset {
 }
 @media (prefers-color-scheme: dark) {
   grid-container-offset {
-    background-color: hsl(12deg, 83%, 62%);
+    background-color: hsl(202deg, 46%, 72%);
   }
 }
 
 flex-offset {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  height: auto;
+  width: auto;
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
@@ -2053,13 +2924,12 @@ flex-offset {
 }
 @media (prefers-color-scheme: dark) {
   flex-offset {
-    background-color: hsl(12deg, 83%, 62%);
+    background-color: hsl(202deg, 46%, 72%);
   }
 }
 
 flex-container-offset {
   display: flex;
-  flex-wrap: wrap;
   gap: 3.5vmin;
   background-color: transparent;
   grid-column: 1;
@@ -2075,7 +2945,91 @@ flex-container-offset {
 }
 @media (prefers-color-scheme: dark) {
   flex-container-offset {
-    background-color: hsl(12deg, 83%, 62%);
+    background-color: hsl(202deg, 46%, 72%);
+  }
+}
+
+flex-wrap-offset {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-wrap-offset {
+    background-color: hsl(29deg, 97%, 86%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-wrap-offset {
+    background-color: hsl(202deg, 46%, 72%);
+  }
+}
+
+flex-container-wrap-offset {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-container-wrap-offset {
+    background-color: hsl(29deg, 97%, 86%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-container-wrap-offset {
+    background-color: hsl(202deg, 46%, 72%);
+  }
+}
+
+flex-wrap-reverse-offset {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-wrap-reverse-offset {
+    background-color: hsl(29deg, 97%, 86%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-wrap-reverse-offset {
+    background-color: hsl(202deg, 46%, 72%);
+  }
+}
+
+flex-container-wrap-reverse-offset {
+  display: flex;
+  gap: 3.5vmin;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: unset;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+@media (prefers-color-scheme: light) {
+  flex-container-wrap-reverse-offset {
+    background-color: hsl(29deg, 97%, 86%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  flex-container-wrap-reverse-offset {
+    background-color: hsl(202deg, 46%, 72%);
   }
 }
 
@@ -2529,7 +3483,7 @@ body {
   .btn-white.active-tertiary,
 .active-tertiary {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(202deg, 46%, 72%);
+    border-left: 4px solid hsl(151deg, 24%, 60%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -2548,7 +3502,7 @@ body {
   .btn-white.active-offset,
 .active-offset {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(12deg, 83%, 62%);
+    border-left: 4px solid hsl(202deg, 46%, 72%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -2909,7 +3863,7 @@ body {
   .btn-offWhite.active-tertiary,
 .active-tertiary {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(202deg, 46%, 72%);
+    border-left: 4px solid hsl(151deg, 24%, 60%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -2928,7 +3882,7 @@ body {
   .btn-offWhite.active-offset,
 .active-offset {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(12deg, 83%, 62%);
+    border-left: 4px solid hsl(202deg, 46%, 72%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -3289,7 +4243,7 @@ body {
   .btn-mutedWhite.active-tertiary,
 .active-tertiary {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(202deg, 46%, 72%);
+    border-left: 4px solid hsl(151deg, 24%, 60%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -3308,7 +4262,7 @@ body {
   .btn-mutedWhite.active-offset,
 .active-offset {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(12deg, 83%, 62%);
+    border-left: 4px solid hsl(202deg, 46%, 72%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -3669,7 +4623,7 @@ body {
   .btn-black.active-tertiary,
 .active-tertiary {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(202deg, 46%, 72%);
+    border-left: 4px solid hsl(151deg, 24%, 60%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -3688,7 +4642,7 @@ body {
   .btn-black.active-offset,
 .active-offset {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(12deg, 83%, 62%);
+    border-left: 4px solid hsl(202deg, 46%, 72%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -4049,7 +5003,7 @@ body {
   .btn-offBlack.active-tertiary,
 .active-tertiary {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(202deg, 46%, 72%);
+    border-left: 4px solid hsl(151deg, 24%, 60%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -4068,7 +5022,7 @@ body {
   .btn-offBlack.active-offset,
 .active-offset {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(12deg, 83%, 62%);
+    border-left: 4px solid hsl(202deg, 46%, 72%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -4429,7 +5383,7 @@ body {
   .btn-mutedBlack.active-tertiary,
 .active-tertiary {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(202deg, 46%, 72%);
+    border-left: 4px solid hsl(151deg, 24%, 60%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -4448,7 +5402,7 @@ body {
   .btn-mutedBlack.active-offset,
 .active-offset {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(12deg, 83%, 62%);
+    border-left: 4px solid hsl(202deg, 46%, 72%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -4809,7 +5763,7 @@ body {
   .btn-gray.active-tertiary,
 .active-tertiary {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(202deg, 46%, 72%);
+    border-left: 4px solid hsl(151deg, 24%, 60%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -4828,7 +5782,7 @@ body {
   .btn-gray.active-offset,
 .active-offset {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(12deg, 83%, 62%);
+    border-left: 4px solid hsl(202deg, 46%, 72%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -5189,7 +6143,7 @@ body {
   .btn-offGray.active-tertiary,
 .active-tertiary {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(202deg, 46%, 72%);
+    border-left: 4px solid hsl(151deg, 24%, 60%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -5208,7 +6162,7 @@ body {
   .btn-offGray.active-offset,
 .active-offset {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(12deg, 83%, 62%);
+    border-left: 4px solid hsl(202deg, 46%, 72%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -5569,7 +6523,7 @@ body {
   .btn-lightGray.active-tertiary,
 .active-tertiary {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(202deg, 46%, 72%);
+    border-left: 4px solid hsl(151deg, 24%, 60%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -5588,7 +6542,7 @@ body {
   .btn-lightGray.active-offset,
 .active-offset {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(12deg, 83%, 62%);
+    border-left: 4px solid hsl(202deg, 46%, 72%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -5949,7 +6903,7 @@ body {
   .btn-darkGray.active-tertiary,
 .active-tertiary {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(202deg, 46%, 72%);
+    border-left: 4px solid hsl(151deg, 24%, 60%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -5968,7 +6922,7 @@ body {
   .btn-darkGray.active-offset,
 .active-offset {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(12deg, 83%, 62%);
+    border-left: 4px solid hsl(202deg, 46%, 72%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -6329,7 +7283,7 @@ body {
   .btn-success.active-tertiary,
 .active-tertiary {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(202deg, 46%, 72%);
+    border-left: 4px solid hsl(151deg, 24%, 60%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -6348,7 +7302,7 @@ body {
   .btn-success.active-offset,
 .active-offset {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(12deg, 83%, 62%);
+    border-left: 4px solid hsl(202deg, 46%, 72%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -6709,7 +7663,7 @@ body {
   .btn-info.active-tertiary,
 .active-tertiary {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(202deg, 46%, 72%);
+    border-left: 4px solid hsl(151deg, 24%, 60%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -6728,7 +7682,7 @@ body {
   .btn-info.active-offset,
 .active-offset {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(12deg, 83%, 62%);
+    border-left: 4px solid hsl(202deg, 46%, 72%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -7089,7 +8043,7 @@ body {
   .btn-warning.active-tertiary,
 .active-tertiary {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(202deg, 46%, 72%);
+    border-left: 4px solid hsl(151deg, 24%, 60%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -7108,7 +8062,7 @@ body {
   .btn-warning.active-offset,
 .active-offset {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(12deg, 83%, 62%);
+    border-left: 4px solid hsl(202deg, 46%, 72%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -7469,7 +8423,7 @@ body {
   .btn-danger.active-tertiary,
 .active-tertiary {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(202deg, 46%, 72%);
+    border-left: 4px solid hsl(151deg, 24%, 60%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -7488,7 +8442,7 @@ body {
   .btn-danger.active-offset,
 .active-offset {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(12deg, 83%, 62%);
+    border-left: 4px solid hsl(202deg, 46%, 72%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -7849,7 +8803,7 @@ body {
   .btn-alert.active-tertiary,
 .active-tertiary {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(202deg, 46%, 72%);
+    border-left: 4px solid hsl(151deg, 24%, 60%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -7868,7 +8822,7 @@ body {
   .btn-alert.active-offset,
 .active-offset {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(12deg, 83%, 62%);
+    border-left: 4px solid hsl(202deg, 46%, 72%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -8229,7 +9183,7 @@ body {
   .btn-background.active-tertiary,
 .active-tertiary {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(202deg, 46%, 72%);
+    border-left: 4px solid hsl(151deg, 24%, 60%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -8248,7 +9202,7 @@ body {
   .btn-background.active-offset,
 .active-offset {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(12deg, 83%, 62%);
+    border-left: 4px solid hsl(202deg, 46%, 72%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -8609,7 +9563,7 @@ body {
   .btn-primary.active-tertiary,
 .active-tertiary {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(202deg, 46%, 72%);
+    border-left: 4px solid hsl(151deg, 24%, 60%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -8628,7 +9582,7 @@ body {
   .btn-primary.active-offset,
 .active-offset {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(12deg, 83%, 62%);
+    border-left: 4px solid hsl(202deg, 46%, 72%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -8989,7 +9943,7 @@ body {
   .btn-secondary.active-tertiary,
 .active-tertiary {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(202deg, 46%, 72%);
+    border-left: 4px solid hsl(151deg, 24%, 60%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -9008,7 +9962,7 @@ body {
   .btn-secondary.active-offset,
 .active-offset {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(12deg, 83%, 62%);
+    border-left: 4px solid hsl(202deg, 46%, 72%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -9369,7 +10323,7 @@ body {
   .btn-tertiary.active-tertiary,
 .active-tertiary {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(202deg, 46%, 72%);
+    border-left: 4px solid hsl(151deg, 24%, 60%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -9388,7 +10342,7 @@ body {
   .btn-tertiary.active-offset,
 .active-offset {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(12deg, 83%, 62%);
+    border-left: 4px solid hsl(202deg, 46%, 72%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -9749,7 +10703,7 @@ body {
   .btn-offset.active-tertiary,
 .active-tertiary {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(202deg, 46%, 72%);
+    border-left: 4px solid hsl(151deg, 24%, 60%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -9768,7 +10722,7 @@ body {
   .btn-offset.active-offset,
 .active-offset {
     color: hsl(214deg, 35%, 37%);
-    border-left: 4px solid hsl(12deg, 83%, 62%);
+    border-left: 4px solid hsl(202deg, 46%, 72%);
     border-radius: 0.25rem;
     background-color: hsl(194deg, 100%, 33%);
   }
@@ -9912,7 +10866,7 @@ body {
 @media (prefers-color-scheme: dark) {
   .bg-tertiary,
 .background-tertiary {
-    background-color: hsl(202deg, 46%, 72%);
+    background-color: hsl(151deg, 24%, 60%);
   }
 }
 
@@ -9925,7 +10879,7 @@ body {
 @media (prefers-color-scheme: dark) {
   .bg-offset,
 .background-offset {
-    background-color: hsl(12deg, 83%, 62%);
+    background-color: hsl(202deg, 46%, 72%);
   }
 }
 
@@ -11288,7 +12242,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .border-dotted-tertiary {
-    border: 6px dotted hsl(202deg, 46%, 72%);
+    border: 6px dotted hsl(151deg, 24%, 60%);
     border-radius: 1rem;
     transition: 250ms;
   }
@@ -11303,7 +12257,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .border-dashed-tertiary {
-    border: 6px dashed hsl(202deg, 46%, 72%);
+    border: 6px dashed hsl(151deg, 24%, 60%);
     border-radius: 1rem;
     transition: 250ms;
   }
@@ -11318,7 +12272,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .border-solid-tertiary {
-    border: 6px solid hsl(202deg, 46%, 72%);
+    border: 6px solid hsl(151deg, 24%, 60%);
     border-radius: 1rem;
     transition: 250ms;
   }
@@ -11333,7 +12287,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .border-double-tertiary {
-    border: 6px double hsl(202deg, 46%, 72%);
+    border: 6px double hsl(151deg, 24%, 60%);
     border-radius: 1rem;
     transition: 250ms;
   }
@@ -11348,7 +12302,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .border-groove-tertiary {
-    border: 6px groove hsl(202deg, 46%, 72%);
+    border: 6px groove hsl(151deg, 24%, 60%);
     border-radius: 1rem;
     transition: 250ms;
   }
@@ -11363,7 +12317,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .border-ridge-tertiary {
-    border: 6px ridge hsl(202deg, 46%, 72%);
+    border: 6px ridge hsl(151deg, 24%, 60%);
     border-radius: 1rem;
     transition: 250ms;
   }
@@ -11378,7 +12332,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .border-inset-tertiary {
-    border: 6px inset hsl(202deg, 46%, 72%);
+    border: 6px inset hsl(151deg, 24%, 60%);
     border-radius: 1rem;
     transition: 250ms;
   }
@@ -11393,7 +12347,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .border-outset-tertiary {
-    border: 6px outset hsl(202deg, 46%, 72%);
+    border: 6px outset hsl(151deg, 24%, 60%);
     border-radius: 1rem;
     transition: 250ms;
   }
@@ -11408,7 +12362,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .border-none-tertiary {
-    border: 6px none hsl(202deg, 46%, 72%);
+    border: 6px none hsl(151deg, 24%, 60%);
     border-radius: 1rem;
     transition: 250ms;
   }
@@ -11423,7 +12377,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .border-hidden-tertiary {
-    border: 6px hidden hsl(202deg, 46%, 72%);
+    border: 6px hidden hsl(151deg, 24%, 60%);
     border-radius: 1rem;
     transition: 250ms;
   }
@@ -11438,7 +12392,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .border-dotted-offset {
-    border: 6px dotted hsl(12deg, 83%, 62%);
+    border: 6px dotted hsl(202deg, 46%, 72%);
     border-radius: 1rem;
     transition: 250ms;
   }
@@ -11453,7 +12407,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .border-dashed-offset {
-    border: 6px dashed hsl(12deg, 83%, 62%);
+    border: 6px dashed hsl(202deg, 46%, 72%);
     border-radius: 1rem;
     transition: 250ms;
   }
@@ -11468,7 +12422,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .border-solid-offset {
-    border: 6px solid hsl(12deg, 83%, 62%);
+    border: 6px solid hsl(202deg, 46%, 72%);
     border-radius: 1rem;
     transition: 250ms;
   }
@@ -11483,7 +12437,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .border-double-offset {
-    border: 6px double hsl(12deg, 83%, 62%);
+    border: 6px double hsl(202deg, 46%, 72%);
     border-radius: 1rem;
     transition: 250ms;
   }
@@ -11498,7 +12452,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .border-groove-offset {
-    border: 6px groove hsl(12deg, 83%, 62%);
+    border: 6px groove hsl(202deg, 46%, 72%);
     border-radius: 1rem;
     transition: 250ms;
   }
@@ -11513,7 +12467,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .border-ridge-offset {
-    border: 6px ridge hsl(12deg, 83%, 62%);
+    border: 6px ridge hsl(202deg, 46%, 72%);
     border-radius: 1rem;
     transition: 250ms;
   }
@@ -11528,7 +12482,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .border-inset-offset {
-    border: 6px inset hsl(12deg, 83%, 62%);
+    border: 6px inset hsl(202deg, 46%, 72%);
     border-radius: 1rem;
     transition: 250ms;
   }
@@ -11543,7 +12497,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .border-outset-offset {
-    border: 6px outset hsl(12deg, 83%, 62%);
+    border: 6px outset hsl(202deg, 46%, 72%);
     border-radius: 1rem;
     transition: 250ms;
   }
@@ -11558,7 +12512,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .border-none-offset {
-    border: 6px none hsl(12deg, 83%, 62%);
+    border: 6px none hsl(202deg, 46%, 72%);
     border-radius: 1rem;
     transition: 250ms;
   }
@@ -11573,7 +12527,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .border-hidden-offset {
-    border: 6px hidden hsl(12deg, 83%, 62%);
+    border: 6px hidden hsl(202deg, 46%, 72%);
     border-radius: 1rem;
     transition: 250ms;
   }
@@ -12281,13 +13235,13 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .btn-tertiary {
-    background-color: hsl(202deg, 46%, 72%);
+    background-color: hsl(151deg, 24%, 60%);
     color: hsl(0deg, 0%, 100%);
   }
   .btn-tertiary:hover {
     background-color: transparent;
-    color: hsl(202deg, 46%, 72%);
-    border: 1px solid hsl(202deg, 46%, 72%);
+    color: hsl(151deg, 24%, 60%);
+    border: 1px solid hsl(151deg, 24%, 60%);
     cursor: pointer;
   }
 }
@@ -12328,13 +13282,13 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   .btn-offset {
-    background-color: hsl(12deg, 83%, 62%);
+    background-color: hsl(202deg, 46%, 72%);
     color: hsl(0deg, 0%, 100%);
   }
   .btn-offset:hover {
     background-color: transparent;
-    color: hsl(12deg, 83%, 62%);
-    border: 1px solid hsl(12deg, 83%, 62%);
+    color: hsl(202deg, 46%, 72%);
+    border: 1px solid hsl(202deg, 46%, 72%);
     cursor: pointer;
   }
 }
@@ -13183,7 +14137,7 @@ p {
 }
 @media (prefers-color-scheme: dark) {
   .texture-tertiary {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='35' specularConstant='0.5' specularExponent='20' lighting-color='hsl(23deg, 0%, 81%)' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='hsl(202deg, 46%, 72%)'%3E%3C/rect%3E%3Crect width='700' height='700' fill='hsl(23deg, 0%, 81%)' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='35' specularConstant='0.5' specularExponent='20' lighting-color='hsl(23deg, 0%, 81%)' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='hsl(151deg, 24%, 60%)'%3E%3C/rect%3E%3Crect width='700' height='700' fill='hsl(23deg, 0%, 81%)' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E") !important;
   }
 }
 
@@ -13198,11 +14152,11 @@ p {
 }
 @media (prefers-color-scheme: dark) {
   .btn.texture-tertiary {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='35' specularConstant='0.5' specularExponent='20' lighting-color='hsl(23deg, 0%, 81%)' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='hsl(202deg, 46%, 72%)'%3E%3C/rect%3E%3Crect width='700' height='700' fill='hsl(23deg, 0%, 81%)' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='35' specularConstant='0.5' specularExponent='20' lighting-color='hsl(23deg, 0%, 81%)' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='hsl(151deg, 24%, 60%)'%3E%3C/rect%3E%3Crect width='700' height='700' fill='hsl(23deg, 0%, 81%)' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E") !important;
     transition: 350ms;
   }
   .btn.texture-tertiary:hover {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='35' specularConstant='0.5' specularExponent='20' lighting-color='hsl(202deg, 46%, 72%)' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='transparent'%3E%3C/rect%3E%3Crect width='700' height='700' fill='hsl(202deg, 46%, 72%)' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='35' specularConstant='0.5' specularExponent='20' lighting-color='hsl(151deg, 24%, 60%)' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='transparent'%3E%3C/rect%3E%3Crect width='700' height='700' fill='hsl(151deg, 24%, 60%)' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E") !important;
   }
 }
 
@@ -13213,7 +14167,7 @@ p {
 }
 @media (prefers-color-scheme: dark) {
   .texture-offset {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='35' specularConstant='0.5' specularExponent='20' lighting-color='hsl(23deg, 0%, 81%)' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='hsl(12deg, 83%, 62%)'%3E%3C/rect%3E%3Crect width='700' height='700' fill='hsl(23deg, 0%, 81%)' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='35' specularConstant='0.5' specularExponent='20' lighting-color='hsl(23deg, 0%, 81%)' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='hsl(202deg, 46%, 72%)'%3E%3C/rect%3E%3Crect width='700' height='700' fill='hsl(23deg, 0%, 81%)' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E") !important;
   }
 }
 
@@ -13228,10 +14182,10 @@ p {
 }
 @media (prefers-color-scheme: dark) {
   .btn.texture-offset {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='35' specularConstant='0.5' specularExponent='20' lighting-color='hsl(23deg, 0%, 81%)' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='hsl(12deg, 83%, 62%)'%3E%3C/rect%3E%3Crect width='700' height='700' fill='hsl(23deg, 0%, 81%)' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='35' specularConstant='0.5' specularExponent='20' lighting-color='hsl(23deg, 0%, 81%)' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='hsl(202deg, 46%, 72%)'%3E%3C/rect%3E%3Crect width='700' height='700' fill='hsl(23deg, 0%, 81%)' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E") !important;
     transition: 350ms;
   }
   .btn.texture-offset:hover {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='35' specularConstant='0.5' specularExponent='20' lighting-color='hsl(12deg, 83%, 62%)' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='transparent'%3E%3C/rect%3E%3Crect width='700' height='700' fill='hsl(12deg, 83%, 62%)' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='35' specularConstant='0.5' specularExponent='20' lighting-color='hsl(202deg, 46%, 72%)' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='transparent'%3E%3C/rect%3E%3Crect width='700' height='700' fill='hsl(202deg, 46%, 72%)' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E") !important;
   }
 }

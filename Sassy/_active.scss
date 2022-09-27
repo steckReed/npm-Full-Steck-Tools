@@ -23,25 +23,25 @@
             $valueDark  : map-get($valueChild, 'dark');
             
             @include light-theme{
-              color: $light-primary;
+              color: $dark-text-primary;
 
               @include active(
                 $border-size      : 4px,
                 $border-style     : solid,
                 $border-color     : $valueLight,
                 $border-radius    : 0.25rem,
-                $background-color : $dark-primary,
+                $background-color : $dark-background,
               );
             }
             @include dark-theme{
-              color: $dark-primary;
+              color: $light-text-primary;
               
               @include active(
                 $border-size      : 4px,
                 $border-style     : solid,
                 $border-color     : $valueDark,
                 $border-radius    : 0.25rem,
-                $background-color : $light-primary,
+                $background-color : $light-background,
               );
             }
 
@@ -49,25 +49,25 @@
           @else{
 
             @include light-theme{
-              color: $light-primary;
+              color: $dark-text-primary;
 
               @include active(
                 $border-size      : 4px,
                 $border-style     : solid,
                 $border-color     : $valueChild,
                 $border-radius    : 0.25rem,
-                $background-color : $dark-primary,
+                $background-color : $dark-background,
               );
             }
             @include dark-theme{
-              color: $dark-primary;
+              color: $light-text-primary;
 
               @include active(
                 $border-size      : 4px,
                 $border-style     : solid,
                 $border-color     : $valueChild,
                 $border-radius    : 0.25rem,
-                $background-color :  $light-primary,
+                $background-color :  $light-background,
               );
             }
 

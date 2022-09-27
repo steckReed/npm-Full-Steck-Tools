@@ -13,10 +13,10 @@ $fs-border-tags: (
 
 // Mixins
   @mixin border-style(
-      $border-size    : 6px, 
+      $border-size    : 4px, 
       $border-style   : dotted, 
       $border-color   :black, 
-      $border-radius  : 1rem,
+      $border-radius  : 0.5rem,
       $transition     : 250ms
     ){ 
     border:$border-size $border-style $border-color; 
@@ -144,14 +144,14 @@ $fs-border-tags: (
           $valueDark  : map-get($value, 'dark');
 
           @include light-theme{
-            @include border-style(6px, $valueBorder, $valueLight, 1rem, 250ms);
+            @include border-style(4px, $valueBorder, $valueLight, 0.5rem, 250ms);
           }
           @include dark-theme{
-            @include border-style(6px, $valueBorder, $valueDark, 1rem, 250ms);
+            @include border-style(4px, $valueBorder, $valueDark, 0.5rem, 250ms);
           }
         }
         @else{
-            @include border-style(6px, $valueBorder, $value, 1rem, 250ms);
+            @include border-style(4px, $valueBorder, $value, 0.5rem, 250ms);
         }
         
       }

@@ -139,7 +139,7 @@ $fs-flex-container-flex-wrap: (
     @include container();
   }
   grid-container,
-  grid-container {
+  .grid-container {
     @include grid-container();
     @include container(100vh, 100vw);
   }

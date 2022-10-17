@@ -22,7 +22,8 @@ $fs-flex-container-flex-wrap: (
 @mixin auto-grid-tag-class-generator($key, $value){
   // @each $keyContainer, $valueContainer in $fs-container-tags{
     // Grid
-      grid-#{$key} {
+      grid-#{$key},
+      .grid-#{$key} {
         @include grid-container();
         @include container();
 
@@ -37,7 +38,8 @@ $fs-flex-container-flex-wrap: (
           background-color: $value;
         }
       }
-      grid-container-#{$key} {
+      grid-container-#{$key},
+      .grid-container-#{$key} {
         @include grid-container();
         @include container(100vh, 100vw);
         
@@ -56,7 +58,8 @@ $fs-flex-container-flex-wrap: (
       
     // Flex
       // Defaults
-        flex-#{$key} {
+        flex-#{$key},
+        .flex-#{$key} {
           @include flex-container();
           @include container();
 
@@ -71,7 +74,8 @@ $fs-flex-container-flex-wrap: (
             background-color: $value;
           }
         }
-        flex-container-#{$key} {
+        flex-container-#{$key},
+        .flex-container-#{$key} {
           @include flex-container();
           @include container(100vh, 100vw);
           
@@ -90,7 +94,8 @@ $fs-flex-container-flex-wrap: (
       
       // Flex Wrap
         @each $keyFlexWrap, $valueFlexWrap in $fs-flex-container-flex-wrap{
-          flex-#{$keyFlexWrap}-#{$key} {
+          flex-#{$keyFlexWrap}-#{$key},
+          .flex-#{$keyFlexWrap}-#{$key} {
             @include flex-container();
             @include container();
 
@@ -105,7 +110,8 @@ $fs-flex-container-flex-wrap: (
               background-color: $value;
             }
           }
-          flex-container-#{$keyFlexWrap}-#{$key} {
+          flex-container-#{$keyFlexWrap}-#{$key},
+          .flex-container-#{$keyFlexWrap}-#{$key} {
             @include flex-container();
             @include container(100vh, 100vw);
             
@@ -127,28 +133,34 @@ $fs-flex-container-flex-wrap: (
 }
 
 // Default Tags
-  grid {
+  grid,
+  .grid {
     @include grid-container();
     @include container();
   }
+  grid-container,
   grid-container {
     @include grid-container();
     @include container(100vh, 100vw);
   }
-  flex {
+  flex ,
+  .flex {
     @include flex-container();
     @include container();
   }
-  flex-wrap {
+  flex-wrap,
+  .flex-wrap {
     @include flex-container();
     @include container();
     flex-wrap: wrap;
   }
-  flex-container {
+  flex-container,
+  .flex-container {
     @include flex-container();
     @include container(100vh, 100vw);
   }
-  flex-container-wrap {
+  flex-container-wrap,
+  .flex-container-wrap {
     @include flex-container();
     @include container(100vh, 100vw);
     flex-wrap: wrap;

@@ -1,14 +1,13 @@
 @use "sass:map";
 
-// Globals (ORDER MATTERS)
+// Globals
 @import './logic';
 @import '_fs-animations';
 @import './colors';
 @import './color-map';
-// @import './automated-a11y-sass/a11y-color'; # <- Depricated
 @import './variables';
 @import './color-theme';
-@import './a11y-colors';
+@import './a11y-color';
 @import './hovers';
 @import './accessibility';
 @import './display';
@@ -19,11 +18,12 @@
 @import './global';
 @import './positioning';
 
-// Everything Else
+// Styles, Layouts, Etc.
 @import './active';
 @import './backgrounds';
 @import './borders';
 @import './buttons';
+@import './disabled';
 @import './icons';
 @import './modals';
 @import './spellchecker';

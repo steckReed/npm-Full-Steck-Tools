@@ -517,7 +517,8 @@
   grid-row: unset;
 }
 
-grid {
+grid,
+.grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -532,7 +533,8 @@ grid {
   margin: auto;
 }
 
-grid-container {
+grid-container,
+.grid-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -547,9 +549,10 @@ grid-container {
   margin: auto;
 }
 
-flex {
+flex,
+.flex {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -558,9 +561,10 @@ flex {
   margin: auto;
 }
 
-flex-wrap {
+flex-wrap,
+.flex-wrap {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -570,9 +574,10 @@ flex-wrap {
   flex-wrap: wrap;
 }
 
-flex-container {
+flex-container,
+.flex-container {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -581,9 +586,10 @@ flex-container {
   margin: auto;
 }
 
-flex-container-wrap {
+flex-container-wrap,
+.flex-container-wrap {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -593,7 +599,8 @@ flex-container-wrap {
   flex-wrap: wrap;
 }
 
-grid-white {
+grid-white,
+.grid-white {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -609,7 +616,8 @@ grid-white {
   background-color: hsl(0deg, 0%, 100%);
 }
 
-grid-container-white {
+grid-container-white,
+.grid-container-white {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -625,9 +633,10 @@ grid-container-white {
   background-color: hsl(0deg, 0%, 100%);
 }
 
-flex-white {
+flex-white,
+.flex-white {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -637,9 +646,10 @@ flex-white {
   background-color: hsl(0deg, 0%, 100%);
 }
 
-flex-container-white {
+flex-container-white,
+.flex-container-white {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -649,9 +659,10 @@ flex-container-white {
   background-color: hsl(0deg, 0%, 100%);
 }
 
-flex-wrap-white {
+flex-wrap-white,
+.flex-wrap-white {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -661,9 +672,10 @@ flex-wrap-white {
   background-color: hsl(0deg, 0%, 100%);
 }
 
-flex-container-wrap-white {
+flex-container-wrap-white,
+.flex-container-wrap-white {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -673,9 +685,10 @@ flex-container-wrap-white {
   background-color: hsl(0deg, 0%, 100%);
 }
 
-flex-wrap-reverse-white {
+flex-wrap-reverse-white,
+.flex-wrap-reverse-white {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -685,9 +698,10 @@ flex-wrap-reverse-white {
   background-color: hsl(0deg, 0%, 100%);
 }
 
-flex-container-wrap-reverse-white {
+flex-container-wrap-reverse-white,
+.flex-container-wrap-reverse-white {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -697,7 +711,8 @@ flex-container-wrap-reverse-white {
   background-color: hsl(0deg, 0%, 100%);
 }
 
-grid-offWhite {
+grid-offWhite,
+.grid-offWhite {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -713,7 +728,8 @@ grid-offWhite {
   background-color: hsl(0deg, 33%, 98%);
 }
 
-grid-container-offWhite {
+grid-container-offWhite,
+.grid-container-offWhite {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -729,9 +745,10 @@ grid-container-offWhite {
   background-color: hsl(0deg, 33%, 98%);
 }
 
-flex-offWhite {
+flex-offWhite,
+.flex-offWhite {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -741,9 +758,10 @@ flex-offWhite {
   background-color: hsl(0deg, 33%, 98%);
 }
 
-flex-container-offWhite {
+flex-container-offWhite,
+.flex-container-offWhite {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -753,9 +771,10 @@ flex-container-offWhite {
   background-color: hsl(0deg, 33%, 98%);
 }
 
-flex-wrap-offWhite {
+flex-wrap-offWhite,
+.flex-wrap-offWhite {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -765,9 +784,10 @@ flex-wrap-offWhite {
   background-color: hsl(0deg, 33%, 98%);
 }
 
-flex-container-wrap-offWhite {
+flex-container-wrap-offWhite,
+.flex-container-wrap-offWhite {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -777,9 +797,10 @@ flex-container-wrap-offWhite {
   background-color: hsl(0deg, 33%, 98%);
 }
 
-flex-wrap-reverse-offWhite {
+flex-wrap-reverse-offWhite,
+.flex-wrap-reverse-offWhite {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -789,9 +810,10 @@ flex-wrap-reverse-offWhite {
   background-color: hsl(0deg, 33%, 98%);
 }
 
-flex-container-wrap-reverse-offWhite {
+flex-container-wrap-reverse-offWhite,
+.flex-container-wrap-reverse-offWhite {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -801,7 +823,8 @@ flex-container-wrap-reverse-offWhite {
   background-color: hsl(0deg, 33%, 98%);
 }
 
-grid-mutedWhite {
+grid-mutedWhite,
+.grid-mutedWhite {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -817,7 +840,8 @@ grid-mutedWhite {
   background-color: hsl(210deg, 18%, 87%);
 }
 
-grid-container-mutedWhite {
+grid-container-mutedWhite,
+.grid-container-mutedWhite {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -833,9 +857,10 @@ grid-container-mutedWhite {
   background-color: hsl(210deg, 18%, 87%);
 }
 
-flex-mutedWhite {
+flex-mutedWhite,
+.flex-mutedWhite {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -845,9 +870,10 @@ flex-mutedWhite {
   background-color: hsl(210deg, 18%, 87%);
 }
 
-flex-container-mutedWhite {
+flex-container-mutedWhite,
+.flex-container-mutedWhite {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -857,9 +883,10 @@ flex-container-mutedWhite {
   background-color: hsl(210deg, 18%, 87%);
 }
 
-flex-wrap-mutedWhite {
+flex-wrap-mutedWhite,
+.flex-wrap-mutedWhite {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -869,9 +896,10 @@ flex-wrap-mutedWhite {
   background-color: hsl(210deg, 18%, 87%);
 }
 
-flex-container-wrap-mutedWhite {
+flex-container-wrap-mutedWhite,
+.flex-container-wrap-mutedWhite {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -881,9 +909,10 @@ flex-container-wrap-mutedWhite {
   background-color: hsl(210deg, 18%, 87%);
 }
 
-flex-wrap-reverse-mutedWhite {
+flex-wrap-reverse-mutedWhite,
+.flex-wrap-reverse-mutedWhite {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -893,9 +922,10 @@ flex-wrap-reverse-mutedWhite {
   background-color: hsl(210deg, 18%, 87%);
 }
 
-flex-container-wrap-reverse-mutedWhite {
+flex-container-wrap-reverse-mutedWhite,
+.flex-container-wrap-reverse-mutedWhite {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -905,7 +935,8 @@ flex-container-wrap-reverse-mutedWhite {
   background-color: hsl(210deg, 18%, 87%);
 }
 
-grid-black {
+grid-black,
+.grid-black {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -921,7 +952,8 @@ grid-black {
   background-color: hsl(0deg, 0%, 7%);
 }
 
-grid-container-black {
+grid-container-black,
+.grid-container-black {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -937,9 +969,10 @@ grid-container-black {
   background-color: hsl(0deg, 0%, 7%);
 }
 
-flex-black {
+flex-black,
+.flex-black {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -949,9 +982,10 @@ flex-black {
   background-color: hsl(0deg, 0%, 7%);
 }
 
-flex-container-black {
+flex-container-black,
+.flex-container-black {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -961,9 +995,10 @@ flex-container-black {
   background-color: hsl(0deg, 0%, 7%);
 }
 
-flex-wrap-black {
+flex-wrap-black,
+.flex-wrap-black {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -973,9 +1008,10 @@ flex-wrap-black {
   background-color: hsl(0deg, 0%, 7%);
 }
 
-flex-container-wrap-black {
+flex-container-wrap-black,
+.flex-container-wrap-black {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -985,9 +1021,10 @@ flex-container-wrap-black {
   background-color: hsl(0deg, 0%, 7%);
 }
 
-flex-wrap-reverse-black {
+flex-wrap-reverse-black,
+.flex-wrap-reverse-black {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -997,9 +1034,10 @@ flex-wrap-reverse-black {
   background-color: hsl(0deg, 0%, 7%);
 }
 
-flex-container-wrap-reverse-black {
+flex-container-wrap-reverse-black,
+.flex-container-wrap-reverse-black {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1009,7 +1047,8 @@ flex-container-wrap-reverse-black {
   background-color: hsl(0deg, 0%, 7%);
 }
 
-grid-offBlack {
+grid-offBlack,
+.grid-offBlack {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -1025,7 +1064,8 @@ grid-offBlack {
   background-color: hsl(0deg, 0%, 11%);
 }
 
-grid-container-offBlack {
+grid-container-offBlack,
+.grid-container-offBlack {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -1041,9 +1081,10 @@ grid-container-offBlack {
   background-color: hsl(0deg, 0%, 11%);
 }
 
-flex-offBlack {
+flex-offBlack,
+.flex-offBlack {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1053,9 +1094,10 @@ flex-offBlack {
   background-color: hsl(0deg, 0%, 11%);
 }
 
-flex-container-offBlack {
+flex-container-offBlack,
+.flex-container-offBlack {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1065,9 +1107,10 @@ flex-container-offBlack {
   background-color: hsl(0deg, 0%, 11%);
 }
 
-flex-wrap-offBlack {
+flex-wrap-offBlack,
+.flex-wrap-offBlack {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1077,9 +1120,10 @@ flex-wrap-offBlack {
   background-color: hsl(0deg, 0%, 11%);
 }
 
-flex-container-wrap-offBlack {
+flex-container-wrap-offBlack,
+.flex-container-wrap-offBlack {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1089,9 +1133,10 @@ flex-container-wrap-offBlack {
   background-color: hsl(0deg, 0%, 11%);
 }
 
-flex-wrap-reverse-offBlack {
+flex-wrap-reverse-offBlack,
+.flex-wrap-reverse-offBlack {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1101,9 +1146,10 @@ flex-wrap-reverse-offBlack {
   background-color: hsl(0deg, 0%, 11%);
 }
 
-flex-container-wrap-reverse-offBlack {
+flex-container-wrap-reverse-offBlack,
+.flex-container-wrap-reverse-offBlack {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1113,7 +1159,8 @@ flex-container-wrap-reverse-offBlack {
   background-color: hsl(0deg, 0%, 11%);
 }
 
-grid-mutedBlack {
+grid-mutedBlack,
+.grid-mutedBlack {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -1129,7 +1176,8 @@ grid-mutedBlack {
   background-color: hsl(0deg, 0%, 15%);
 }
 
-grid-container-mutedBlack {
+grid-container-mutedBlack,
+.grid-container-mutedBlack {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -1145,9 +1193,10 @@ grid-container-mutedBlack {
   background-color: hsl(0deg, 0%, 15%);
 }
 
-flex-mutedBlack {
+flex-mutedBlack,
+.flex-mutedBlack {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1157,9 +1206,10 @@ flex-mutedBlack {
   background-color: hsl(0deg, 0%, 15%);
 }
 
-flex-container-mutedBlack {
+flex-container-mutedBlack,
+.flex-container-mutedBlack {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1169,9 +1219,10 @@ flex-container-mutedBlack {
   background-color: hsl(0deg, 0%, 15%);
 }
 
-flex-wrap-mutedBlack {
+flex-wrap-mutedBlack,
+.flex-wrap-mutedBlack {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1181,9 +1232,10 @@ flex-wrap-mutedBlack {
   background-color: hsl(0deg, 0%, 15%);
 }
 
-flex-container-wrap-mutedBlack {
+flex-container-wrap-mutedBlack,
+.flex-container-wrap-mutedBlack {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1193,9 +1245,10 @@ flex-container-wrap-mutedBlack {
   background-color: hsl(0deg, 0%, 15%);
 }
 
-flex-wrap-reverse-mutedBlack {
+flex-wrap-reverse-mutedBlack,
+.flex-wrap-reverse-mutedBlack {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1205,9 +1258,10 @@ flex-wrap-reverse-mutedBlack {
   background-color: hsl(0deg, 0%, 15%);
 }
 
-flex-container-wrap-reverse-mutedBlack {
+flex-container-wrap-reverse-mutedBlack,
+.flex-container-wrap-reverse-mutedBlack {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1217,7 +1271,8 @@ flex-container-wrap-reverse-mutedBlack {
   background-color: hsl(0deg, 0%, 15%);
 }
 
-grid-gray {
+grid-gray,
+.grid-gray {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -1233,7 +1288,8 @@ grid-gray {
   background-color: hsl(0deg, 0%, 50%);
 }
 
-grid-container-gray {
+grid-container-gray,
+.grid-container-gray {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -1249,9 +1305,10 @@ grid-container-gray {
   background-color: hsl(0deg, 0%, 50%);
 }
 
-flex-gray {
+flex-gray,
+.flex-gray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1261,9 +1318,10 @@ flex-gray {
   background-color: hsl(0deg, 0%, 50%);
 }
 
-flex-container-gray {
+flex-container-gray,
+.flex-container-gray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1273,9 +1331,10 @@ flex-container-gray {
   background-color: hsl(0deg, 0%, 50%);
 }
 
-flex-wrap-gray {
+flex-wrap-gray,
+.flex-wrap-gray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1285,9 +1344,10 @@ flex-wrap-gray {
   background-color: hsl(0deg, 0%, 50%);
 }
 
-flex-container-wrap-gray {
+flex-container-wrap-gray,
+.flex-container-wrap-gray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1297,9 +1357,10 @@ flex-container-wrap-gray {
   background-color: hsl(0deg, 0%, 50%);
 }
 
-flex-wrap-reverse-gray {
+flex-wrap-reverse-gray,
+.flex-wrap-reverse-gray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1309,9 +1370,10 @@ flex-wrap-reverse-gray {
   background-color: hsl(0deg, 0%, 50%);
 }
 
-flex-container-wrap-reverse-gray {
+flex-container-wrap-reverse-gray,
+.flex-container-wrap-reverse-gray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1321,7 +1383,8 @@ flex-container-wrap-reverse-gray {
   background-color: hsl(0deg, 0%, 50%);
 }
 
-grid-offGray {
+grid-offGray,
+.grid-offGray {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -1337,7 +1400,8 @@ grid-offGray {
   background-color: hsl(0deg, 0%, 73%);
 }
 
-grid-container-offGray {
+grid-container-offGray,
+.grid-container-offGray {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -1353,9 +1417,10 @@ grid-container-offGray {
   background-color: hsl(0deg, 0%, 73%);
 }
 
-flex-offGray {
+flex-offGray,
+.flex-offGray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1365,9 +1430,10 @@ flex-offGray {
   background-color: hsl(0deg, 0%, 73%);
 }
 
-flex-container-offGray {
+flex-container-offGray,
+.flex-container-offGray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1377,9 +1443,10 @@ flex-container-offGray {
   background-color: hsl(0deg, 0%, 73%);
 }
 
-flex-wrap-offGray {
+flex-wrap-offGray,
+.flex-wrap-offGray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1389,9 +1456,10 @@ flex-wrap-offGray {
   background-color: hsl(0deg, 0%, 73%);
 }
 
-flex-container-wrap-offGray {
+flex-container-wrap-offGray,
+.flex-container-wrap-offGray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1401,9 +1469,10 @@ flex-container-wrap-offGray {
   background-color: hsl(0deg, 0%, 73%);
 }
 
-flex-wrap-reverse-offGray {
+flex-wrap-reverse-offGray,
+.flex-wrap-reverse-offGray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1413,9 +1482,10 @@ flex-wrap-reverse-offGray {
   background-color: hsl(0deg, 0%, 73%);
 }
 
-flex-container-wrap-reverse-offGray {
+flex-container-wrap-reverse-offGray,
+.flex-container-wrap-reverse-offGray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1425,7 +1495,8 @@ flex-container-wrap-reverse-offGray {
   background-color: hsl(0deg, 0%, 73%);
 }
 
-grid-lightGray {
+grid-lightGray,
+.grid-lightGray {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -1441,7 +1512,8 @@ grid-lightGray {
   background-color: hsl(0deg, 0%, 84%);
 }
 
-grid-container-lightGray {
+grid-container-lightGray,
+.grid-container-lightGray {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -1457,9 +1529,10 @@ grid-container-lightGray {
   background-color: hsl(0deg, 0%, 84%);
 }
 
-flex-lightGray {
+flex-lightGray,
+.flex-lightGray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1469,9 +1542,10 @@ flex-lightGray {
   background-color: hsl(0deg, 0%, 84%);
 }
 
-flex-container-lightGray {
+flex-container-lightGray,
+.flex-container-lightGray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1481,9 +1555,10 @@ flex-container-lightGray {
   background-color: hsl(0deg, 0%, 84%);
 }
 
-flex-wrap-lightGray {
+flex-wrap-lightGray,
+.flex-wrap-lightGray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1493,9 +1568,10 @@ flex-wrap-lightGray {
   background-color: hsl(0deg, 0%, 84%);
 }
 
-flex-container-wrap-lightGray {
+flex-container-wrap-lightGray,
+.flex-container-wrap-lightGray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1505,9 +1581,10 @@ flex-container-wrap-lightGray {
   background-color: hsl(0deg, 0%, 84%);
 }
 
-flex-wrap-reverse-lightGray {
+flex-wrap-reverse-lightGray,
+.flex-wrap-reverse-lightGray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1517,9 +1594,10 @@ flex-wrap-reverse-lightGray {
   background-color: hsl(0deg, 0%, 84%);
 }
 
-flex-container-wrap-reverse-lightGray {
+flex-container-wrap-reverse-lightGray,
+.flex-container-wrap-reverse-lightGray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1529,7 +1607,8 @@ flex-container-wrap-reverse-lightGray {
   background-color: hsl(0deg, 0%, 84%);
 }
 
-grid-darkGray {
+grid-darkGray,
+.grid-darkGray {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -1545,7 +1624,8 @@ grid-darkGray {
   background-color: hsl(0deg, 0%, 25%);
 }
 
-grid-container-darkGray {
+grid-container-darkGray,
+.grid-container-darkGray {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -1561,9 +1641,10 @@ grid-container-darkGray {
   background-color: hsl(0deg, 0%, 25%);
 }
 
-flex-darkGray {
+flex-darkGray,
+.flex-darkGray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1573,9 +1654,10 @@ flex-darkGray {
   background-color: hsl(0deg, 0%, 25%);
 }
 
-flex-container-darkGray {
+flex-container-darkGray,
+.flex-container-darkGray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1585,9 +1667,10 @@ flex-container-darkGray {
   background-color: hsl(0deg, 0%, 25%);
 }
 
-flex-wrap-darkGray {
+flex-wrap-darkGray,
+.flex-wrap-darkGray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1597,9 +1680,10 @@ flex-wrap-darkGray {
   background-color: hsl(0deg, 0%, 25%);
 }
 
-flex-container-wrap-darkGray {
+flex-container-wrap-darkGray,
+.flex-container-wrap-darkGray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1609,9 +1693,10 @@ flex-container-wrap-darkGray {
   background-color: hsl(0deg, 0%, 25%);
 }
 
-flex-wrap-reverse-darkGray {
+flex-wrap-reverse-darkGray,
+.flex-wrap-reverse-darkGray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1621,9 +1706,10 @@ flex-wrap-reverse-darkGray {
   background-color: hsl(0deg, 0%, 25%);
 }
 
-flex-container-wrap-reverse-darkGray {
+flex-container-wrap-reverse-darkGray,
+.flex-container-wrap-reverse-darkGray {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1633,7 +1719,8 @@ flex-container-wrap-reverse-darkGray {
   background-color: hsl(0deg, 0%, 25%);
 }
 
-grid-success {
+grid-success,
+.grid-success {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -1649,7 +1736,8 @@ grid-success {
   background-color: hsl(134deg, 61%, 41%);
 }
 
-grid-container-success {
+grid-container-success,
+.grid-container-success {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -1665,9 +1753,10 @@ grid-container-success {
   background-color: hsl(134deg, 61%, 41%);
 }
 
-flex-success {
+flex-success,
+.flex-success {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1677,9 +1766,10 @@ flex-success {
   background-color: hsl(134deg, 61%, 41%);
 }
 
-flex-container-success {
+flex-container-success,
+.flex-container-success {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1689,9 +1779,10 @@ flex-container-success {
   background-color: hsl(134deg, 61%, 41%);
 }
 
-flex-wrap-success {
+flex-wrap-success,
+.flex-wrap-success {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1701,9 +1792,10 @@ flex-wrap-success {
   background-color: hsl(134deg, 61%, 41%);
 }
 
-flex-container-wrap-success {
+flex-container-wrap-success,
+.flex-container-wrap-success {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1713,9 +1805,10 @@ flex-container-wrap-success {
   background-color: hsl(134deg, 61%, 41%);
 }
 
-flex-wrap-reverse-success {
+flex-wrap-reverse-success,
+.flex-wrap-reverse-success {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1725,9 +1818,10 @@ flex-wrap-reverse-success {
   background-color: hsl(134deg, 61%, 41%);
 }
 
-flex-container-wrap-reverse-success {
+flex-container-wrap-reverse-success,
+.flex-container-wrap-reverse-success {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1737,7 +1831,8 @@ flex-container-wrap-reverse-success {
   background-color: hsl(134deg, 61%, 41%);
 }
 
-grid-info {
+grid-info,
+.grid-info {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -1753,7 +1848,8 @@ grid-info {
   background-color: hsl(190deg, 90%, 50%);
 }
 
-grid-container-info {
+grid-container-info,
+.grid-container-info {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -1769,9 +1865,10 @@ grid-container-info {
   background-color: hsl(190deg, 90%, 50%);
 }
 
-flex-info {
+flex-info,
+.flex-info {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1781,9 +1878,10 @@ flex-info {
   background-color: hsl(190deg, 90%, 50%);
 }
 
-flex-container-info {
+flex-container-info,
+.flex-container-info {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1793,9 +1891,10 @@ flex-container-info {
   background-color: hsl(190deg, 90%, 50%);
 }
 
-flex-wrap-info {
+flex-wrap-info,
+.flex-wrap-info {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1805,9 +1904,10 @@ flex-wrap-info {
   background-color: hsl(190deg, 90%, 50%);
 }
 
-flex-container-wrap-info {
+flex-container-wrap-info,
+.flex-container-wrap-info {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1817,9 +1917,10 @@ flex-container-wrap-info {
   background-color: hsl(190deg, 90%, 50%);
 }
 
-flex-wrap-reverse-info {
+flex-wrap-reverse-info,
+.flex-wrap-reverse-info {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1829,9 +1930,10 @@ flex-wrap-reverse-info {
   background-color: hsl(190deg, 90%, 50%);
 }
 
-flex-container-wrap-reverse-info {
+flex-container-wrap-reverse-info,
+.flex-container-wrap-reverse-info {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1841,7 +1943,8 @@ flex-container-wrap-reverse-info {
   background-color: hsl(190deg, 90%, 50%);
 }
 
-grid-warning {
+grid-warning,
+.grid-warning {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -1857,7 +1960,8 @@ grid-warning {
   background-color: hsl(27deg, 98%, 54%);
 }
 
-grid-container-warning {
+grid-container-warning,
+.grid-container-warning {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -1873,9 +1977,10 @@ grid-container-warning {
   background-color: hsl(27deg, 98%, 54%);
 }
 
-flex-warning {
+flex-warning,
+.flex-warning {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1885,9 +1990,10 @@ flex-warning {
   background-color: hsl(27deg, 98%, 54%);
 }
 
-flex-container-warning {
+flex-container-warning,
+.flex-container-warning {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1897,9 +2003,10 @@ flex-container-warning {
   background-color: hsl(27deg, 98%, 54%);
 }
 
-flex-wrap-warning {
+flex-wrap-warning,
+.flex-wrap-warning {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1909,9 +2016,10 @@ flex-wrap-warning {
   background-color: hsl(27deg, 98%, 54%);
 }
 
-flex-container-wrap-warning {
+flex-container-wrap-warning,
+.flex-container-wrap-warning {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1921,9 +2029,10 @@ flex-container-wrap-warning {
   background-color: hsl(27deg, 98%, 54%);
 }
 
-flex-wrap-reverse-warning {
+flex-wrap-reverse-warning,
+.flex-wrap-reverse-warning {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1933,9 +2042,10 @@ flex-wrap-reverse-warning {
   background-color: hsl(27deg, 98%, 54%);
 }
 
-flex-container-wrap-reverse-warning {
+flex-container-wrap-reverse-warning,
+.flex-container-wrap-reverse-warning {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1945,7 +2055,8 @@ flex-container-wrap-reverse-warning {
   background-color: hsl(27deg, 98%, 54%);
 }
 
-grid-danger {
+grid-danger,
+.grid-danger {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -1961,7 +2072,8 @@ grid-danger {
   background-color: hsl(354deg, 70%, 54%);
 }
 
-grid-container-danger {
+grid-container-danger,
+.grid-container-danger {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -1977,9 +2089,10 @@ grid-container-danger {
   background-color: hsl(354deg, 70%, 54%);
 }
 
-flex-danger {
+flex-danger,
+.flex-danger {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -1989,9 +2102,10 @@ flex-danger {
   background-color: hsl(354deg, 70%, 54%);
 }
 
-flex-container-danger {
+flex-container-danger,
+.flex-container-danger {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2001,9 +2115,10 @@ flex-container-danger {
   background-color: hsl(354deg, 70%, 54%);
 }
 
-flex-wrap-danger {
+flex-wrap-danger,
+.flex-wrap-danger {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2013,9 +2128,10 @@ flex-wrap-danger {
   background-color: hsl(354deg, 70%, 54%);
 }
 
-flex-container-wrap-danger {
+flex-container-wrap-danger,
+.flex-container-wrap-danger {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2025,9 +2141,10 @@ flex-container-wrap-danger {
   background-color: hsl(354deg, 70%, 54%);
 }
 
-flex-wrap-reverse-danger {
+flex-wrap-reverse-danger,
+.flex-wrap-reverse-danger {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2037,9 +2154,10 @@ flex-wrap-reverse-danger {
   background-color: hsl(354deg, 70%, 54%);
 }
 
-flex-container-wrap-reverse-danger {
+flex-container-wrap-reverse-danger,
+.flex-container-wrap-reverse-danger {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2049,7 +2167,8 @@ flex-container-wrap-reverse-danger {
   background-color: hsl(354deg, 70%, 54%);
 }
 
-grid-alert {
+grid-alert,
+.grid-alert {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -2065,7 +2184,8 @@ grid-alert {
   background-color: hsl(51deg, 100%, 51%);
 }
 
-grid-container-alert {
+grid-container-alert,
+.grid-container-alert {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -2081,9 +2201,10 @@ grid-container-alert {
   background-color: hsl(51deg, 100%, 51%);
 }
 
-flex-alert {
+flex-alert,
+.flex-alert {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2093,9 +2214,10 @@ flex-alert {
   background-color: hsl(51deg, 100%, 51%);
 }
 
-flex-container-alert {
+flex-container-alert,
+.flex-container-alert {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2105,9 +2227,10 @@ flex-container-alert {
   background-color: hsl(51deg, 100%, 51%);
 }
 
-flex-wrap-alert {
+flex-wrap-alert,
+.flex-wrap-alert {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2117,9 +2240,10 @@ flex-wrap-alert {
   background-color: hsl(51deg, 100%, 51%);
 }
 
-flex-container-wrap-alert {
+flex-container-wrap-alert,
+.flex-container-wrap-alert {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2129,9 +2253,10 @@ flex-container-wrap-alert {
   background-color: hsl(51deg, 100%, 51%);
 }
 
-flex-wrap-reverse-alert {
+flex-wrap-reverse-alert,
+.flex-wrap-reverse-alert {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2141,9 +2266,10 @@ flex-wrap-reverse-alert {
   background-color: hsl(51deg, 100%, 51%);
 }
 
-flex-container-wrap-reverse-alert {
+flex-container-wrap-reverse-alert,
+.flex-container-wrap-reverse-alert {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2153,7 +2279,8 @@ flex-container-wrap-reverse-alert {
   background-color: hsl(51deg, 100%, 51%);
 }
 
-grid-background {
+grid-background,
+.grid-background {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -2168,17 +2295,20 @@ grid-background {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  grid-background {
+  grid-background,
+.grid-background {
     background-color: hsl(0deg, 0%, 93%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  grid-background {
+  grid-background,
+.grid-background {
     background-color: hsl(218deg, 23%, 21%);
   }
 }
 
-grid-container-background {
+grid-container-background,
+.grid-container-background {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -2193,19 +2323,22 @@ grid-container-background {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  grid-container-background {
+  grid-container-background,
+.grid-container-background {
     background-color: hsl(0deg, 0%, 93%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  grid-container-background {
+  grid-container-background,
+.grid-container-background {
     background-color: hsl(218deg, 23%, 21%);
   }
 }
 
-flex-background {
+flex-background,
+.flex-background {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2214,19 +2347,22 @@ flex-background {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-background {
+  flex-background,
+.flex-background {
     background-color: hsl(0deg, 0%, 93%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-background {
+  flex-background,
+.flex-background {
     background-color: hsl(218deg, 23%, 21%);
   }
 }
 
-flex-container-background {
+flex-container-background,
+.flex-container-background {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2235,19 +2371,22 @@ flex-container-background {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-container-background {
+  flex-container-background,
+.flex-container-background {
     background-color: hsl(0deg, 0%, 93%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-container-background {
+  flex-container-background,
+.flex-container-background {
     background-color: hsl(218deg, 23%, 21%);
   }
 }
 
-flex-wrap-background {
+flex-wrap-background,
+.flex-wrap-background {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2256,19 +2395,22 @@ flex-wrap-background {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-wrap-background {
+  flex-wrap-background,
+.flex-wrap-background {
     background-color: hsl(0deg, 0%, 93%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-wrap-background {
+  flex-wrap-background,
+.flex-wrap-background {
     background-color: hsl(218deg, 23%, 21%);
   }
 }
 
-flex-container-wrap-background {
+flex-container-wrap-background,
+.flex-container-wrap-background {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2277,19 +2419,22 @@ flex-container-wrap-background {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-container-wrap-background {
+  flex-container-wrap-background,
+.flex-container-wrap-background {
     background-color: hsl(0deg, 0%, 93%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-container-wrap-background {
+  flex-container-wrap-background,
+.flex-container-wrap-background {
     background-color: hsl(218deg, 23%, 21%);
   }
 }
 
-flex-wrap-reverse-background {
+flex-wrap-reverse-background,
+.flex-wrap-reverse-background {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2298,19 +2443,22 @@ flex-wrap-reverse-background {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-wrap-reverse-background {
+  flex-wrap-reverse-background,
+.flex-wrap-reverse-background {
     background-color: hsl(0deg, 0%, 93%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-wrap-reverse-background {
+  flex-wrap-reverse-background,
+.flex-wrap-reverse-background {
     background-color: hsl(218deg, 23%, 21%);
   }
 }
 
-flex-container-wrap-reverse-background {
+flex-container-wrap-reverse-background,
+.flex-container-wrap-reverse-background {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2319,17 +2467,20 @@ flex-container-wrap-reverse-background {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-container-wrap-reverse-background {
+  flex-container-wrap-reverse-background,
+.flex-container-wrap-reverse-background {
     background-color: hsl(0deg, 0%, 93%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-container-wrap-reverse-background {
+  flex-container-wrap-reverse-background,
+.flex-container-wrap-reverse-background {
     background-color: hsl(218deg, 23%, 21%);
   }
 }
 
-grid-primary {
+grid-primary,
+.grid-primary {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -2344,17 +2495,20 @@ grid-primary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  grid-primary {
+  grid-primary,
+.grid-primary {
     background-color: hsl(194deg, 100%, 33%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  grid-primary {
+  grid-primary,
+.grid-primary {
     background-color: hsl(214deg, 35%, 37%);
   }
 }
 
-grid-container-primary {
+grid-container-primary,
+.grid-container-primary {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -2369,19 +2523,22 @@ grid-container-primary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  grid-container-primary {
+  grid-container-primary,
+.grid-container-primary {
     background-color: hsl(194deg, 100%, 33%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  grid-container-primary {
+  grid-container-primary,
+.grid-container-primary {
     background-color: hsl(214deg, 35%, 37%);
   }
 }
 
-flex-primary {
+flex-primary,
+.flex-primary {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2390,19 +2547,22 @@ flex-primary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-primary {
+  flex-primary,
+.flex-primary {
     background-color: hsl(194deg, 100%, 33%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-primary {
+  flex-primary,
+.flex-primary {
     background-color: hsl(214deg, 35%, 37%);
   }
 }
 
-flex-container-primary {
+flex-container-primary,
+.flex-container-primary {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2411,19 +2571,22 @@ flex-container-primary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-container-primary {
+  flex-container-primary,
+.flex-container-primary {
     background-color: hsl(194deg, 100%, 33%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-container-primary {
+  flex-container-primary,
+.flex-container-primary {
     background-color: hsl(214deg, 35%, 37%);
   }
 }
 
-flex-wrap-primary {
+flex-wrap-primary,
+.flex-wrap-primary {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2432,19 +2595,22 @@ flex-wrap-primary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-wrap-primary {
+  flex-wrap-primary,
+.flex-wrap-primary {
     background-color: hsl(194deg, 100%, 33%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-wrap-primary {
+  flex-wrap-primary,
+.flex-wrap-primary {
     background-color: hsl(214deg, 35%, 37%);
   }
 }
 
-flex-container-wrap-primary {
+flex-container-wrap-primary,
+.flex-container-wrap-primary {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2453,19 +2619,22 @@ flex-container-wrap-primary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-container-wrap-primary {
+  flex-container-wrap-primary,
+.flex-container-wrap-primary {
     background-color: hsl(194deg, 100%, 33%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-container-wrap-primary {
+  flex-container-wrap-primary,
+.flex-container-wrap-primary {
     background-color: hsl(214deg, 35%, 37%);
   }
 }
 
-flex-wrap-reverse-primary {
+flex-wrap-reverse-primary,
+.flex-wrap-reverse-primary {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2474,19 +2643,22 @@ flex-wrap-reverse-primary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-wrap-reverse-primary {
+  flex-wrap-reverse-primary,
+.flex-wrap-reverse-primary {
     background-color: hsl(194deg, 100%, 33%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-wrap-reverse-primary {
+  flex-wrap-reverse-primary,
+.flex-wrap-reverse-primary {
     background-color: hsl(214deg, 35%, 37%);
   }
 }
 
-flex-container-wrap-reverse-primary {
+flex-container-wrap-reverse-primary,
+.flex-container-wrap-reverse-primary {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2495,17 +2667,20 @@ flex-container-wrap-reverse-primary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-container-wrap-reverse-primary {
+  flex-container-wrap-reverse-primary,
+.flex-container-wrap-reverse-primary {
     background-color: hsl(194deg, 100%, 33%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-container-wrap-reverse-primary {
+  flex-container-wrap-reverse-primary,
+.flex-container-wrap-reverse-primary {
     background-color: hsl(214deg, 35%, 37%);
   }
 }
 
-grid-secondary {
+grid-secondary,
+.grid-secondary {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -2520,17 +2695,20 @@ grid-secondary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  grid-secondary {
+  grid-secondary,
+.grid-secondary {
     background-color: hsl(4deg, 82%, 67%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  grid-secondary {
+  grid-secondary,
+.grid-secondary {
     background-color: hsl(12deg, 83%, 62%);
   }
 }
 
-grid-container-secondary {
+grid-container-secondary,
+.grid-container-secondary {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -2545,19 +2723,22 @@ grid-container-secondary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  grid-container-secondary {
+  grid-container-secondary,
+.grid-container-secondary {
     background-color: hsl(4deg, 82%, 67%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  grid-container-secondary {
+  grid-container-secondary,
+.grid-container-secondary {
     background-color: hsl(12deg, 83%, 62%);
   }
 }
 
-flex-secondary {
+flex-secondary,
+.flex-secondary {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2566,19 +2747,22 @@ flex-secondary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-secondary {
+  flex-secondary,
+.flex-secondary {
     background-color: hsl(4deg, 82%, 67%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-secondary {
+  flex-secondary,
+.flex-secondary {
     background-color: hsl(12deg, 83%, 62%);
   }
 }
 
-flex-container-secondary {
+flex-container-secondary,
+.flex-container-secondary {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2587,19 +2771,22 @@ flex-container-secondary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-container-secondary {
+  flex-container-secondary,
+.flex-container-secondary {
     background-color: hsl(4deg, 82%, 67%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-container-secondary {
+  flex-container-secondary,
+.flex-container-secondary {
     background-color: hsl(12deg, 83%, 62%);
   }
 }
 
-flex-wrap-secondary {
+flex-wrap-secondary,
+.flex-wrap-secondary {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2608,19 +2795,22 @@ flex-wrap-secondary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-wrap-secondary {
+  flex-wrap-secondary,
+.flex-wrap-secondary {
     background-color: hsl(4deg, 82%, 67%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-wrap-secondary {
+  flex-wrap-secondary,
+.flex-wrap-secondary {
     background-color: hsl(12deg, 83%, 62%);
   }
 }
 
-flex-container-wrap-secondary {
+flex-container-wrap-secondary,
+.flex-container-wrap-secondary {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2629,19 +2819,22 @@ flex-container-wrap-secondary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-container-wrap-secondary {
+  flex-container-wrap-secondary,
+.flex-container-wrap-secondary {
     background-color: hsl(4deg, 82%, 67%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-container-wrap-secondary {
+  flex-container-wrap-secondary,
+.flex-container-wrap-secondary {
     background-color: hsl(12deg, 83%, 62%);
   }
 }
 
-flex-wrap-reverse-secondary {
+flex-wrap-reverse-secondary,
+.flex-wrap-reverse-secondary {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2650,19 +2843,22 @@ flex-wrap-reverse-secondary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-wrap-reverse-secondary {
+  flex-wrap-reverse-secondary,
+.flex-wrap-reverse-secondary {
     background-color: hsl(4deg, 82%, 67%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-wrap-reverse-secondary {
+  flex-wrap-reverse-secondary,
+.flex-wrap-reverse-secondary {
     background-color: hsl(12deg, 83%, 62%);
   }
 }
 
-flex-container-wrap-reverse-secondary {
+flex-container-wrap-reverse-secondary,
+.flex-container-wrap-reverse-secondary {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2671,17 +2867,20 @@ flex-container-wrap-reverse-secondary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-container-wrap-reverse-secondary {
+  flex-container-wrap-reverse-secondary,
+.flex-container-wrap-reverse-secondary {
     background-color: hsl(4deg, 82%, 67%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-container-wrap-reverse-secondary {
+  flex-container-wrap-reverse-secondary,
+.flex-container-wrap-reverse-secondary {
     background-color: hsl(12deg, 83%, 62%);
   }
 }
 
-grid-tertiary {
+grid-tertiary,
+.grid-tertiary {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -2696,17 +2895,20 @@ grid-tertiary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  grid-tertiary {
+  grid-tertiary,
+.grid-tertiary {
     background-color: hsl(183deg, 100%, 36%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  grid-tertiary {
+  grid-tertiary,
+.grid-tertiary {
     background-color: hsl(151deg, 24%, 60%);
   }
 }
 
-grid-container-tertiary {
+grid-container-tertiary,
+.grid-container-tertiary {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -2721,19 +2923,22 @@ grid-container-tertiary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  grid-container-tertiary {
+  grid-container-tertiary,
+.grid-container-tertiary {
     background-color: hsl(183deg, 100%, 36%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  grid-container-tertiary {
+  grid-container-tertiary,
+.grid-container-tertiary {
     background-color: hsl(151deg, 24%, 60%);
   }
 }
 
-flex-tertiary {
+flex-tertiary,
+.flex-tertiary {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2742,19 +2947,22 @@ flex-tertiary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-tertiary {
+  flex-tertiary,
+.flex-tertiary {
     background-color: hsl(183deg, 100%, 36%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-tertiary {
+  flex-tertiary,
+.flex-tertiary {
     background-color: hsl(151deg, 24%, 60%);
   }
 }
 
-flex-container-tertiary {
+flex-container-tertiary,
+.flex-container-tertiary {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2763,19 +2971,22 @@ flex-container-tertiary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-container-tertiary {
+  flex-container-tertiary,
+.flex-container-tertiary {
     background-color: hsl(183deg, 100%, 36%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-container-tertiary {
+  flex-container-tertiary,
+.flex-container-tertiary {
     background-color: hsl(151deg, 24%, 60%);
   }
 }
 
-flex-wrap-tertiary {
+flex-wrap-tertiary,
+.flex-wrap-tertiary {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2784,19 +2995,22 @@ flex-wrap-tertiary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-wrap-tertiary {
+  flex-wrap-tertiary,
+.flex-wrap-tertiary {
     background-color: hsl(183deg, 100%, 36%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-wrap-tertiary {
+  flex-wrap-tertiary,
+.flex-wrap-tertiary {
     background-color: hsl(151deg, 24%, 60%);
   }
 }
 
-flex-container-wrap-tertiary {
+flex-container-wrap-tertiary,
+.flex-container-wrap-tertiary {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2805,19 +3019,22 @@ flex-container-wrap-tertiary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-container-wrap-tertiary {
+  flex-container-wrap-tertiary,
+.flex-container-wrap-tertiary {
     background-color: hsl(183deg, 100%, 36%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-container-wrap-tertiary {
+  flex-container-wrap-tertiary,
+.flex-container-wrap-tertiary {
     background-color: hsl(151deg, 24%, 60%);
   }
 }
 
-flex-wrap-reverse-tertiary {
+flex-wrap-reverse-tertiary,
+.flex-wrap-reverse-tertiary {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2826,19 +3043,22 @@ flex-wrap-reverse-tertiary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-wrap-reverse-tertiary {
+  flex-wrap-reverse-tertiary,
+.flex-wrap-reverse-tertiary {
     background-color: hsl(183deg, 100%, 36%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-wrap-reverse-tertiary {
+  flex-wrap-reverse-tertiary,
+.flex-wrap-reverse-tertiary {
     background-color: hsl(151deg, 24%, 60%);
   }
 }
 
-flex-container-wrap-reverse-tertiary {
+flex-container-wrap-reverse-tertiary,
+.flex-container-wrap-reverse-tertiary {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2847,17 +3067,20 @@ flex-container-wrap-reverse-tertiary {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-container-wrap-reverse-tertiary {
+  flex-container-wrap-reverse-tertiary,
+.flex-container-wrap-reverse-tertiary {
     background-color: hsl(183deg, 100%, 36%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-container-wrap-reverse-tertiary {
+  flex-container-wrap-reverse-tertiary,
+.flex-container-wrap-reverse-tertiary {
     background-color: hsl(151deg, 24%, 60%);
   }
 }
 
-grid-offset {
+grid-offset,
+.grid-offset {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -2872,17 +3095,20 @@ grid-offset {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  grid-offset {
+  grid-offset,
+.grid-offset {
     background-color: hsl(29deg, 97%, 86%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  grid-offset {
+  grid-offset,
+.grid-offset {
     background-color: hsl(202deg, 46%, 72%);
   }
 }
 
-grid-container-offset {
+grid-container-offset,
+.grid-container-offset {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -2897,19 +3123,22 @@ grid-container-offset {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  grid-container-offset {
+  grid-container-offset,
+.grid-container-offset {
     background-color: hsl(29deg, 97%, 86%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  grid-container-offset {
+  grid-container-offset,
+.grid-container-offset {
     background-color: hsl(202deg, 46%, 72%);
   }
 }
 
-flex-offset {
+flex-offset,
+.flex-offset {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2918,19 +3147,22 @@ flex-offset {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-offset {
+  flex-offset,
+.flex-offset {
     background-color: hsl(29deg, 97%, 86%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-offset {
+  flex-offset,
+.flex-offset {
     background-color: hsl(202deg, 46%, 72%);
   }
 }
 
-flex-container-offset {
+flex-container-offset,
+.flex-container-offset {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2939,19 +3171,22 @@ flex-container-offset {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-container-offset {
+  flex-container-offset,
+.flex-container-offset {
     background-color: hsl(29deg, 97%, 86%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-container-offset {
+  flex-container-offset,
+.flex-container-offset {
     background-color: hsl(202deg, 46%, 72%);
   }
 }
 
-flex-wrap-offset {
+flex-wrap-offset,
+.flex-wrap-offset {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2960,19 +3195,22 @@ flex-wrap-offset {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-wrap-offset {
+  flex-wrap-offset,
+.flex-wrap-offset {
     background-color: hsl(29deg, 97%, 86%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-wrap-offset {
+  flex-wrap-offset,
+.flex-wrap-offset {
     background-color: hsl(202deg, 46%, 72%);
   }
 }
 
-flex-container-wrap-offset {
+flex-container-wrap-offset,
+.flex-container-wrap-offset {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -2981,19 +3219,22 @@ flex-container-wrap-offset {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-container-wrap-offset {
+  flex-container-wrap-offset,
+.flex-container-wrap-offset {
     background-color: hsl(29deg, 97%, 86%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-container-wrap-offset {
+  flex-container-wrap-offset,
+.flex-container-wrap-offset {
     background-color: hsl(202deg, 46%, 72%);
   }
 }
 
-flex-wrap-reverse-offset {
+flex-wrap-reverse-offset,
+.flex-wrap-reverse-offset {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -3002,19 +3243,22 @@ flex-wrap-reverse-offset {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-wrap-reverse-offset {
+  flex-wrap-reverse-offset,
+.flex-wrap-reverse-offset {
     background-color: hsl(29deg, 97%, 86%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-wrap-reverse-offset {
+  flex-wrap-reverse-offset,
+.flex-wrap-reverse-offset {
     background-color: hsl(202deg, 46%, 72%);
   }
 }
 
-flex-container-wrap-reverse-offset {
+flex-container-wrap-reverse-offset,
+.flex-container-wrap-reverse-offset {
   display: flex;
-  gap: 3.5vmin;
+  gap: 1.25vw;
   background-color: transparent;
   grid-column: 1;
   grid-row: unset;
@@ -3023,12 +3267,14 @@ flex-container-wrap-reverse-offset {
   margin: auto;
 }
 @media (prefers-color-scheme: light) {
-  flex-container-wrap-reverse-offset {
+  flex-container-wrap-reverse-offset,
+.flex-container-wrap-reverse-offset {
     background-color: hsl(29deg, 97%, 86%);
   }
 }
 @media (prefers-color-scheme: dark) {
-  flex-container-wrap-reverse-offset {
+  flex-container-wrap-reverse-offset,
+.flex-container-wrap-reverse-offset {
     background-color: hsl(202deg, 46%, 72%);
   }
 }
@@ -13838,6 +14084,9 @@ p {
   font-size: clamp(0.8125rem, 1.6563vw, 1rem);
 }
 
+/*
+  Textures Created With https://fffuel.co/nnnoise/
+*/
 @media (prefers-color-scheme: light) {
   .texture {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='35' specularConstant='0.5' specularExponent='20' lighting-color='hsl(23deg, 0%, 81%)' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='hsl(194deg, 100%, 33%)'%3E%3C/rect%3E%3Crect width='700' height='700' fill='hsl(23deg, 0%, 81%)' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E") !important;

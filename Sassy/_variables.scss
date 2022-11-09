@@ -1,9 +1,13 @@
 // Store Default Tag Names to Loop Through
-$fs-default-size-tags: (
+$fs-default-class-size: (
   // Description
   'xl' : 'xl',
   'lg' : 'lg',
   'md' : 'md',
   'sm' : 'sm',
   'xs' : 'xs',
+);
+
+$fs-default-numeric-sizes: (
+  '' : ''
 );

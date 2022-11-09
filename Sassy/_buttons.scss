@@ -39,16 +39,18 @@
           @include light-theme{
             @include light-style($valueLight);
             @include btn-hover(transparent, $valueLight, 1px solid $valueLight);
+            color: fs-a11y-color($valueLight);
           }
           @include dark-theme{
             @include dark-style($valueDark);
             @include btn-hover(transparent, $valueDark, 1px solid $valueDark);
+            color: fs-a11y-color($valueDark);
           }
         }
         @else{
           @include btn-hover(transparent, $value, 1px solid $value);
           background-color: $value;
-          color: $colorWhite;
+          color: fs-a11y-color($value);
         }
                 
         transition: 325ms;

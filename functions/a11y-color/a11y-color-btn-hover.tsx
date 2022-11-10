@@ -4,8 +4,6 @@
 
 import $ from "jquery";
 
-
-
 if (typeof window !== 'undefined') {
   $(document).ready(function () {
     let rgbColors = new Object();

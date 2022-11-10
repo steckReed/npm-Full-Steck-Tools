@@ -1,20 +1,39 @@
 // Mixins
   @mixin auto-font-class-generator($key, $value){
-    // Color
-      .color-#{$key},
-      .font-color-#{$key}{
+    
+    .color-#{$key},
+    .font-color-#{$key}{
+      @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
+        $valueLight : map-get($value, 'light');
+        $valueDark  : map-get($value, 'dark');
+
+        @include light-theme{ color: $valueLight; }
+        @include dark-theme { color: $valueDark;  }
+      }
+      @else{
+        color: $value;
+      }
+    }
+
+    // !important
+    @each $keyImportantName, $keyImportantValue in map.get($fs-suffix-class-names, "!important"){
+
+      .color-#{$key}-#{$keyImportantValue},
+      .font-color-#{$key}-#{$keyImportantValue}{
         @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
           $valueLight : map-get($value, 'light');
           $valueDark  : map-get($value, 'dark');
 
-          @include light-theme{ color: $valueLight; }
-          @include dark-theme { color: $valueDark;  }
+          @include light-theme{ color: $valueLight !important; }
+          @include dark-theme { color: $valueDark !important;  }
         }
         @else{
-          color: $value;
+          color: $value !important;
         }
       }
-    // Color
+
+    }
+      
   }
 // Mixins
 

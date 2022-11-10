@@ -1,13 +1,33 @@
-// Store Default Tag Names to Loop Through
-$fs-default-class-size: (
-  // Description
-  'xl' : 'xl',
-  'lg' : 'lg',
-  'md' : 'md',
-  'sm' : 'sm',
-  'xs' : 'xs',
+
+/* 
+  Stores Current List of Names that Can be Swapped for 'important'
+  Use:     color-primary-important
+  Handles: color: $primary !important;
+*/
+$fs-suffix-class-names: (
+  '!important':(
+    1:'important',
+    2:'impt'
+  )
+
+
 );
 
-$fs-default-numeric-sizes: (
-  '' : ''
+
+// Store Default Class Size suffixes
+$fs-suffix-class-sizes: (
+  // Name suffixes
+  'names':(
+    'xl' : 'xl',
+    'lg' : 'lg',
+    'md' : 'md',
+    'sm' : 'sm',
+    'xs' : 'xs',
+  ),
+
+  // Numberic suffixes
+  'numeric':(
+    '10' : '10'
+  )
 );
+

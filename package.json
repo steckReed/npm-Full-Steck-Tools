@@ -1,6 +1,6 @@
 {
   "name": "full-steck-tools",
-  "version": "1.0.7",
+  "version": "1.0.7a",
   "description": "Trying to Make Webdev an Easier &amp; Better Place One Line at a Time",
   "main": "index.js",
   "scripts": {

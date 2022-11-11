@@ -232,6 +232,17 @@
     background-position: 100% center;
   }
 }
+/* 
+  Adapted From: https://github.com/jhogue/automated-a11y-sass 
+  Created to Help Aid In Automatically Generating Readable Font Colors
+
+  Notes:
+    - Runs Before Page Load
+
+  Main Functions to Call:
+    - color-contrast   // <- Returns Black/White Based on BG Color
+    - a11y-color       // <- Returns Acceptable Color as Close to One Passed Without Altering Hue
+*/
 .outline {
   outline: 1px solid hsl(0deg, 0%, 100%);
 }
@@ -377,9 +388,29 @@
   color: hsl(0deg, 0%, 100%);
 }
 
+.color-white-important,
+.font-color-white-important {
+  color: hsl(0deg, 0%, 100%) !important;
+}
+
+.color-white-impt,
+.font-color-white-impt {
+  color: hsl(0deg, 0%, 100%) !important;
+}
+
 .color-offWhite,
 .font-color-offWhite {
   color: hsl(0deg, 33%, 98%);
+}
+
+.color-offWhite-important,
+.font-color-offWhite-important {
+  color: hsl(0deg, 33%, 98%) !important;
+}
+
+.color-offWhite-impt,
+.font-color-offWhite-impt {
+  color: hsl(0deg, 33%, 98%) !important;
 }
 
 .color-mutedWhite,
@@ -387,9 +418,29 @@
   color: hsl(210deg, 18%, 87%);
 }
 
+.color-mutedWhite-important,
+.font-color-mutedWhite-important {
+  color: hsl(210deg, 18%, 87%) !important;
+}
+
+.color-mutedWhite-impt,
+.font-color-mutedWhite-impt {
+  color: hsl(210deg, 18%, 87%) !important;
+}
+
 .color-black,
 .font-color-black {
   color: hsl(0deg, 0%, 7%);
+}
+
+.color-black-important,
+.font-color-black-important {
+  color: hsl(0deg, 0%, 7%) !important;
+}
+
+.color-black-impt,
+.font-color-black-impt {
+  color: hsl(0deg, 0%, 7%) !important;
 }
 
 .color-offBlack,
@@ -397,9 +448,29 @@
   color: hsl(0deg, 0%, 11%);
 }
 
+.color-offBlack-important,
+.font-color-offBlack-important {
+  color: hsl(0deg, 0%, 11%) !important;
+}
+
+.color-offBlack-impt,
+.font-color-offBlack-impt {
+  color: hsl(0deg, 0%, 11%) !important;
+}
+
 .color-mutedBlack,
 .font-color-mutedBlack {
   color: hsl(0deg, 0%, 15%);
+}
+
+.color-mutedBlack-important,
+.font-color-mutedBlack-important {
+  color: hsl(0deg, 0%, 15%) !important;
+}
+
+.color-mutedBlack-impt,
+.font-color-mutedBlack-impt {
+  color: hsl(0deg, 0%, 15%) !important;
 }
 
 .color-gray,
@@ -407,9 +478,29 @@
   color: hsl(0deg, 0%, 50%);
 }
 
+.color-gray-important,
+.font-color-gray-important {
+  color: hsl(0deg, 0%, 50%) !important;
+}
+
+.color-gray-impt,
+.font-color-gray-impt {
+  color: hsl(0deg, 0%, 50%) !important;
+}
+
 .color-offGray,
 .font-color-offGray {
   color: hsl(0deg, 0%, 73%);
+}
+
+.color-offGray-important,
+.font-color-offGray-important {
+  color: hsl(0deg, 0%, 73%) !important;
+}
+
+.color-offGray-impt,
+.font-color-offGray-impt {
+  color: hsl(0deg, 0%, 73%) !important;
 }
 
 .color-lightGray,
@@ -417,9 +508,29 @@
   color: hsl(0deg, 0%, 84%);
 }
 
+.color-lightGray-important,
+.font-color-lightGray-important {
+  color: hsl(0deg, 0%, 84%) !important;
+}
+
+.color-lightGray-impt,
+.font-color-lightGray-impt {
+  color: hsl(0deg, 0%, 84%) !important;
+}
+
 .color-darkGray,
 .font-color-darkGray {
   color: hsl(0deg, 0%, 25%);
+}
+
+.color-darkGray-important,
+.font-color-darkGray-important {
+  color: hsl(0deg, 0%, 25%) !important;
+}
+
+.color-darkGray-impt,
+.font-color-darkGray-impt {
+  color: hsl(0deg, 0%, 25%) !important;
 }
 
 .color-success,
@@ -427,9 +538,29 @@
   color: hsl(134deg, 61%, 41%);
 }
 
+.color-success-important,
+.font-color-success-important {
+  color: hsl(134deg, 61%, 41%) !important;
+}
+
+.color-success-impt,
+.font-color-success-impt {
+  color: hsl(134deg, 61%, 41%) !important;
+}
+
 .color-info,
 .font-color-info {
   color: hsl(190deg, 90%, 50%);
+}
+
+.color-info-important,
+.font-color-info-important {
+  color: hsl(190deg, 90%, 50%) !important;
+}
+
+.color-info-impt,
+.font-color-info-impt {
+  color: hsl(190deg, 90%, 50%) !important;
 }
 
 .color-warning,
@@ -437,14 +568,44 @@
   color: hsl(27deg, 98%, 54%);
 }
 
+.color-warning-important,
+.font-color-warning-important {
+  color: hsl(27deg, 98%, 54%) !important;
+}
+
+.color-warning-impt,
+.font-color-warning-impt {
+  color: hsl(27deg, 98%, 54%) !important;
+}
+
 .color-danger,
 .font-color-danger {
   color: hsl(354deg, 70%, 54%);
 }
 
+.color-danger-important,
+.font-color-danger-important {
+  color: hsl(354deg, 70%, 54%) !important;
+}
+
+.color-danger-impt,
+.font-color-danger-impt {
+  color: hsl(354deg, 70%, 54%) !important;
+}
+
 .color-alert,
 .font-color-alert {
   color: hsl(51deg, 100%, 51%);
+}
+
+.color-alert-important,
+.font-color-alert-important {
+  color: hsl(51deg, 100%, 51%) !important;
+}
+
+.color-alert-impt,
+.font-color-alert-impt {
+  color: hsl(51deg, 100%, 51%) !important;
 }
 
 @media (prefers-color-scheme: light) {
@@ -457,6 +618,32 @@
   .color-background,
 .font-color-background {
     color: hsl(218deg, 23%, 21%);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .color-background-important,
+.font-color-background-important {
+    color: hsl(0deg, 0%, 93%) !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .color-background-important,
+.font-color-background-important {
+    color: hsl(218deg, 23%, 21%) !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .color-background-impt,
+.font-color-background-impt {
+    color: hsl(0deg, 0%, 93%) !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .color-background-impt,
+.font-color-background-impt {
+    color: hsl(218deg, 23%, 21%) !important;
   }
 }
 
@@ -474,6 +661,32 @@
 }
 
 @media (prefers-color-scheme: light) {
+  .color-primary-important,
+.font-color-primary-important {
+    color: hsl(194deg, 100%, 33%) !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .color-primary-important,
+.font-color-primary-important {
+    color: hsl(214deg, 35%, 37%) !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .color-primary-impt,
+.font-color-primary-impt {
+    color: hsl(194deg, 100%, 33%) !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .color-primary-impt,
+.font-color-primary-impt {
+    color: hsl(214deg, 35%, 37%) !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
   .color-secondary,
 .font-color-secondary {
     color: hsl(4deg, 82%, 67%);
@@ -483,6 +696,32 @@
   .color-secondary,
 .font-color-secondary {
     color: hsl(12deg, 83%, 62%);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .color-secondary-important,
+.font-color-secondary-important {
+    color: hsl(4deg, 82%, 67%) !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .color-secondary-important,
+.font-color-secondary-important {
+    color: hsl(12deg, 83%, 62%) !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .color-secondary-impt,
+.font-color-secondary-impt {
+    color: hsl(4deg, 82%, 67%) !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .color-secondary-impt,
+.font-color-secondary-impt {
+    color: hsl(12deg, 83%, 62%) !important;
   }
 }
 
@@ -500,6 +739,32 @@
 }
 
 @media (prefers-color-scheme: light) {
+  .color-tertiary-important,
+.font-color-tertiary-important {
+    color: hsl(183deg, 100%, 36%) !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .color-tertiary-important,
+.font-color-tertiary-important {
+    color: hsl(151deg, 24%, 60%) !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .color-tertiary-impt,
+.font-color-tertiary-impt {
+    color: hsl(183deg, 100%, 36%) !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .color-tertiary-impt,
+.font-color-tertiary-impt {
+    color: hsl(151deg, 24%, 60%) !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
   .color-offset,
 .font-color-offset {
     color: hsl(29deg, 97%, 86%);
@@ -509,6 +774,32 @@
   .color-offset,
 .font-color-offset {
     color: hsl(202deg, 46%, 72%);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .color-offset-important,
+.font-color-offset-important {
+    color: hsl(29deg, 97%, 86%) !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .color-offset-important,
+.font-color-offset-important {
+    color: hsl(202deg, 46%, 72%) !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .color-offset-impt,
+.font-color-offset-impt {
+    color: hsl(29deg, 97%, 86%) !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .color-offset-impt,
+.font-color-offset-impt {
+    color: hsl(202deg, 46%, 72%) !important;
   }
 }
 
@@ -12860,7 +13151,7 @@ body {
       -ms-user-select: none;
           user-select: none;
   background-color: hsl(0deg, 0%, 100%);
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 7%);
   transition: 325ms;
 }
 .btn-white:hover {
@@ -12891,7 +13182,7 @@ body {
       -ms-user-select: none;
           user-select: none;
   background-color: hsl(0deg, 33%, 98%);
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 7%);
   transition: 325ms;
 }
 .btn-offWhite:hover {
@@ -12922,7 +13213,7 @@ body {
       -ms-user-select: none;
           user-select: none;
   background-color: hsl(210deg, 18%, 87%);
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 7%);
   transition: 325ms;
 }
 .btn-mutedWhite:hover {
@@ -13077,7 +13368,7 @@ body {
       -ms-user-select: none;
           user-select: none;
   background-color: hsl(0deg, 0%, 73%);
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 7%);
   transition: 325ms;
 }
 .btn-offGray:hover {
@@ -13108,7 +13399,7 @@ body {
       -ms-user-select: none;
           user-select: none;
   background-color: hsl(0deg, 0%, 84%);
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 7%);
   transition: 325ms;
 }
 .btn-lightGray:hover {
@@ -13201,7 +13492,7 @@ body {
       -ms-user-select: none;
           user-select: none;
   background-color: hsl(190deg, 90%, 50%);
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 7%);
   transition: 325ms;
 }
 .btn-info:hover {
@@ -13232,7 +13523,7 @@ body {
       -ms-user-select: none;
           user-select: none;
   background-color: hsl(27deg, 98%, 54%);
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 7%);
   transition: 325ms;
 }
 .btn-warning:hover {
@@ -13294,7 +13585,7 @@ body {
       -ms-user-select: none;
           user-select: none;
   background-color: hsl(51deg, 100%, 51%);
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 7%);
   transition: 325ms;
 }
 .btn-alert:hover {
@@ -13330,6 +13621,7 @@ body {
   .btn-background {
     background-color: hsl(0deg, 0%, 93%);
     color: hsl(0deg, 0%, 7%);
+    color: hsl(0deg, 0%, 7%);
   }
   .btn-background:hover {
     background-color: transparent;
@@ -13341,6 +13633,7 @@ body {
 @media (prefers-color-scheme: dark) {
   .btn-background {
     background-color: hsl(218deg, 23%, 21%);
+    color: hsl(0deg, 0%, 100%);
     color: hsl(0deg, 0%, 100%);
   }
   .btn-background:hover {
@@ -13377,6 +13670,7 @@ body {
   .btn-primary {
     background-color: hsl(194deg, 100%, 33%);
     color: hsl(0deg, 0%, 7%);
+    color: hsl(0deg, 0%, 100%);
   }
   .btn-primary:hover {
     background-color: transparent;
@@ -13388,6 +13682,7 @@ body {
 @media (prefers-color-scheme: dark) {
   .btn-primary {
     background-color: hsl(214deg, 35%, 37%);
+    color: hsl(0deg, 0%, 100%);
     color: hsl(0deg, 0%, 100%);
   }
   .btn-primary:hover {
@@ -13424,6 +13719,7 @@ body {
   .btn-secondary {
     background-color: hsl(4deg, 82%, 67%);
     color: hsl(0deg, 0%, 7%);
+    color: hsl(0deg, 0%, 7%);
   }
   .btn-secondary:hover {
     background-color: transparent;
@@ -13435,6 +13731,7 @@ body {
 @media (prefers-color-scheme: dark) {
   .btn-secondary {
     background-color: hsl(12deg, 83%, 62%);
+    color: hsl(0deg, 0%, 100%);
     color: hsl(0deg, 0%, 100%);
   }
   .btn-secondary:hover {
@@ -13471,6 +13768,7 @@ body {
   .btn-tertiary {
     background-color: hsl(183deg, 100%, 36%);
     color: hsl(0deg, 0%, 7%);
+    color: hsl(0deg, 0%, 7%);
   }
   .btn-tertiary:hover {
     background-color: transparent;
@@ -13483,6 +13781,7 @@ body {
   .btn-tertiary {
     background-color: hsl(151deg, 24%, 60%);
     color: hsl(0deg, 0%, 100%);
+    color: hsl(0deg, 0%, 7%);
   }
   .btn-tertiary:hover {
     background-color: transparent;
@@ -13518,6 +13817,7 @@ body {
   .btn-offset {
     background-color: hsl(29deg, 97%, 86%);
     color: hsl(0deg, 0%, 7%);
+    color: hsl(0deg, 0%, 7%);
   }
   .btn-offset:hover {
     background-color: transparent;
@@ -13530,6 +13830,7 @@ body {
   .btn-offset {
     background-color: hsl(202deg, 46%, 72%);
     color: hsl(0deg, 0%, 100%);
+    color: hsl(0deg, 0%, 7%);
   }
   .btn-offset:hover {
     background-color: transparent;
@@ -13736,6 +14037,15 @@ body {
   margin: auto 0;
   text-align: left;
   font-size: 12px;
+}
+
+/*
+  Houses Global Disabled Classes
+*/
+.disabled {
+  opacity: 0.5 !important;
+  cursor: default !important;
+  pointer-events: none !important;
 }
 
 i, i::after, i::before {

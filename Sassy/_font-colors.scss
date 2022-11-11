@@ -16,10 +16,10 @@
     }
 
     // !important
-    @each $keyImportantName, $keyImportantValue in map.get($fs-suffix-class-names, "!important"){
-
-      .color-#{$key}-#{$keyImportantValue},
-      .font-color-#{$key}-#{$keyImportantValue}{
+    @each $name in $fs-suffix-important {
+      
+      .color-#{$key}-#{$name},
+      .font-color-#{$key}-#{$name}{
         @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
           $valueLight : map-get($value, 'light');
           $valueDark  : map-get($value, 'dark');

@@ -1,0 +1,44 @@
+// Mixins
+  @mixin glassmorphism-structure($value){
+    @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
+      $valueLight : map-get($value, 'light');
+      $valueDark  : map-get($value, 'dark');
+
+      @include light-theme{
+        background: rgba($valueLight, 0.15);
+        backdrop-filter: blur(5.1px);
+      }
+      @include dark-theme {
+        background: rgba($valueDark, 0.15);
+        backdrop-filter: blur(5.1px);
+      }
+    }
+    @else{
+        background: rgba($value, 0.15);
+        backdrop-filter: blur(5.1px);
+    }
+  }
+
+  @mixin auto-glassmorphism-class-generator($key, $value, $classPrefix: '', $classSuffix: ''){
+    .#{str-replace($classPrefix, ':')}glassmorphism-#{$key}#{$classSuffix},
+    .#{str-replace($classPrefix, ':')}glass-#{$key}#{$classSuffix}{
+      // Default
+      @if ($classPrefix == ''){
+        @include glassmorphism-structure($value)
+      }
+
+      // Tag Selectors
+      @if ( string.slice($classPrefix, 1, 1) == ':' ) {
+        &:#{string.slice($classPrefix, 2, (string.length($classPrefix) - 1))} {
+          @include glassmorphism-structure($value);
+        }
+      }
+    }
+  }
+// Mixins
+
+// Auto-Generated Classes
+@each $key, $value in $auto-class-generator-merge{ @include auto-glassmorphism-class-generator($key, $value); }
+
+// Classes
+// Classes

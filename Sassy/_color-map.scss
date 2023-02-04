@@ -1,0 +1,76 @@
+// SCSS Auto Class Generator Map
+  $fs-auto-class-generator: (
+    // Default Colors
+      // White
+      'white'       : $colorWhite,
+      'offWhite'    : $colorOffWhite,
+      'mutedWhite'  : $colorMutedWhite,
+
+      // Black
+      'black'       : $colorBlack,
+      'offBlack'    : $colorOffBlack,
+      'mutedBlack'  : $colorMutedBlack,
+
+      // Gray
+      'gray'        : $colorGray,
+      'offGray'     : $colorOffGray,
+      'lightGray'   : $colorLightGray,
+      'darkGray'    : $colorDarkGray,
+    // Default Colors
+
+    // Description
+      'success'   : $colorSuccess,
+      'info'      : $colorInfo,
+      'warning'   : $colorWarning,
+      'danger'    : $colorDanger,
+      'alert'     : $colorAlert,
+    // Description
+    
+    // Default (Allows for out-of-the-box use)
+      'background':(
+        'light' : $light-background,
+        'dark'  : $dark-background
+      ),
+      'primary':(
+        'light' : $light-primary,
+        'dark'  : $dark-primary
+      ),
+      'secondary':(
+        'light' : $light-secondary,
+        'dark'  : $dark-secondary
+      ),
+      'tertiary':(
+        'light' : $light-tertiary,
+        'dark'  : $dark-tertiary
+      ),
+      'offset':(
+        'light' : $light-offset,
+        'dark'  : $dark-offset
+      ),
+    // Default
+  );
+
+// SCSS Auto Class Generator Map
+
+// Remove Dups in fs-auto-class-generator (Allows user to overwrite defaults)
+  @if(variable-exists(auto-class-generator)){
+    @each $key, $value in $auto-class-generator{ 
+      $fs-auto-class-generator : map-remove($fs-auto-class-generator, $key);  
+    }
+  };
+// Remove Dups in fs-auto-class-generator 
+
+// Default Auto Class Generator (Color Map)
+  $auto-class-generator-merge: null !default; // Makes Global Scope (Prevents "Undefined Variable" Error)
+
+  // Ensure $auto-class-generator Exists
+  @if( 
+    (variable-exists(auto-class-generator)) and 
+    (varIs($auto-class-generator, 'map'))
+    ){
+    $auto-class-generator-merge : map.merge($fs-auto-class-generator, $auto-class-generator);
+  } 
+  @else {
+    $auto-class-generator-merge : $fs-auto-class-generator;
+  }
+// Default Auto Class Generator

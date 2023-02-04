@@ -1,0 +1,231 @@
+// Mixins
+  @mixin btn(
+    $height        : min-content,
+    $minWidth      : 90px,
+    $width         : min-content, 
+    $padding       : 0.375rem 0.75rem, 
+    $margin        : auto, 
+    $border        : 1px solid transparent, 
+    $border-radius : 0.25rem, 
+    $font-weight   : 400, 
+    $text-align    : center, 
+    $line-height   : 1.5, 
+    $white-space   : nowrap, 
+    $user-select   : none
+  ){
+    height        : $height;
+    min-width     : $minWidth;
+    width         : $width;
+    padding       : $padding;
+    margin        : $margin;
+    border        : $border;
+    border-radius : $border-radius;
+    font-weight   : $font-weight;
+    text-align    : $text-align;
+    line-height   : $line-height;
+    white-space   : $white-space;
+    user-select   : $user-select;
+  }
+  
+  @mixin auto-btn-class-generator($key, $value){
+    // Normal & Description
+      .btn-#{$key}{
+        @include btn();
+
+        @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
+          $valueLight : map-get($value, 'light');
+          $valueDark  : map-get($value, 'dark');
+
+          @include light-theme{
+            @include light-style($valueLight);
+            @include btn-hover(transparent, $valueLight, 1px solid $valueLight);
+            color: fs-a11y-color($valueLight);
+          }
+          @include dark-theme{
+            @include dark-style($valueDark);
+            @include btn-hover(transparent, $valueDark, 1px solid $valueDark);
+            color: fs-a11y-color($valueDark);
+          }
+        }
+        @else{
+          @include btn-hover(transparent, $value, 1px solid $value);
+          background-color: $value;
+          color: fs-a11y-color($value);
+        }
+                
+        transition: 325ms;
+      }
+    // Normal & Description
+  }
+
+  // Effects (Hover, Link Visited, Active, Focus)
+    @mixin btn-hover(
+      $background-color:transparent, 
+      $color:$light-text-primary, 
+      $border:1px solid $light-secondary, 
+      $cursor:pointer
+    ){
+      &:hover {
+        @include effects($background-color, $color, $border, $cursor);
+        @content;
+      }
+    }
+    @mixin btn-link(
+      $background-color:transparent, 
+      $color:$light-text-primary, 
+      $border:1px solid $light-secondary, 
+      $cursor:pointer
+    ){
+      &:link {
+        @include effects($background-color, $color, $border, $cursor);
+        @content;
+      }
+    }
+    @mixin btn-visited(
+      $background-color:transparent, 
+      $color:$light-text-primary, 
+      $border:1px solid $light-secondary, 
+      $cursor:pointer
+    ){
+      &:visited {
+        @include effects($background-color, $color, $border, $cursor);
+        @content;
+      }
+    }
+    @mixin btn-active(
+      $background-color:transparent, 
+      $color:$light-text-primary, 
+      $border:1px solid $light-secondary, 
+      $cursor:pointer
+    ){
+      &:active {
+        @include effects($background-color, $color, $border, $cursor);
+        @content;
+      } 
+    }
+    @mixin btn-focus(){
+      &:focus {
+        outline: none;
+        @content;
+      } 
+    }
+  // Effects
+// Mixins
+
+// Auto-Generated Classes
+@each $key, $value in $auto-class-generator-merge{ @include auto-btn-class-generator($key, $value); }
+
+// Classes
+  .btn{ @include btn(); }
+
+  // Dropdown Containers
+    // Dropdown Menu
+      // Dropdown group container
+      .dropdown-btn-group-container{ 
+        grid-column-end: 0px;
+        height: min-content;
+        column-gap: 0px;
+        padding: 0px; 
+        
+        & > i,
+        & > button{
+          @include grid-pos($grid-row:1);
+          padding: 0.375rem 0.75rem;
+          margin: auto;
+          min-width: unset;
+        }
+      }
+
+      // Dropdown menu button
+      .dropdown-menu-btn{
+        @include grid-pos($grid-row:1);
+        @include grid-container(minmax(18px, min-content) auto);
+        
+        @include light-theme{
+          @include light-style();
+          @include btn-hover(#{$light-secondary}70 !important, $light-text-primary, $border:none);
+        }
+        @include dark-theme{
+          @include dark-style();
+          @include btn-hover(#{$dark-secondary}70 !important, $dark-text-primary, $border:none);
+        }
+        
+        height: 100%;
+        padding: 0.375rem 0.75rem;
+        border: none;
+        border-radius: 0px 0.2rem 0.2rem 0px;
+        transition: 325ms;
+
+        & > i{ grid-column: 2; margin: auto; }
+      }
+      .active > .dropdown-menu-btn{
+        padding: 0.375rem 0.75rem;
+        border: none;
+        border-radius: 0px 0.2rem 0.2rem 0px;
+        transition: 325ms;
+        @include light-theme{
+          background-color: $light-text-primary;
+          color: $light-primary;
+          @include btn-hover(#{$light-secondary}70 !important, $light-text-primary, $border:none);
+        }
+        @include dark-theme{
+          background-color: $dark-text-primary;
+          color: $dark-primary;
+          @include btn-hover(#{$dark-secondary}70 !important, $dark-text-primary, $border:none);
+        }
+      }
+  
+      // Dropdown menu selected
+      .dropdown-menu-selected{
+        margin: auto;
+      }
+      
+      // Dropdown menu
+      .dropdown-menu{ 
+        @include grid-pos($grid-row:1);
+        @include grid-container();
+        position: absolute;
+        transform: translate3d(52px, 38px, 0px);
+        top: 2px;
+        left: 0px;
+        min-width: 85px;
+        width: max-content;
+        padding: 0.375rem 0.75rem;
+        border-radius: 0.25rem;
+        
+        @include light-theme{ background-color: $light-text-primary; color: $light-primary; }
+        @include dark-theme{  background-color: $dark-text-primary;  color: $dark-primary;}
+
+        &:hover{ cursor: default; }
+      }
+      
+      // Dropdown menu item
+      .dropdown-menu-item{ 
+        @include grid-container(minmax(18px, min-content) auto, $row-gap:8px);
+        padding: 0.375rem 0.75rem;
+        border-radius: 0.25rem;
+        
+        @include light-theme{
+          @include btn-hover(#{$light-primary}70 !important, $light-text-primary, $border:none);
+        }
+        @include dark-theme{
+          @include btn-hover(#{$dark-primary}70 !important, $dark-text-primary, $border:none);
+        }
+
+        & > i{ 
+          @include grid-pos($grid-row:1);
+          margin: auto 0;
+          text-align: left;
+        }
+        & > p{ 
+          @include grid-pos($grid-row:1);
+          margin: auto 0;
+          text-align: left;
+          font-size: 12px; 
+        }
+
+      }
+    // Dropdown Menu
+
+  // Dropdown Containers
+// Classes

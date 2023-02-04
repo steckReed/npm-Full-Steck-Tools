@@ -1,0 +1,74 @@
+// Mixins
+  @mixin text-color-structure($value){
+    @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
+      $valueLight : map-get($value, 'light');
+      $valueDark  : map-get($value, 'dark');
+
+      @include light-theme{ color: $valueLight; }
+      @include dark-theme { color: $valueDark;  }
+    }
+    @else{
+      color: $value;
+    }
+  }
+
+  @mixin auto-text-class-generator($key, $value, $classPrefix: '', $classSuffix: ''){
+    /*
+      Wanted Combos (example color == white):
+        // Defaults
+          .color-white
+          .color-white-important
+          .color-white-impt
+
+        // Selectors
+          .hover-color-white
+          .hover-color-white-important
+          .hover-color-white-impt
+          
+          .active-color-white
+          .active-color-white-important
+          .active-color-white-impt
+
+    */
+    .#{str-replace($classPrefix, ':')}color-#{$key}#{$classSuffix},
+    .#{str-replace($classPrefix, ':')}text-color-#{$key}#{$classSuffix}{
+      // Default
+      @if ($classPrefix == ''){
+        @include text-color-structure($value)
+      }
+
+      // Tag Selectors
+      @if ( string.slice($classPrefix, 1, 1)==':' ) {
+        &:#{string.slice($classPrefix, 2, (string.length($classPrefix) - 1))} {
+          @include text-color-structure($value);
+        }
+      }
+    }
+
+    // !important
+    @each $name in $fs-suffix-important {
+      
+      .color-#{$key}-#{$name},
+      .text-color-#{$key}-#{$name}{
+        @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
+          $valueLight : map-get($value, 'light');
+          $valueDark  : map-get($value, 'dark');
+
+          @include light-theme{ color: $valueLight !important; }
+          @include dark-theme { color: $valueDark !important;  }
+        }
+        @else{
+          color: $value !important;
+        }
+      }
+
+    }
+      
+  }
+// Mixins
+
+// Auto-Generated Classes
+@each $key, $value in $auto-class-generator-merge{ @include auto-text-class-generator($key, $value); }
+
+// Classes
+// Classes

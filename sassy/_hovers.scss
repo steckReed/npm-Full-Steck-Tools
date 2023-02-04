@@ -1,0 +1,13 @@
+// Mixins
+  @mixin hover(
+    $background-color:transparent, 
+    $color:$light-text-primary, 
+    $border:1px solid $light-secondary, 
+    $cursor:pointer
+  ){
+    &:hover {
+      @include effects($background-color, $color, $border, $cursor);
+      @content;
+    }
+  }
+// Mixins

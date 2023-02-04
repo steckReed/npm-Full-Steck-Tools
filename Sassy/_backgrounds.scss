@@ -1,0 +1,25 @@
+// Mixins
+  @mixin auto-background-class-generator($key, $value){
+    // Background Color
+      .bg-#{$key},
+      .background-#{$key}{
+        @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
+          $valueLight : map-get($value, 'light');
+          $valueDark  : map-get($value, 'dark');
+
+          @include light-theme{ background-color : $valueLight; }
+          @include dark-theme { background-color : $valueDark;  }
+        }
+        @else{
+          background-color : $value;
+        }
+      }
+    // Background Color
+  }
+// Mixins
+
+// Auto-Generated Classes
+@each $key, $value in $auto-class-generator-merge{ @include auto-background-class-generator($key, $value); }
+
+// Classes
+// Classes

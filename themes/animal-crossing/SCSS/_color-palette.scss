@@ -1,0 +1,70 @@
+// Defaults
+$ac-white          : hsl(60, 100%, 99%);
+$ac-tan            : hsl(52, 44%, 93%);
+$ac-black          : hsl(300, 5%, 29%);
+$ac-gray           : hsl(41, 26%, 83%);
+$ac-seafoam-green  : hsl(132, 100%, 81%);
+$ac-seafoam-blue   : hsl(183, 88%, 74%);
+$ac-brown          : hsl(35, 53%, 51%);
+$ac-light-brown    : hsl(49, 48%, 51%);
+$ac-yellow         : hsl(56, 100%, 69%);
+$ac-purple         : hsl(249, 31%, 32%);
+$ac-lavender       : hsl(273, 31%, 72%);
+$ac-light-teal     : hsl(171, 65%, 48%);
+$ac-light-teal-alt : hsl(170, 74%, 34%);
+$ac-dark-teal      : hsl(185, 100%, 27%);
+$ac-dark-teal-alt  : hsl(185, 100%, 19%);
+
+
+
+// Light
+$ac-light-background   : $ac-white;
+$ac-light-font-primary : $ac-black;
+$ac-light-teal         : $ac-light-teal;
+$ac-light-teal-alt     : $ac-light-teal-alt;
+
+// Dark
+$ac-dark-background    : $ac-purple;
+$ac-dark-font-primary  : $ac-white;
+$ac-dark-teal          : $ac-dark-teal;
+$ac-dark-teal-alt      : $ac-dark-teal-alt;
+
+
+// Auto Class Generator ('@npm/full-steck-tools')
+  $auto-class-generator-animal-crossing:(
+    'ac-white'          : $ac-white,
+    'ac-tan'            : $ac-tan,
+    'ac-black'          : $ac-black,
+    'ac-gray'           : $ac-gray,
+    'ac-seafoam-green'  : $ac-seafoam-green,
+    'ac-seafoam-blue'   : $ac-seafoam-blue,
+    'ac-brown'          : $ac-brown,
+    'ac-light-brown'    : $ac-light-brown,
+    'ac-yellow'         : $ac-yellow,
+    'ac-purple'         : $ac-purple,
+    'ac-lavender'       : $ac-lavender,
+    'ac-light-teal'     : $ac-light-teal,
+    'ac-light-teal-alt' : $ac-light-teal-alt,
+    'ac-dark-teal'      : $ac-dark-teal,
+    'ac-dark-teal-alt'  : $ac-dark-teal-alt,
+
+
+    // Change Color on Theme
+    'ac-background':(
+      'light' : $ac-light-background,
+      'dark'  : $ac-dark-background,
+    ),
+    'ac-font-primary':(
+      'light' : $ac-light-font-primary,
+      'dark'  : $ac-dark-font-primary,
+    ),
+    'ac-teal':(
+      'light' : $ac-light-teal,
+      'dark'  : $ac-dark-teal,
+    ),
+    'ac-teal-alt':(
+      'light' : $ac-light-teal-alt,
+      'dark'  : $ac-dark-teal-alt,
+    ),
+  );
+// Auto Class Generator

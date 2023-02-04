@@ -24,19 +24,22 @@ $tagSelectorsClassPrefix : (
 
   @each $key, $value in $auto-class-generator-merge{ 
     // Background Color
-    @include auto-background-class-generator  ($key, $value, $classPrefix: $tagSelector);
+    @include auto-background-class-generator    ($key, $value, $classPrefix: $tagSelector);
     
     // Border
-    @include auto-border-class-generator      ($key, $value, $classPrefix: $tagSelector);
+    @include auto-border-class-generator        ($key, $value, $classPrefix: $tagSelector);
     
     // Elevation
-    @include auto-elevation-class-generator   ($key, $value, $classPrefix: $tagSelector);
+    @include auto-elevation-class-generator     ($key, $value, $classPrefix: $tagSelector);
+
+    // Glassmorphism
+    @include auto-glassmorphism-class-generator ($key, $value, $classPrefix: $tagSelector);
 
     // Shadow
-    @include auto-shadow-class-generator      ($key, $value, $classPrefix: $tagSelector);
+    @include auto-shadow-class-generator        ($key, $value, $classPrefix: $tagSelector);
 
     // Text Color
-    @include auto-text-class-generator        ($key, $value, $classPrefix: $tagSelector);
+    @include auto-text-class-generator          ($key, $value, $classPrefix: $tagSelector);
   }
   
 }

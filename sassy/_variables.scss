@@ -1,0 +1,20 @@
+// Important
+$fs-suffix-important : 'important','impt';
+
+// Directions
+$fs-suffix-direction-up    : 'up','raise';
+$fs-suffix-direction-down  : 'down','lower';
+$fs-suffix-direction-left  : 'left','lt';
+$fs-suffix-direction-right : 'right','rt';
+
+
+
+// Class Sizes
+$fs-suffix-class-sizes-names   : 'xl','lg','md','sm','xs';
+$fs-suffix-class-sizes-numeric : 1,2,3,4,5,6,7,8,9,10;
+
+
+// Shortcut Class Styles (Overwrites)
+$fs-overwrite-class-styles-padding       : 'padding', 'pd';
+$fs-overwrite-class-styles-margin        : 'margin', 'mg';
+$fs-overwrite-class-styles-border-width  : 'border-width', 'bdr-w';

@@ -1,15 +1,38 @@
 # npm-Full-Steck-Tools
 
 Trying to Make Webdev an Easier &amp; Better Place One Line at a Time
+
 Plugin Contains
 
 - SCSS for helpful out of the box styling & mixins to create your own custom classes
-- JS Animations, Snackbars, etc.
+- Large Focus on SCSS Color Palette and Dynamically Made Classes
+
 
 GIT REPO: https://github.com/steckReed/npm-Full-Steck-Tools
 
-This Package Works Best With Icons!
-https://react-icons.github.io/react-icons/
+
+
+```
+// // Package imports
+// @import '@npm/full-steck-tools/themes/animal-crossing/_-color-palette.scss';
+// @import '@npm/full-steck-tools/sassy/-fs-mixins.scss';
+// @import '@npm/full-steck-tools/themes/animal-crossing/_-styles.scss';
+
+
+// Testing imports
+@import './full-steck-tools/themes/animal-crossing/_-color-palette.scss';
+@import './full-steck-tools/sassy/-fs-mixins.scss';
+@import './full-steck-tools/themes/animal-crossing/_-styles.scss';
+```
+
+
+## Required & Recommended Packages
+    @Required:
+        npm i lodash @types/webpack-env react-icons
+
+        lodash              : https://lodash.com/
+        @types/webpack-env  : https://webpack.js.org/guides/dependency-management/#requirecontext
+        react-icons         : https://react-icons.github.io/react-icons/
 
 ## TO USE:
 

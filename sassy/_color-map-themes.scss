@@ -1,0 +1,10 @@
+/*
+  Purpose is to merge
+*/
+
+// Merge Theme Map Colors (If Included)
+  // Animal Crossing
+  @if(variable-exists(auto-class-generator-animal-crossing)){
+    $fs-auto-class-generator: map-merge($fs-auto-class-generator, $auto-class-generator-animal-crossing);
+  }
+// Merge Theme Map Colors

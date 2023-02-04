@@ -1,0 +1,57 @@
+$fs-auto-class-generator: (
+  // Default Colors
+    'transparent' : $colorTransparent,
+    'white'       : $colorWhite,
+    'black'       : $colorBlack,
+    'gray'        : $colorGray70,
+    'ocean'       : $colorOcean,
+    'blue'        : $colorBlue,
+    'sky'         : $colorSky,
+    'teal'        : $colorTeal,
+    'green'       : $colorGreen,
+    'yellow'      : $colorYellow,
+    'orange'      : $colorOrange,
+    'red'         : $colorRed,
+    'pink'        : $colorPink,
+    'purple'      : $colorPurple,
+  // Default Colors
+
+  // Description
+    'success'   : $colorSuccess,
+    'info'      : $colorInfo,
+    'warning'   : $colorWarning,
+    'danger'    : $colorDanger,
+    'alert'     : $colorAlert,
+  // Description
+  
+  // Default (Allows for out-of-the-box use)
+    'background':(
+      'light' : $light-background,
+      'dark'  : $dark-background
+    ),
+    'primary':(
+      'light' : $light-primary,
+      'dark'  : $dark-primary
+    ),
+    'secondary':(
+      'light' : $light-secondary,
+      'dark'  : $dark-secondary
+    ),
+    'tertiary':(
+      'light' : $light-tertiary,
+      'dark'  : $dark-tertiary
+    ),
+    'offset':(
+      'light' : $light-offset,
+      'dark'  : $dark-offset
+    ),
+    'theme':(
+      'light' : $colorWhite,
+      'dark'  : $colorBlack
+    ),
+    'theme-alt':(
+      'light' : $colorBlack,
+      'dark'  : $colorWhite
+    ),
+  // Default
+);

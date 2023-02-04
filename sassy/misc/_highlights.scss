@@ -1,0 +1,67 @@
+// Mixins
+@mixin auto-hightlight-class-generator($key, $value) {
+  @if(varIs($value, 'map') and (map-has-key($value, 'light') and map-has-key($value, 'dark'))) {
+    $valueLight : map-get($value, 'light');
+    $valueDark : map-get($value, 'dark');
+
+    .highlight-#{$key},
+    .highlight1-#{$key} {
+      @include light-theme {
+        @include highlight($deg: 135deg, $colorOne: $valueLight, $colorTwo: $valueDark);
+      }
+
+      @include dark-theme {
+        @include highlight($deg: 135deg, $colorOne: $valueDark, $colorTwo: $valueLight);
+      }
+    }
+
+    .highlight2-#{$key} {
+      @include light-theme {
+        @include highlight($colorOne: $valueLight, $colorTwo: $valueDark);
+      }
+
+      @include dark-theme {
+        @include highlight($colorOne: $valueDark, $colorTwo: $valueLight);
+      }
+    }
+
+  }
+
+  @else {
+
+    @each $keySub,
+    $valueSub in $auto-class-generator-merge {
+      @if not(varIs($valueSub, 'map')) {
+
+        .highlight-#{$key}-#{$keySub},
+        .highlight1-#{$key}-#{$keySub} {
+          @include highlight($deg: 135deg, $colorOne: $value, $colorTwo: $valueSub);
+        }
+
+        .highlight2-#{$key}-#{$keySub} {
+          @include highlight($colorOne: $value, $colorTwo: $valueSub);
+        }
+
+      }
+    }
+  }
+
+}
+
+@mixin highlight($deg :30deg,
+  $colorOne :black,
+  $colorTwo :white) {
+  background: linear-gradient($deg, $colorOne, $colorTwo);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @content;
+}
+
+// Mixins
+
+// Auto-Generated Classes
+@each $key,
+$value in $auto-class-generator-merge {
+  @include auto-hightlight-class-generator($key, $value);
+}

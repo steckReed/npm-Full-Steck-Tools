@@ -1,0 +1,17 @@
+/*
+  Purpose of file is to keep separated list of all bare bone required files
+  Idea is for including this file only to begin debugging process without including all other files
+*/
+
+// Globals
+  // {Name Here}
+  @import './logic';
+  @import './a11y-color';
+
+  // Colors
+  @import './colors';
+  @import './color-map-default';
+  @import './color-map-themes';
+  @import './color-map-merge';
+  @import './variables';
+  @import './color-theme';

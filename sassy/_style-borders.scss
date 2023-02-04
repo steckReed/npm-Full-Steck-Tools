@@ -1,0 +1,79 @@
+$fs-border-tags: (
+  'dotted' : dotted,
+  'dashed' : dashed,
+  'solid'  : solid,
+  'double' : double,
+  'groove' : groove,
+  'ridge'  : ridge,
+  'inset'  : inset,
+  'outset' : outset,
+  'none'   : none,
+  'hidden' : hidden
+);
+
+// Mixins
+  @mixin border-structure($value, $valueBorder){
+    @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
+      $valueLight : map-get($value, 'light');
+      $valueDark  : map-get($value, 'dark');
+
+      @include light-theme{
+        @include border-style(4px, $valueBorder, $valueLight, 0.5rem, 250ms);
+      }
+      @include dark-theme{
+        @include border-style(4px, $valueBorder, $valueDark, 0.5rem, 250ms);
+      }
+    }
+    @else{
+        @include border-style(4px, $valueBorder, $value, 0.5rem, 250ms);
+    }
+  }
+
+  @mixin border-style(
+      $border-width    : 4px, 
+      $border-style   : dotted, 
+      $border-color   :black, 
+      $border-radius  : 0.5rem,
+      $transition     : 250ms
+    ){ 
+    border:$border-width $border-style $border-color; 
+    border-radius: $border-radius;
+    transition: $transition;
+  }
+    
+  @mixin auto-border-class-generator($key, $value, $classPrefix: '', $classSuffix: ''){
+    @each $keyBorder, $valueBorder in $fs-border-tags{
+
+      .#{str-replace($classPrefix, ':')}border-#{$keyBorder}-#{$key}{
+        // Default
+        @if ($classPrefix == ''){
+          @include border-structure($value, $valueBorder);
+        }
+        
+        // Tag Selectors
+        @if ( string.slice($classPrefix, 1, 1)==':' ) {
+          &:#{string.slice($classPrefix, 2, (string.length($classPrefix) - 1))} {
+            @include border-structure($value, $valueBorder);
+          }
+        }
+      }
+
+    }
+  }
+// Mixins
+
+// Auto-Generated Classes
+@each $key, $value in $auto-class-generator-merge{ @include auto-border-class-generator($key, $value); }
+
+// Classes
+  .dotted{ @include border-style($border-width:6px, $border-style:dotted, $border-color:black, $border-radius:1rem);}
+  .dashed{ @include border-style($border-width:6px, $border-style:dashed, $border-color:black, $border-radius:1rem)}
+  .solid { @include border-style($border-width:6px, $border-style:solid , $border-color:black, $border-radius:1rem)}
+  .double{ @include border-style($border-width:6px, $border-style:double, $border-color:black, $border-radius:1rem)}
+  .groove{ @include border-style($border-width:6px, $border-style:groove, $border-color:black, $border-radius:1rem)}
+  .ridge { @include border-style($border-width:6px, $border-style:ridge , $border-color:black, $border-radius:1rem)}
+  .inset { @include border-style($border-width:6px, $border-style:inset , $border-color:black, $border-radius:1rem)}
+  .outset{ @include border-style($border-width:6px, $border-style:outset, $border-color:black, $border-radius:1rem)}
+  .none  { @include border-style($border-width:6px, $border-style:none  , $border-color:black, $border-radius:1rem)}
+  .hidden{ @include border-style($border-width:6px, $border-style:hidden, $border-color:black, $border-radius:1rem)}
+// Classes

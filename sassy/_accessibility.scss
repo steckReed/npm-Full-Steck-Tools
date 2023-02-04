@@ -1,0 +1,89 @@
+// Mixins
+  @mixin outline($outlineColor:$colorWhite, $outlineStyle:1px solid){
+    outline:$outlineStyle $outlineColor;
+  }
+// Mixins
+
+// Classes
+  // Default
+    .outline{ @include outline(); }
+    // Normal
+      .outline-primary  { 
+        @include light-theme{
+          @include outline($light-secondary); 
+        }
+        @include dark-theme{
+          @include outline($dark-secondary); 
+        }
+      }
+      .outline-secondary{ 
+        @include light-theme{
+          @include outline($light-tertiary); 
+        }
+        @include dark-theme{
+          @include outline($dark-tertiary); 
+        }
+      }
+    // Normal
+
+    // Description
+      .outline-success{ @include outline($colorSuccess); }
+      .outline-info   { @include outline($colorInfo);    }
+      .outline-warning{ @include outline($colorWarning); }
+      .outline-danger { @include outline($colorDanger);  }
+      .outline-alert  { @include outline($colorAlert);   }
+    // Description
+
+    // Hover
+      .outline-hover{ @include hover(){ @include outline(); } }
+
+      // Normal
+        .outline-primary-hover  { 
+          @include light-theme{
+            @include hover(){ @include outline($dark-secondary); }
+          }
+          @include dark-theme{
+            @include hover(){ @include outline($dark-secondary); }
+          }
+        }
+        .outline-secondary-hover{ 
+          @include light-theme{
+            @include hover(){ @include outline($dark-tertiary); }
+          }
+          @include dark-theme{
+            @include hover(){ @include outline($dark-tertiary); }
+          }
+        }
+      // Normal
+
+      // Description
+        .outline-success-hover{
+          @include hover(){
+            @include outline($colorSuccess);
+          }
+        }
+        .outline-info-hover{
+          @include hover(){
+            @include outline($colorInfo);
+          }
+        }
+        .outline-warning-hover{
+          @include hover(){
+            @include outline($colorWarning);
+          }
+        }
+        .outline-danger-hover{
+          @include hover(){
+            @include outline($colorDanger);
+          }
+        }
+        .outline-alert-hover{
+          @include hover(){
+            @include outline($colorAlert);
+          }
+        }
+      // Description
+    // Hover
+  // Default
+
+// Classes

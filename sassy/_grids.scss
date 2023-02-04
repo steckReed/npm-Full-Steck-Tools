@@ -1,0 +1,33 @@
+// Mixins
+  @mixin grid-pos($grid-column:unset, $grid-row:unset){ grid-column:$grid-column; grid-row:$grid-row; }
+  @mixin grid-container($grid-columns:1fr, $grid-rows:auto, $column-gap:4px, $row-gap:4px, $bg-color: transparent){
+    display: grid;
+    grid-template-columns: $grid-columns;
+    grid-template-rows: $grid-rows;
+    column-gap: $column-gap;
+    row-gap: $row-gap;
+    background-color: $bg-color;
+    @content;
+  }
+
+  @mixin flex-container($flex-columns:1fr, $flex-rows:auto, $gap: 1.25vw, $bg-color: transparent){
+    display: flex;
+    gap: $gap;
+    background-color: $bg-color;
+    @content;
+  }
+// Mixins
+
+// Classes
+  // Grids
+  // Grids
+  
+  // Flex
+  // Flex
+
+  // Collapsible Containers
+    .collapsible-container{
+      @include grid-pos(1);
+    }
+  // Collapsible Containers
+// Classes

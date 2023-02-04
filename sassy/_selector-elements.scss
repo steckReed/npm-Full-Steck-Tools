@@ -1,0 +1,42 @@
+// @To Use:
+//   Add to start of given "type style" class:
+//     .#{str-replace($classPrefix, ':')}{CLASS_NAME_HERE}{
+//        // Default
+//        @if ($classPrefix == ''){
+//          @include {STRUCTURE_NAME_HERE}($value, $valueBorder);
+//        }
+
+//        // Tag Selectors
+//        @if ( string.slice($classPrefix, 1 ,1) == ':' ) {
+//           &:#{string.slice($classPrefix, 2, (string.length($classPrefix) - 1))} {
+//             @include {STRUCTURE_NAME_HERE}($value);
+//           }
+//        }
+//     }
+
+$tagSelectorsClassPrefix : (
+  ':hover-', 
+  ':active-'
+);
+
+
+@each $tagSelector in $tagSelectorsClassPrefix{
+
+  @each $key, $value in $auto-class-generator-merge{ 
+    // Background Color
+    @include auto-background-class-generator  ($key, $value, $classPrefix: $tagSelector);
+    
+    // Border
+    @include auto-border-class-generator      ($key, $value, $classPrefix: $tagSelector);
+    
+    // Elevation
+    @include auto-elevation-class-generator   ($key, $value, $classPrefix: $tagSelector);
+
+    // Shadow
+    @include auto-shadow-class-generator      ($key, $value, $classPrefix: $tagSelector);
+
+    // Text Color
+    @include auto-text-class-generator        ($key, $value, $classPrefix: $tagSelector);
+  }
+  
+}

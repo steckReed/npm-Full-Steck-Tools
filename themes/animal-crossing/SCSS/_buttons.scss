@@ -1,0 +1,98 @@
+// Mixins
+  $acBtnStyles : ('', '-1');
+
+  @mixin auto-class-generator-animal-crossing($key, $value){
+    @each $acBtnStyle in $acBtnStyles{
+
+      .ac-btn#{$acBtnStyle}-#{$key}{
+        @include btn(
+          $border        : 4px solid transparent,
+          $border-radius : 50px,
+        );
+        
+        @if($acBtnStyle == ""){ transform: rotate(-3deg); }
+        color: white;
+        transition: 325ms;
+
+
+        @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
+          $valueLight : map-get($value, 'light');
+          $valueDark  : map-get($value, 'dark');
+
+          @include light-theme{
+            // @include light-style($valueLight);
+            
+            background-color: $valueLight;
+            &:hover { border: 4px solid $valueLight !important; }
+          }
+          @include dark-theme{
+            // @include dark-style($valueDark);
+            
+            background-color: $valueDark;
+            &:hover { border: 4px solid $valueDark !important; }
+          }
+        }
+        @else{
+          background-color: $value;
+          
+          &:hover{
+            transition: 250ms;
+            cursor: pointer;
+            border: 4px solid $value !important;
+          }
+        }
+        
+        
+        &:hover{ 
+          @include fst-background-stripe-animation(); 
+          @if($acBtnStyle == ""){ transform: rotate(-3deg) scale(1.04); }
+          @else{ transform: scale(1.04); }
+
+          transition: 250ms;
+          cursor: pointer;
+        }
+        &:active{
+          @if($acBtnStyle == ""){ transform: rotate(-3deg) translateY(2px) !important; }
+          @else{ transform: translateY(2px) !important; }
+
+          transition: 80ms;
+        }
+                
+      }
+      
+    }
+  }
+// Mixins
+
+@each $key, $value in $auto-class-generator-merge{ @include auto-class-generator-animal-crossing($key, $value); }
+
+
+
+
+.ac-btn-og {
+  @include btn(
+    $border        : 4px solid transparent,
+    $border-radius : 50px,
+  );
+  transform: rotate(-3deg);
+  transition: 80ms;
+
+
+  color: $ac-white;
+  background-color: $ac-light-teal;
+
+  &:hover {
+    transition: 250ms;
+    cursor: pointer;
+    border: 4px solid $ac-light-teal !important;
+    transform: rotate(-3deg) scale(1.04);
+    @include fst-background-stripe-animation( 
+      $colorOne:hsl(176, 96%, 36%),
+      $colorTwo:hsl(175, 89%, 41%)
+    );
+  }
+  &:active {
+    transition: 80ms;
+    transform: rotate(-3deg) translateY(2px) !important;
+  }
+}

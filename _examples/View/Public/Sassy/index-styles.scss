@@ -11,5 +11,19 @@
 // @import '../../../../sassy/fs-include-globals';
 // @import '../../../../sassy/style-glassmorphism'
 
-// // OPTIONAL FOR DEBUG
-// @import '../../../../sassy/selector-elements'
+// // OPTIONAL DEBUG (:Selectors)-
+// $tagSelectorsClassPrefix : (
+//   ':hover-', 
+//   ':active-'
+// );
+
+
+// @each $tagSelector in $tagSelectorsClassPrefix{
+
+//   @each $key, $value in $auto-class-generator-merge{ 
+
+//     @include auto-chip-class-generator    ($key, $value, $classPrefix: $tagSelector);
+
+//   }
+  
+// }

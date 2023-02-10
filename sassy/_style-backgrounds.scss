@@ -1,23 +1,28 @@
 // Mixins
-  @mixin background-structure($value){
+
+  @mixin background-class-structure($valueColor){
+    background-color : $valueColor; 
+    color: fs-a11y-color($valueColor);
+  }
+
+
+  @mixin determine-theme($value){
     @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
       $valueLight : map-get($value, 'light');
       $valueDark  : map-get($value, 'dark');
 
       @include light-theme{
-        background-color : $valueLight; 
-        color: fs-a11y-color($valueLight);
+        @include background-class-structure($valueLight)
       }
       @include dark-theme {
-        background-color : $valueDark;  
-        color: fs-a11y-color($valueDark);
+        @include background-class-structure($valueDark)
       }
     }
     @else{
-      background-color : $value;
-      color: fs-a11y-color($value);
+      @include background-class-structure($value)
     }
   }
+
 
   @mixin auto-background-class-generator($key, $value, $classPrefix: '', $classSuffix: ''){
     // Background Color

@@ -30,13 +30,13 @@
       .#{str-replace($classPrefix, ':')}bg-color-#{$key}#{$classSuffix}{
         // Default
         @if ($classPrefix == ''){
-          @include background-structure($value)
+          @include determine-theme($value)
         }
 
         // Tag Selectors
         @if ( string.slice($classPrefix, 1, 1) == ':' ) {
           &:#{string.slice($classPrefix, 2, (string.length($classPrefix) - 1))} {
-            @include background-structure($value);
+            @include determine-theme($value);
           }
         }
       }

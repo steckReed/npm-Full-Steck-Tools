@@ -3,38 +3,42 @@
 */
 
 $shadowTypes : (
-  '1'   : (0px 2px 1px -1px   ,0px 1px 1px 0px   ,0px 1px 3px 0px)
-  ,'2'  : (0px 3px 1px -2px   ,0px 2px 2px 0px   ,0px 1px 5px 0px)
-  ,'3'  : (0px 3px 3px -2px   ,0px 3px 4px 0px   ,0px 1px 8px 0px)
-  ,'4'  : (0px 2px 4px -1px   ,0px 4px 5px 0px   ,0px 1px 10px 0px)
-  ,'5'  : (0px 3px 5px -1px   ,0px 6px 10px 0px  ,0px 1px 18px 0px)
-  ,'6'  : (0px 5px 5px -3px   ,0px 8px 10px 1px  ,0px 3px 14px 2px)
-  ,'7'  : (0px 7px 8px -4px   ,0px 12px 17px 2px ,0px 5px 22px 4px)
-  ,'8'  : (0px 8px 10px -5px  ,0px 16px 24px 2px ,0px 6px 30px 5px)
-  ,'9'  : (0px 11px 15px -7px ,0px 24px 38px 3px ,0px 9px 46px 8px)
+  '1'   : ('light':(0px 2px 1px -1px   ,0px 1px 1px 0px   ,0px 1px 3px 0px)  ,'dark':(0px 3px 1px -2px   ,0px 2px 2px 0px   ,0px 1px 5px 0px))
+  ,'2'  : ('light':(0px 3px 1px -2px   ,0px 2px 2px 0px   ,0px 1px 5px 0px)  ,'dark':(0px 3px 3px -2px   ,0px 3px 4px 0px   ,0px 1px 8px 0px))
+  ,'3'  : ('light':(0px 3px 3px -2px   ,0px 3px 4px 0px   ,0px 1px 8px 0px)  ,'dark':(0px 2px 4px -1px   ,0px 4px 5px 0px   ,0px 1px 10px 0px))
+  ,'4'  : ('light':(0px 2px 4px -1px   ,0px 4px 5px 0px   ,0px 1px 10px 0px) ,'dark':(0px 3px 5px -1px   ,0px 6px 10px 0px  ,0px 1px 18px 0px))
+  ,'5'  : ('light':(0px 3px 5px -1px   ,0px 6px 10px 0px  ,0px 1px 18px 0px) ,'dark':(0px 5px 5px -3px   ,0px 8px 10px 1px  ,0px 3px 14px 2px))
+  ,'6'  : ('light':(0px 5px 5px -3px   ,0px 8px 10px 1px  ,0px 3px 14px 2px) ,'dark':(0px 7px 8px -4px   ,0px 12px 17px 2px ,0px 5px 22px 4px))
+  ,'7'  : ('light':(0px 7px 8px -4px   ,0px 12px 17px 2px ,0px 5px 22px 4px) ,'dark':(0px 8px 10px -5px  ,0px 16px 24px 2px ,0px 6px 30px 5px))
+  ,'8'  : ('light':(0px 8px 10px -5px  ,0px 16px 24px 2px ,0px 6px 30px 5px) ,'dark':(0px 11px 15px -7px ,0px 24px 38px 3px ,0px 9px 46px 8px))
+  ,'9'  : ('light':(0px 11px 15px -7px ,0px 24px 38px 3px ,0px 9px 46px 8px) ,'dark':(0px 13px 17px -9px ,0px 28px 42px 3px ,0px 11px 50px 10px))
 );
 
 
-@mixin shadow-structure($value, $keyShadowTypes, $valueShadowTypes){
+@mixin shadow-class-structure($color, $shadowType){
+  box-shadow: rgba($color, 0.20) list.nth($shadowType, 1), 
+              rgba($color, 0.14) list.nth($shadowType, 2), 
+              rgba($color, 0.12) list.nth($shadowType, 3);
+}
+
+
+@mixin determine-shadow-class-theme($value, $keyShadowTypes, $valueShadowTypes){
+    $valueShadowTypeLight : map-get($valueShadowTypes, 'light');
+    $valueShadowTypeDark  : map-get($valueShadowTypes, 'dark');
+
   @if(varIs($value, 'map') and ( map-has-key($value, 'light') and map-has-key($value, 'dark') )){ 
     $valueLight : map-get($value, 'light');
     $valueDark  : map-get($value, 'dark');
 
     @include light-theme{ 
-      box-shadow: rgba($valueLight, 0.20) list.nth($valueShadowTypes, 1), 
-                  rgba($valueLight, 0.14) list.nth($valueShadowTypes, 2), 
-                  rgba($valueLight, 0.12) list.nth($valueShadowTypes, 3);
+      @include shadow-class-structure($valueLight, $valueShadowTypeLight);
     }
     @include dark-theme { 
-      box-shadow: rgba($valueDark, 0.20) list.nth($valueShadowTypes, 1), 
-                  rgba($valueDark, 0.14) list.nth($valueShadowTypes, 2),
-                  rgba($valueDark, 0.12) list.nth($valueShadowTypes, 3);
+      @include shadow-class-structure($valueLight, $valueShadowTypeDark);
     }
   }
   @else{
-      box-shadow: rgba($value, 0.20) list.nth($valueShadowTypes, 1), 
-                  rgba($value, 0.14) list.nth($valueShadowTypes, 2), 
-                  rgba($value, 0.12) list.nth($valueShadowTypes, 3);
+    @include shadow-class-structure($value, $valueShadowTypeLight);
   }
 }
 
@@ -45,13 +49,13 @@ $shadowTypes : (
     .#{str-replace($classPrefix, ':')}shadow-#{$keyShadowTypes}-#{$key}#{$classSuffix}{
       // Default
       @if ($classPrefix == ''){
-        @include shadow-structure($value, $keyShadowTypes, $valueShadowTypes)
+        @include determine-shadow-class-theme($value, $keyShadowTypes, $valueShadowTypes)
       }
 
       // Tag Selectors
       @if ( string.slice($classPrefix, 1, 1)==':' ) {
         &:#{string.slice($classPrefix, 2, (string.length($classPrefix) - 1))} {
-          @include shadow-structure($value, $keyShadowTypes, $valueShadowTypes)
+          @include determine-shadow-class-theme($value, $keyShadowTypes, $valueShadowTypes)
         }
       }
     }

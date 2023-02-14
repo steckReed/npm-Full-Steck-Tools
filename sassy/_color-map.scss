@@ -47,6 +47,14 @@
         'light' : $light-offset,
         'dark'  : $dark-offset
       ),
+      'theme':(
+        'light' : $colorWhite,
+        'dark'  : $colorBlack
+      ),
+      'theme-alt':(
+        'light' : $colorBlack,
+        'dark'  : $colorWhite
+      ),
     // Default
   );
 

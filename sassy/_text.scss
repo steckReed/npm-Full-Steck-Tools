@@ -60,6 +60,7 @@
 // Mixins
 
 // Classes
+  .text                     { @include text(); }
   .text-no-wrap             { @include text-no-wrap(); }
   .text-wrap                { @include text-wrap(); }
   .text-disable-user-select { @include text-disable-user-select(); }

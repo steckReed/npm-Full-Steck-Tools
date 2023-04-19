@@ -193,8 +193,8 @@
     .sample { light-or-dark: "light"; }
   */
 
-  $light-contrast: contrast-ratio($color, $colorWhite);
-  $dark-contrast: contrast-ratio($color, $colorBlack);
+  $light-contrast: contrast-ratio($color, $colorBase-100);
+  $dark-contrast: contrast-ratio($color, $colorBase-0);
 
   @if $light-contrast > $dark-contrast {
     // Contrast against white is higher than against black, so, this is a dark color
@@ -229,12 +229,12 @@
 
   // Light Background. Return Dark Font
   @if ($color-lum >= $threshold) {
-    @return $colorBlack;
+    @return $colorBase-0;
   }
 
   // Dark Background. Return Light Font
   @if ($color-lum < $threshold) {
-    @return $colorWhite;
+    @return $colorBase-100;
   }
 }
 
@@ -260,11 +260,11 @@
   $color-lod  :light-or-dark($color);
 
   @if ($color-lod == "dark") {
-    @return $colorWhite;
+    @return $colorBase-100;
   }
 
   @else {
-    @return $colorBlack;
+    @return $colorBase-0;
   }
 }
 

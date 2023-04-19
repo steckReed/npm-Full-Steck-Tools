@@ -1,5 +1,5 @@
 // Mixins
-  @mixin outline($outlineColor:$colorWhite, $outlineStyle:1px solid){
+  @mixin outline($outlineColor:$colorBase-100, $outlineStyle:1px solid){
     outline:$outlineStyle $outlineColor;
   }
 // Mixins
